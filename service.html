@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html class = service-bg>
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<body>
+   
+  <!-----------------------------Navbar------------------------------------->
+  <div class="service-bg">
+  
+  <header>
+            <div class="menu-toggle" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="overlay"></div>
+            <div class="container">
+                <nav>
+                  <img src="/images/logo.png" width="150" height="100">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="OriginalContent.html">OriginalContent</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+<!-----------------------------------Video gallery----------------------------->
+
+
+
+
+
+<div class="main-container">
+
+    <div class="heading">Videography <i class="fas fa-video"></i></div>
+ 
+        <div class="video-container">
+
+            <div class="video">
+                <video src="/images/Basketball mixtape.mp4" >
+                    <h2>Music Video</h2>
+                </video>
+            </div>
+
+            <div class="video">
+                <video src="/images/Beeyee.mp4" ></video>
+            </div>
+
+            <div class="video">
+                <video src="/images/Basketball mixtape.mp4" ></video>
+            </div>
+
+           
+            
+
+            
+
+          
+
+        </div>
+</div>
+
+
+
+<script>
+    var video = document.querySelectorAll('video')
+    video.forEach(play => play.addEventListener('click',() => {
+
+        play.classList.toggle('active');
+
+        if(play.paused){
+            play.play();
+        }else{
+            play.pause();
+            play.currentTime = 0;
+        }
+    }));
+</script>
+
+
+
+
+<!------------------------------Photography---------------------------------------->
+
+
+
+<div class="photography-container">
+
+    <div class="heading">Photography <i class="fas fa-camera-retro"></i></div>
+
+<div class="photo-container">
+    <div class="photo-gallery">
+      <a href="/images/IMG_0247.jpg" class="img-1">
+      <i class="icon ion-md-expand">
+      </i></a>
+
+
+        <a href="/images/140249643_432245638004953_1474718059893026384_n_edited.jpg" class="img-2">
+          <i class="icon ion-md-expand"> 
+          </i></a>
+
+          <a href="/images/IMG_3123.jpg" class="img-3">
+            <i class="icon ion-md-expand">
+            </i></a>
+
+            <a href="/images/IMG_3587.JPG" class="img-4">
+              <i class="icon ion-md-expand">
+              </i></a>
+
+              <a href="/images/20191019_231210.jpg" class="img-5">
+                <i class="icon ion-md-expand">
+                </i></a>
+
+                <a href="/images/IMG_9930.JPG" class="img-6">
+                  <i class="icon ion-md-expand">
+                  </i></a>
+
+                  <a href="/images/pic.jpeg" class="img-7">
+                    <i class="icon ion-md-expand">
+                    </i></a>
+
+                    <a href="/images/ameeapedo_20200114055359.jpg" class="img-8">
+                      <i class="icon ion-md-expand">
+                      </i></a>
+
+                      
+    </div>
+  </div>
+</div>
+
+
+
+   
+  <!------------------Service Card----------------------------------------------->
+
+
+  <div class="heading1">Price List <i class="fas fa-money-check-alt"></i></div>
+
+  <div id="container">	
+	
+    <!-- Start	Product details -->
+        <div class="product-details">
+            
+            <!-- 	Product Name -->
+        <h1>Music Videos</h1>
+    <!-- 		<span class="hint new">New</span> -->
+    <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
+    <!-- 		the Product rating -->
+        <span class="hint-star star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+        </span>
+            
+        
+    <!-- The most important information about the product -->
+            <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+    
+            
+            
+    <!--Control -->
+    <div class="control">
+        
+    <!-- Start Button buying -->
+        <button class="btn">
+    <!-- 		the Price -->
+         <span class="price">450 $</span>
+    <!-- 		shopping cart icon-->
+       <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+    <!-- 		Buy Now / ADD to Cart-->
+       <span class="buy">Buy Now</span>
+     </button>
+        <!-- End Button buying -->
+        
+    </div>
+                
+    </div>
+        
+    <!-- 	End	Product details   -->
+        
+        
+        
+    <!-- 	Start product image & Information -->
+        
+    <div class="product-image">
+        
+        <img src="/images/pexels-kyle-loftus-5488369.jpg" alt="Omar Dsoky">
+        
+    <!-- 	product Information-->
+    <div class="info">
+        <h2>Package 1 </h2>
+        <ul>
+            <li><strong>Pro 4k Quality: </strong></li>
+            <li><strong>Pro advanced Effects: </strong></li>
+            <li><strong>3 locations: </strong></li>
+            <li><strong>3 Hour shoot: </strong></li>
+            <li><strong>Blooms in: </strong></li>
+            <li><strong>Features: </strong></li>
+            
+        </ul>
+    </div>
+    </div>
+    <!--  End product image  -->
+    
+    
+    </div>
+
+    <div id="container">	
+
+        <!-- Start	Product details -->
+            <div class="product-details">
+                
+                <!-- 	Product Name -->
+            <h1>Short Flims</h1>
+        <!-- 		<span class="hint new">New</span> -->
+        <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
+        <!-- 		the Product rating -->
+            <span class="hint-star star">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+            </span>
+                
+            
+        <!-- The most important information about the product -->
+                <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+        
+                
+                
+        <!-- 		Control -->
+        <div class="control">
+            
+        <!-- Start Button buying -->
+            <button class="btn">
+        <!-- 		the Price -->
+             <span class="price">600$</span>
+        <!-- 		shopping cart icon-->
+           <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+        <!-- 		Buy Now / ADD to Cart-->
+           <span class="buy">Buy Now</span>
+         </button>
+            <!-- End Button buying -->
+            
+        </div>
+                    
+        </div>
+            
+        <!-- 	End	Product details   -->
+            
+            
+            
+        <!-- 	Start product image & Information -->
+            
+        <div class="product-image">
+            
+            <img src="/images/pexels-martin-lopez-1117132.jpg" alt="Omar Dsoky">
+            
+        <!-- 	product Information-->
+        <div class="info">
+            <h2>Short Flims </h2>
+            <ul>
+                <li><strong>3 days shoot: </strong>Full Sun</li>
+                <li><strong>Part of pre-production: </strong>Damp</li>
+                <li><strong>Collaborative: </strong>9 - 11</li>
+               
+            </ul>
+        </div>
+        </div>
+        <!--  End product image  -->
+        
+        
+        </div>
+
+        <div id="container1">	
+
+            <!-- Start	Product details -->
+                <div class="product-details">
+                    
+                    <!-- 	Product Name -->
+                <h1>Events</h1>
+            <!-- 		<span class="hint new">New</span> -->
+            <!-- 		<span class="hint free-shipping">Free Shipping</span> -->
+            <!-- 		the Product rating -->
+                <span class="hint-star star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </span>
+                    
+                
+            <!-- The most important information about the product -->
+                    <p class="information">" Especially good for container gardening, the Angelonia will keep blooming all summer even if old flowers are removed. Once tall enough to cut, bring them inside and you'll notice a light scent that some say is reminiscent of apples. "</p>
+            
+                    
+                    
+            <!-- 		Control -->
+            <div class="control">
+                
+            <!-- Start Button buying -->
+                <button class="btn">
+            <!-- 		the Price -->
+                 <span class="price">200 $</span>
+            <!-- 		shopping cart icon-->
+               <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+            <!-- 		Buy Now / ADD to Cart-->
+               <span class="buy">Buy Now</span>
+             </button>
+                <!-- End Button buying -->
+                
+            </div>
+                        
+            </div>
+                
+            <!-- 	End	Product details   -->
+                
+                
+                
+            <!-- 	Start product image & Information -->
+                
+            <div class="product-image">
+                
+                <img src="/images/pexels-salah-alawadhi-382297.jpg" alt="Omar Dsoky">
+                
+            <!-- 	product Information-->
+            <div class="info">
+                <h2>Events & Photography </h2>
+                <ul>
+                    <li><strong>Two hours: </strong>Full Sun</li>
+                    <li><strong>Videography: </strong>Damp</li>
+                    <li><strong>Photography: </strong>9 - 11</li>
+                    <li><strong>Photography: </strong>$75</li>
+                    <li><strong>All Photos recieved </strong>Mid‑Summer - Mid‑Fall</li>
+                    <li><strong>10 edits: </strong>Tolerates heat</li>
+                    <li><strong>1 Hour: </strong>Tolerates heat</li>
+                </ul>
+            </div>
+            </div>
+
+        </div>
+            <!--  End product image  -->
+            
+            
+            </div>
+    
+    <script>
+        // font-family: 'Alegreya', serif;
+// font-family: 'Alice', serif;
+// font-family: 'Arapey', serif;
+// font-family: 'Aref Ruqaa', serif;
+// font-family: 'Cantata One', serif;
+// font-family: 'Domine', serif;
+// font-family: 'Droid Serif', serif;
+// font-family: 'Gentium Basic', serif;
+// font-family: 'Libre Baskerville', serif;
+// font-family: 'Lora', serif;
+// font-family: 'Merriweather', serif;
+// font-family: 'Old Standard TT', serif;
+// font-family: 'Oranienbaum', serif;
+// font-family: 'Prata', serif;
+// font-family: 'Rufina', serif;
+// font-family: 'Vidaloka', serif;
+// font-family: 'Bentham', serif;
+// font-family: 'Saira Extra Condensed', sans-serif;
+// font-family: 'Saira', sans-serif;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Saira Condensed', sans-serif;
+// font-family: 'Titillium Web', sans-serif;
+// font-family: 'Quicksand', sans-serif;
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Abel', sans-serif;
+// font-family: 'Ruluko', sans-serif;
+// font-family: 'Rum Raisin', sans-serif;
+// font-family: 'Snippet', sans-serif;
+// font-family: 'Chathura', sans-serif;
+// font-family: 'Text Me One', sans-serif;
+// font-family: 'Sansita', sans-serif;
+// font-family: 'Wire One', sans-serif;
+// font-family: 'Marvel', sans-serif;
+// font-family: 'Bubbler One', sans-serif;
+// font-family: 'Advent Pro', sans-serif;
+// font-family: 'Amaranth', sans-serif;
+// font-family: 'Convergence', sans-serif;
+    </script>
+    
+    
+    
+
+    
+
+
+
+  
+
+
+
+<!----------------------Footer---------------------------->
+
+
+
+
+
+
+    <!---------------------------JavaScript----------------------------------->
+    <script>
+        var open = document.getElementById('hamburger');
+var changeIcon = true;
+
+open.addEventListener("click", function(){
+
+    var overlay = document.querySelector('.overlay');
+    var nav = document.querySelector('nav');
+    var icon = document.querySelector('.menu-toggle i');
+
+    overlay.classList.toggle("menu-open");
+    nav.classList.toggle("menu-open");
+
+    if (changeIcon) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-times");
+
+        changeIcon = false;
+    }
+    else {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+        changeIcon = true;
+    }
+});
+    </script>
+
+
+
+
+
+
+
+
+  
+</body>
+</html>  
