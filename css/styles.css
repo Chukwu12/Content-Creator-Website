@@ -374,7 +374,7 @@ section p {
 
 /*--------------About Page---------------------*/
 .about-bg {
-  background: #333;
+  background: #111;
 }
 
 header .logo {
@@ -699,7 +699,7 @@ input {
   content: "Fun Facts About Me";
   position: absolute;
   text-align: center;
-  top: 2200px;
+  top: 2210px;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 12em;
@@ -707,6 +707,7 @@ input {
   color: transparent;
   -webkit-text-stroke: 1px gold;
   white-space: nowrap;
+  margin-top: 50px;
 }
 
 .practice-bg section {
