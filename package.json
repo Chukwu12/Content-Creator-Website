@@ -1,0 +1,22 @@
+{
+  "name": "salef-website",
+  "version": "1.0.0",
+  "description": "Content Website",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chukwu12/Salef-Website.git"
+  },
+  "author": "Okechukwu Egeruoh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chukwu12/Salef-Website/issues"
+  },
+  "homepage": "https://github.com/Chukwu12/Salef-Website#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
