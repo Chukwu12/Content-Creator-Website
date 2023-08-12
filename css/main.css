@@ -150,6 +150,7 @@ h3 {
 
 .header-content {
   padding-bottom: 4rem;
+  z-index: 6;
 }
 .header-content h1 {
   font-size: 3.5rem;
