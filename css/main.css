@@ -804,7 +804,7 @@ svg {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 6rem;
     row-gap: 0;
-    align-items: center;
+   
   }
   .about-left {
     margin-bottom: 0;
