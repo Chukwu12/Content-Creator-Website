@@ -57,8 +57,7 @@ parallax.addEventListener('mousemove', e => {
     ${y /sFront}%
     )`;
 
-    back.style.transform = `translate(
-      (${x/ sBack}%,
+    back.style.transform = `translate(${x/ sBack}%,
     ${y /sBack}%
     )`;
 })
