@@ -187,7 +187,8 @@ header.container {
   padding: 0 2rem;
 }
 
-.layer, .back-layer{
+.layer, 
+.back-layer{
   position: absolute;
   top: 0;
   left: 0;
@@ -196,7 +197,7 @@ header.container {
   pointer-events: none;
 }
 
-layer{
+.layer{
   z-index: 1;
 }
 
@@ -204,7 +205,8 @@ layer{
   z-index: 0;
 }
 
-.layer img, .back-layer img{
+.layer img, 
+.back-layer img{
 position: absolute;
 }
 
@@ -217,6 +219,55 @@ position: absolute;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
   max-width: 380px;
 }
+
+.layer img:nth-child(1) {
+  top: 0;
+  left: 20%;
+  width: 16%;
+}
+
+.layer img:nth-child(2) {
+  top: 50;
+  left: 20%;
+  width: 13%;
+}
+
+.layer img:nth-child(3) {
+ bottom: 0;
+  left: 30%;
+  width: 14%;
+}
+
+.layer img:nth-child(4) {
+  bottom: 0;
+  right: 10%;
+  width: 12%;
+}
+
+.layer img:nth-child(5) {
+  top: 10;
+  right:30%;
+  width: 11%;
+}
+
+.back-layer img:nth-child(1) {
+  top: -10;
+ right: 10%;
+  width: 30%;
+}
+
+.back-layer img:nth-child(2) {
+  top: -20;
+ right: 20%;
+  width: 30%;
+}
+
+.back-layer img:nth-child(3) {
+  top: -10;
+  right: 20%;
+  width: 32%;
+}
+
 
 
 
