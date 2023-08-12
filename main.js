@@ -41,14 +41,14 @@ const interval = setInterval(() => {
 
 
 // ==========================================Home Background Effects=================================//
-const parallax = document.querySelector('#home-page');
+const parallax = document.querySelector('.parallax');
 const front = document.querySelector('.layer');
 const back = document.querySelector('.back-layer');
 
 const sFront = 150;
 const sBack  = 400;
 
-home-page.addEventListener('mousemove', e => {
+parallax.addEventListener('mousemove', e => {
   
   const x = e.clientX;
   const y = e.clientY;
