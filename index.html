@@ -12,8 +12,9 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
 </head>
 <!-- CSS -->
 <link rel="stylesheet" href="css/main.css">
@@ -24,7 +25,7 @@
 
   <!-- Header -->
   <header>
-    <nav class="navbar fixed-top navbar-expand-sm  bg-light p-md-4">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="./images/logo.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -32,9 +33,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mx-auto"></div>
-          <ul class="navbar-nav">
-            <li class="nav-item  active" aria-current="page">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
               <a class="nav-link" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
@@ -51,37 +51,43 @@
       </div>
     </nav>
   </header>
+     <!-- Header End -->
 
-  <div id="header" class="vh-100 w-100 d-flex">
 
-    <div class="header-container">
-      <div class="header-content">
-        <h1>I'm a <br><span class="typewrite" data-loop="yes" data-speed="100" data-delay="2000"
-            data-words='["Photographer", "Videographer", "Content Creator"]'></span></h1>
-        <h3>Salif Soumahoro</h3>
+     <section>
+      <div class="container d-flex align-items-center">
+        <div class="header-content text-center">
+            <h1>I'm a <br><span class="typewrite" data-loop="yes" data-speed="100" data-delay="2000"
+                data-words='["Photographer", "Videographer", "Content Creator"]'></span></h1>
+            <h3>Salif Soumahoro</h3>
+    
+            <ul class="social-links list-inline">
+              <li class="list-inline-item">
+                <a href="#" class="flex">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="flex">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="flex">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+     </section>
+   
 
-        <ul class="social-links">
-          <li>
-            <a href="#" class="flex">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="flex">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="flex">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    </header>
+  
 
-    <!-- Header End -->
+
+
+ 
 
 
 
@@ -95,12 +101,11 @@
     <script src="typewriting-master/typewriting.js"></script>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 
     </script>
 </body>
