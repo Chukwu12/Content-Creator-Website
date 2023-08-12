@@ -632,7 +632,7 @@ svg {
 
 .card-button:hover {
   border: 1px solid var(--dark-color);
-  background-color: var(--color);
+  background-color: var(--color);grid
 }
 
 @keyframes chan-sh {
