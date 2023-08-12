@@ -238,7 +238,7 @@ position: absolute;
   width: 14%;
 }
 
-.layer img:nth-child(4) {
+/* .layer img:nth-child(4) {
   bottom: 0%;
   right: 15%;
   width: 12%;
@@ -248,7 +248,7 @@ position: absolute;
   top: 50%;
   right:30%;
   width: 11%;
-}
+} */
 
 .back-layer img:nth-child(1) {
   top: 10%;
@@ -268,7 +268,7 @@ position: absolute;
   width: 32%;
 }
 
-.back-layer img:nth-child(4) {
+/* .back-layer img:nth-child(4) {
   top: 15%;
   right: 25%;
   width: 32%;
@@ -278,7 +278,7 @@ position: absolute;
   top: 20%;
   right: 35%;
   width: 32%;
-}
+} */
 
 
 
