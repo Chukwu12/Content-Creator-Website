@@ -661,13 +661,14 @@ h1 {
 }
 .carousel-item {
   background: #777;
+}
+
+.carousel-item img{
   object-fit: cover;
   object-position: center;
   height: 50vh;
   overflow: hidden;
- 
 }
-
 /* title */
 .title2 {
   margin-bottom: 5rem;
