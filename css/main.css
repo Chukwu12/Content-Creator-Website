@@ -312,6 +312,11 @@ position: absolute;
   padding: 0 2rem;
 }
 
+.about-content grid{
+  gap: 5rem;
+  align-items: center;
+}
+
 /* button down and title -reusable */
 .btn-down {
   font-size: 3rem;
@@ -335,15 +340,20 @@ position: absolute;
   font-weight: 600;
   position: relative;
   text-align: center;
+  font-size: 3rem;
 }
 .title h2::after {
   position: absolute;
   content: "";
   top: 120%;
-  left: 0;
+  right: 50%;
   width: 70px;
   height: 4px;
   background-color: var(--dark-color);
+}
+
+.lead p{
+  font-size: 1.4rem;
 }
 
 /* work */
@@ -817,7 +827,10 @@ svg {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 6rem;
     row-gap: 0;
-   
+  }
+
+  .work-top grid{
+    row-gap: 3rem;
   }
   .about-left {
     margin-bottom: 0;
