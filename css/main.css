@@ -463,7 +463,10 @@ position: absolute;
   margin: 0 auto;
   padding: 0 2rem;
 }
-
+.insta-grid{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
 
 #insta .title h2 {
   color: var(--light-color);
