@@ -65,7 +65,8 @@ body {
   list-style: none;
   display: inline-block;
   margin-left: 0;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .navbar ul li a {
@@ -660,7 +661,11 @@ h1 {
 }
 .carousel-item {
   background: #777;
-  height: 50rem;
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  overflow: hidden;
+ 
 }
 
 /* title */
