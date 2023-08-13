@@ -1,0 +1,649 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&family=Slabo+27px&family=Zilla+Slab:ital,wght@0,500;0,700;1,600&display=swap'); 
+
+/* scss stuff
+--------------------------------------------- */
+
+$card-width: 100%;
+$card-height: 480px;
+$img-height: 370px;
+
+$primary: #f0efeb;
+$secondary: #d8f3dc;
+$white: #fff;
+$black: #555b6e;
+$gray: #4a4e69;
+$red: #EF476F;
+$green: #A2D9CE;
+
+$shadow-01: 1px 2px 3px rgba(0, 0, 0, 0.6);
+$shadow-02: 0 1px 1px rgba(0,0,0,0.11), 
+            0 2px 2px rgba(0,0,0,0.11), 
+            0 4px 4px rgba(0,0,0,0.11), 
+            0 6px 8px rgba(0,0,0,0.11),
+            0 8px 16px rgba(0,0,0,0.11);
+$shadow-03: 0 1px 2px rgba(0,0,0,0.07), 
+            0 2px 4px rgba(0,0,0,0.07), 
+            0 4px 8px rgba(0,0,0,0.07), 
+            0 8px 16px rgba(0,0,0,0.07),
+            0 16px 32px rgba(0,0,0,0.07), 
+            0 32px 64px rgba(0,0,0,0.07);
+$shadow-04: 0px 8.74766px 16.4019px rgba(0, 41, 103, 0.158), inset 0px -1.09346px 4.37383px rgba(0, 0, 0, 0.192), inset 0px 4.37383px 4.37383px rgba(242, 242, 242, 0.25);
+$transition-01: all 0.8s ease;
+$transition-02: .9s cubic-bezier(0.13, 0.38, 0.45, 0.94);
+
+@mixin h1text {
+  line-height: 0.8;
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5w + 1rem), 4.5);
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $white;
+  font-family: 'Slabo 27px', serif;
+}
+
+@mixin h2text {
+  line-height: 1;
+  font-size: 2rem;
+  font-size: clamp(1.5rem, calc(5w + 1rem), 2.1);
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $secondary; 
+  font-family: 'EB Garamond', serif;
+}
+
+@mixin h3text {
+  line-height: 0.9;
+  font-size: 50px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $gray;
+  font-family: 'Slabo 27px', serif;
+}
+
+@mixin h4text {
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $primary;
+  font-family: 'Zilla Slab', serif;
+}
+
+@mixin bodytext {
+  line-height: 1;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $black;
+  font-family: 'Zilla Slab', serif;
+}
+
+@mixin smalltext {
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+  color: $primary;
+}
+
+@mixin linktext {
+  line-height: 0.9;
+  letter-spacing: 0.1em;
+  font-family: 'Zilla Slab', serif;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  color:  darken($secondary, 50%); 
+}
+@mixin linktext-hover {
+  color:  darken($secondary, 100%);
+}
+@mixin button {
+          @include linktext;
+          background-image: linear-gradient(to right, #232526 0%, #414345  61%, #232526  100%);
+          position: absolute;
+          margin: 0;
+          bottom: 20px;
+          background-size: 200% auto;
+          right: 17px;
+          z-index: 33;
+          padding:0.6em 2em;
+          border-radius: 16px;
+          transition: $transition-02;
+          background-size: 200% auto;
+          box-shadow: $shadow-04;
+          border:0;
+          cursor:pointer;
+          color:  darken($white, 7%); 
+           &:hover {
+          @include linktext-hover;
+            background-position: right center;
+            color:  darken($white, 30%); 
+            text-decoration: none;
+            box-shadow: $shadow-01;
+             
+      }
+  
+}
+@mixin button-2 {
+  padding: 15px;
+  border-radius: 20%;
+  -webkit-box-shadow: 5px 5px 15px 1px #8C8C8C, -12px -12px 15px -4px #FFFFFF; 
+  box-shadow: 5px 5px 15px 1px #8C8C8C, -12px -12px 15px -4px #FFFFFF;
+  i {
+    font-size: 35px;
+  }
+}
+
+@mixin button-3 {  
+      @include linktext;
+      position: absolute;
+      margin: 0;
+      bottom: 20px;
+      background-size: 200% auto;
+      right: 17px;
+      z-index: 33;
+      padding:0.6em 2em;
+      border-radius: 16px;
+      transition: $transition-02;
+      background-image: linear-gradient(#444, #333);
+      text-align: center;
+      color:  darken($white, 7%); 
+      margin: 0 1px;
+      border-top: 1px solid rgba(255,255,255,0.25);
+      border-left: 1px solid rgba(255,255,255,0.05);
+      border-right: 1px solid rgba(255,255,255,0.05);
+      box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: all .175s ease;
+      box-shadow: $shadow-01;
+      
+  &:hover {
+     
+         background-position: right center;
+         color:  darken($white, 30%); 
+         text-decoration: none;      
+         box-shadow: $shadow-02;
+    
+  }
+      
+  
+   
+}
+/* section nav
+--------------------------------------------- */
+nav {
+     max-width: 1200px;
+     margin: 0 auto;
+     background-color: $white;
+     padding: 0 1em .5em;
+           ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              display: flex;
+                li{
+                 list-style-type: none;
+                 flex: 3;  
+                  .user {
+                    flex: 1;  
+                  }
+                   .heart {
+                      background: darken($red, 50%);
+                      color: #fff;
+                    }
+                  .call {
+                      background: darken($white, 75%); 
+                      color: #fff;
+                    }
+                  .mail {
+                      background: darken($secondary, 8%);
+                      color: #fff;
+                    }
+                     a{
+                       color: $gray;
+                       font-weight: 300;
+                       letter-spacing: 2px;
+                       text-decoration: none;
+                       background: darken($white, 2%);
+                       padding: 20px 5px;
+                       display: inline-block;
+                       width: 100%;
+                       text-align: center;
+                       @include h4text;
+                       font-weight: bold;
+                       color: $gray;
+                       text-transform: uppercase;
+   
+                       &:hover {
+                        background: darken($white, 7%);
+                        
+                         }                     
+                       }
+                 }
+             
+         }
+}
+@media all and (max-width: 1000px) {
+   .navigation ul {
+      flex-wrap: wrap;
+   }
+   
+   .navigation li {
+      flex: 1 1 50%;
+   }
+
+   .navigation .user {
+      flex: 1 1 33.33%;
+   }
+}
+
+@media all and (max-width: 480px) {
+   .navigation li {
+      flex-basis: 100%;
+   }
+
+   .navigation .user {
+      flex-basis: 50%;
+   }
+}
+
+
+
+
+/* section stuff
+--------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#featured {
+  background: $white;
+  margin-top: 20px;
+
+  .section-title {
+    text-align: center;
+    padding: 0 1em;
+    @include h3text;
+    line-height: 0.9;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+    font-weight: 500;
+    cursor: pointer;
+     transition: $transition-02;
+    
+  }
+  .section-title:hover {
+   letter-spacing: 1.8px;
+   filter: blur(1px);
+}
+  
+  .container__card-wrapper {
+    width: 93%;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+      background-color: $white;
+      height: $card-height;
+      width: $card-width;
+      border-radius:  2px;
+      max-width: 20em;
+      margin: 2em 0.7em;
+      box-shadow: $shadow-02;
+      text-align: center;
+      position: relative;
+
+      &:hover {
+        box-shadow: $shadow-03;
+      }
+
+      .img {
+        height: $img-height;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &.a {
+          background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxap-1937e2ca-ba4e-47f1-9f1a-673193fcf349.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGFwLTE5MzdlMmNhLWJhNGUtNDdmMS05ZjFhLTY3MzE5M2ZjZjM0OS5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.TJtGCjxzuFvGIS6WbY9MFDPaAcZkVqbI-_wnnXAjUFA);
+          background-size: cover;
+        }
+        &.b {
+          background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxc7-9ab46ae7-2d17-4057-abda-11286e1fb307.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGM3LTlhYjQ2YWU3LTJkMTctNDA1Ny1hYmRhLTExMjg2ZTFmYjMwNy5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.F-eBNDZpMKE633UUA8CQs_PvVEEn9IExU5HCw_4HTWs);
+          background-size: cover;
+        }
+        &.c {
+          background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5mxdx-4ff65579-1ac7-4247-9bf8-489e76a65146.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNTY2MTM3OTctM2JhOS00NzFlLWJlMTQtMTQxOTQ5ZDNlYzVlXC9kZTVteGR4LTRmZjY1NTc5LTFhYzctNDI0Ny05YmY4LTQ4OWU3NmE2NTE0Ni5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.r8VM3f87snHaI-B4MHBEhd-F1CCVr69SVOkzao5bG-8);
+          background-size: cover;
+        }
+        &.d {
+          background-image: url(https://res.cloudinary.com/dsx500kcj/image/upload/v1602520562/blossom-001/purple-hydrangea_white-rose_snowberry_Symphoricarpos-albus-001_gpj3uc.png);
+          background-size: cover;
+        }
+        &.e {
+          background-image: url(https://res.cloudinary.com/dsx500kcj/image/upload/v1602520562/blossom-001/roses_hypericum_white_bouquet_001_a9celz.png);
+          background-size: cover;
+        }
+        &.f {
+          background-image: url(https://res.cloudinary.com/dsx500kcj/image/upload/v1602520562/blossom-001/pink_roses_hypericum_mix_flower_arrangement-003_qswqj4.png);
+          background-size: cover;
+        }
+      }
+
+      .info {
+        top: 0;
+        left: 0;
+        text-align: center;
+        margin: 100px 0 0 0;
+        width: 100%;
+        z-index: 10;
+
+        h3 {
+          @include h3text;
+          position: absolute;
+          padding: 0;
+          margin: 0;
+          top: 10px;
+          left: 15px;         
+        }
+
+        small {
+          @include smalltext;
+          position: absolute;
+          padding: 0;
+          margin: 0;
+          top: 60px;
+          left: 17px;
+        }
+
+        p {
+          @include bodytext;
+          font-weight: bold;
+          position: absolute;
+          bottom: 42px;
+          left: 17px;
+          padding: 0 1em;
+          z-index: 20;
+        }
+          .count-green {
+          line-height: 0.9;
+          text-transform: uppercase;
+          font-size: 8px;
+          letter-spacing: .8px;
+          font-weight: 500;
+          color: $black;
+          position: absolute;
+          top: 450px;
+          left: 51px;
+          z-index: 77;
+        }
+          .count {
+          color: $red;
+          line-height: 0.9;
+          text-transform: uppercase;
+          font-size: 8px;
+          letter-spacing: .8px;
+          font-weight: 500;
+          position: absolute;
+          top: 450px;
+          left: 51px;
+          z-index: 77;
+        }
+ 
+        .btn {
+          @include button-3;
+        }
+        
+        .heart-02 {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        top: calc(94% - 12px);
+        left: calc(16% - 12px);
+        transform: rotate(45deg);
+        background-color: $green;
+        animation-name: heart-02;
+        animation-duration: 6.2s;
+        cursor:pointer;
+        animation-iteration-count: infinite;
+        z-index: 77;
+        box-shadow: $shadow-02;
+
+        &::before,
+        &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: $green;
+        }
+  
+        &::before {
+        left: -7px;
+        }
+
+        &::after {
+        top: -7px;
+        }
+          
+}
+        .heart {
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        top: calc(94% - 12px);
+        left: calc(16% - 12px);
+        transform: rotate(45deg);
+        background-color: $red;
+        animation-name: heart;
+          cursor:pointer;
+        animation-duration: 6.2s;
+        animation-iteration-count: infinite;
+        z-index: 77;
+        box-shadow: $shadow-02;
+
+        &::before,
+        &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: $red;
+        }
+  
+        &::before {
+        left: -7px;
+        }
+
+        &::after {
+        top: -7px;
+        }
+          
+}
+  
+
+@keyframes heart {
+  0% {
+    transform: rotate(48deg) scale(1);
+  }
+  35% {
+    transform: rotate(50deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(48deg) scale(1);
+  }
+  60% {
+    transform: rotate(46deg) scale(1.25);
+  }
+  100% {
+    transform: rotate(45deg) scale(1);
+  }
+}
+        @keyframes heart-02 {
+  0% {
+    transform: rotate(28deg) scale(1);
+  }
+  35% {
+    transform: rotate(30deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(28deg) scale(1);
+  }
+  60% {
+    transform: rotate(26deg) scale(1.25);
+  }
+  100% {
+    transform: rotate(25deg) scale(1);
+  }
+}
+
+
+      }
+
+      .gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(121, 209, 202, 0.329);
+        background: linear-gradient(
+          to bottom,
+          rgba(254, 252, 234, 0.03) 40%,
+          rgba(252, 250, 235, 0.03) 9%,
+          rgba(239, 239, 239, 1) 100%
+        );
+        
+        width: $card-width;
+        height: $card-width;
+        z-index: 9;
+      }
+
+      .cardlayer-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: lighten($secondary, 2%); 
+        background: linear-gradient(180deg, #FFFFFF 0%, #D3E0FF 100%);
+        background-image: -webkit-linear-gradient(top, #f4f1ee, #fff);
+			  background-image: linear-gradient(top, #f4f1ee, #fff);
+        
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, .3), inset 0px 2px 1px 1px white, inset 0px -1px 1px 1px rgba(204,198,197,.5);
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        z-index: 20;
+        transition: $transition-02;
+        
+        &__content {
+          padding: 2em;
+
+          h3 {
+            @include h3text;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            top: 30px;
+            text-shadow: 0px -1px 1px #bdb5b4, 1px 1px 1px white;
+          }
+
+          hr {
+            width: 70px;
+            height: 3px;
+            margin: 3px auto;
+            border: 0;
+            background: $primary;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            top: 150px;
+          }
+
+          p {
+            @include bodytext;
+            position: absolute;
+            padding: 0 1em;
+            margin: 0;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            top: 90px;
+          }
+        }
+      }
+    }
+
+    .card-overlay {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        .cardlayer-overlay {
+          opacity: 1;
+          visibility: visible;
+          transform: scale(1);
+          transition: $transition-02;
+          
+        }
+      }
+    }
+  }
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+.hero {
+    text-align: center;
+    padding: 10em 1em;
+    background: #222; 
+    @supports (background-blend-mode: multiply) {
+    background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/56613797-3ba9-471e-be14-141949d3ec5e/de5n3nn-57e9b404-945a-4ac2-8c4b-6e683e9e7db6.jpg/v1/fill/w_1024,h_320,q_75,strp/sunflower_by_toash_de5n3nn-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD0zMjAiLCJwYXRoIjoiXC9mXC81NjYxMzc5Ny0zYmE5LTQ3MWUtYmUxNC0xNDE5NDlkM2VjNWVcL2RlNW4zbm4tNTdlOWI0MDQtOTQ1YS00YWMyLThjNGItNmU2ODNlOWU3ZGI2LmpwZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.liQjyUmZEITMVWxuwNEaZdkDNa8blbWzDlfq_uInuN0),
+    linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 20%,rgba(255,255,255,0) 100%);
+    background-blend-mode: overlay;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+         &__wrapper {
+    h1 {
+      @include h1text;
+      padding: 0;
+      filter: blur(1px);
+    }
+
+    h3 {
+      @include h3text;
+      margin-top: -40px;
+    }
+  }
+  
+  }
+}
+
