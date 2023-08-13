@@ -312,7 +312,7 @@ position: absolute;
   padding: 0 2rem;
 }
 
-.about-content grid{
+.about-content{
   gap: 5rem;
   align-items: center;
 }
@@ -383,6 +383,10 @@ position: absolute;
 .work-bottom > div .icon img {
   width: 50px;
   margin: 0 auto 1.7rem auto;
+}
+
+.work-top p{
+  font-size: 1.4rem;
 }
 
 /* portfolio */
