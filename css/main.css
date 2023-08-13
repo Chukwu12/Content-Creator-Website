@@ -184,6 +184,7 @@ h3 {
 }
 .social-links li a:hover {
   opacity: 0.9;
+  background-color: var(--color);
 }
 
 header.container {
