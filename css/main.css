@@ -167,6 +167,7 @@ h3 {
 .social-links {
   display: flex;
   margin-top: 3.5rem;
+  justify-content: center;
 }
 .social-links li a {
   width: 40px;
@@ -222,18 +223,18 @@ position: absolute;
 
 .layer img:nth-child(1) {
   top: 0%;
-  left: 20%;
+  left: 0%;
   width: 16%;
 }
 
 .layer img:nth-child(2) {
   top: 60%;
-  left: 20%;
+  left: 5%;
   width: 13%;
 }
 
 .layer img:nth-child(3) {
- bottom: 0%;
+ bottom: 5%;
   left: 40%;
   width: 14%;
 }
@@ -252,18 +253,18 @@ position: absolute;
 
 .back-layer img:nth-child(1) {
   top: 10%;
- right: 10%;
+ right: 5%;
   width: 30%;
 }
 
 .back-layer img:nth-child(2) {
-  top: 20%;
+  top: 10%;
  right: 40%;
   width: 30%;
 }
 
 .back-layer img:nth-child(3) {
-  top: 5%;
+  bottom: 5%;
   right: 5%;
   width: 32%;
 }
