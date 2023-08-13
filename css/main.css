@@ -451,6 +451,8 @@ position: absolute;
   transform: scale(0.9);
 }
 
+/* Videos */
+
 #insta {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("../images/insta-pic.jpg") center/cover no-repeat fixed;
@@ -460,6 +462,12 @@ position: absolute;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+.insta-grid{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
 }
 
 #insta .title h2 {
@@ -480,6 +488,8 @@ position: absolute;
 .insta-grid > div:hover {
   transform: scale(0.9);
 }
+
+/* Videos Ends */
 
 /* footer */
 .footer-container {
