@@ -56,12 +56,15 @@ body {
 
 .navbar ul {
   display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .navbar ul li {
   list-style: none;
   display: inline-block;
   margin-left: 0;
+  font-size: 1.8rem;
 }
 
 .navbar ul li a {
@@ -145,6 +148,7 @@ h3 {
     position: relative;
     display: flex;
   background-size: cover;
+  filter: grayscale(100%);
 }
 
 .header-content {
@@ -225,18 +229,21 @@ position: absolute;
   top: 0%;
   left: 0%;
   width: 16%;
+  filter: grayscale(100%);
 }
 
 .layer img:nth-child(2) {
   top: 60%;
   left: 5%;
   width: 13%;
+  filter: grayscale(100%);
 }
 
 .layer img:nth-child(3) {
  bottom: 5%;
   left: 40%;
   width: 14%;
+  filter: grayscale(100%);
 }
 
 /* .layer img:nth-child(4) {
@@ -255,18 +262,21 @@ position: absolute;
   top: 10%;
  right: 5%;
   width: 30%;
+  filter: grayscale(100%);
 }
 
 .back-layer img:nth-child(2) {
   top: 10%;
  right: 40%;
   width: 30%;
+  filter: grayscale(100%);
 }
 
 .back-layer img:nth-child(3) {
   bottom: 5%;
   right: 5%;
   width: 32%;
+  filter: grayscale(100%);
 }
 
 /* .back-layer img:nth-child(4) {
