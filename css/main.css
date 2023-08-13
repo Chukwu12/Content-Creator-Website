@@ -29,7 +29,7 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
-  overflow: hidden;
+
 }
 
 /* Navbar  */
@@ -145,7 +145,7 @@ h3 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(/images/pexels-jessica-lewis-593324.jpg);
    min-height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow-y: hidden;
     position: relative;
     display: flex;
   background-size: cover;
