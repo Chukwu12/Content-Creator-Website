@@ -376,6 +376,11 @@ header.container {
   padding: 0 2rem;
 }
 
+video{
+  width: 500px;
+  height: 300px;
+}
+
 #insta .title h2 {
   color: var(--light-color);
 }
