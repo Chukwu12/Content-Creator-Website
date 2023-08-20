@@ -778,7 +778,8 @@ svg {
     width: 50%;
   }
   .insta-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    justify-items: center;
   }
   .service-content {
     grid-template-columns: repeat(1, 1fr);
@@ -787,7 +788,8 @@ svg {
 
 @media (min-width: 992px) {
   .insta-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    justify-items: center;
   }
   .insta-grid > div {
     height: 250px;
