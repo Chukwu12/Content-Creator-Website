@@ -704,9 +704,7 @@ svg {
   .title h2 .title2 h2 {
     font-size: 4rem;
   }
-  .work-bottom {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -726,6 +724,12 @@ svg {
   }
   .service-content {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 785px) {
+  .work-bottom {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
