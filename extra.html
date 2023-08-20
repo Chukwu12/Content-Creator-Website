@@ -1,0 +1,118 @@
+<div class="layer">
+    <img src="images/IMG_3582.JPG">
+    <img src="images/IMG_3587.JPG">
+    <img src="images/IMG_3478.JPG">
+    <!-- <img src="images/IMG_7491.jpg">
+    <img src="images/IMG_7491.jpg"> -->
+   
+  </div>
+  
+  <div class="back-layer">
+    <img src="images/IMG_20190708_115051_177.jpg">
+    <img src="images/IMG_9930.JPG">
+    <img src="images/IMG_9897.JPG">
+    <!-- <img src="images/IMG_7491.jpg">
+    <img src="images/IMG_3478.JPG"> -->
+    
+  </div>
+
+
+  .layer, 
+.back-layer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.layer{
+  z-index: 1;
+}
+
+.back-layer{
+  z-index: 0;
+}
+
+.layer img, 
+.back-layer img{
+position: absolute;
+}
+
+.layer img{
+  box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.5);
+  max-width: 220px;
+}
+
+.back-layer img{
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  max-width: 380px;
+}
+
+.layer img:nth-child(1) {
+  top: 0%;
+  left: 0%;
+  width: 16%;
+  filter: grayscale(100%);
+}
+
+.layer img:nth-child(2) {
+  top: 60%;
+  left: 5%;
+  width: 13%;
+  filter: grayscale(100%);
+}
+
+.layer img:nth-child(3) {
+ bottom: 5%;
+  left: 40%;
+  width: 14%;
+  filter: grayscale(100%);
+}
+
+/* .layer img:nth-child(4) {
+  bottom: 0%;
+  right: 15%;
+  width: 12%;
+}
+
+.layer img:nth-child(5) {
+  top: 50%;
+  right:30%;
+  width: 11%;
+} */
+
+.back-layer img:nth-child(1) {
+  top: 10%;
+ right: 5%;
+  width: 30%;
+  filter: grayscale(100%);
+}
+
+.back-layer img:nth-child(2) {
+  top: 10%;
+ right: 40%;
+  width: 30%;
+  filter: grayscale(100%);
+}
+
+.back-layer img:nth-child(3) {
+  bottom: 5%;
+  right: 5%;
+  width: 32%;
+  filter: grayscale(100%);
+}
+
+/* .back-layer img:nth-child(4) {
+  top: 15%;
+  right: 25%;
+  width: 32%;
+}
+
+.back-layer img:nth-child(5) {
+  top: 20%;
+  right: 35%;
+  width: 32%;
+} */
+
