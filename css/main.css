@@ -208,6 +208,14 @@ header.container {
   overflow: hidden;
 }
 
+.about-left img {
+  width: 100%;
+  border-radius: 25px;
+  height: 500px;
+  display: block;
+  object-fit: cover;
+}
+
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -255,7 +263,9 @@ header.container {
 }
 
 .lead p{
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+    padding: 0 1rem;
 }
 
 /* work */
@@ -705,7 +715,7 @@ svg {
   .work-bottom {
     grid-template-columns: repeat(4, 1fr);
   }
-  
+
 }
 @media (min-width: 576px) {
   .title h2 .title2 h2 {
