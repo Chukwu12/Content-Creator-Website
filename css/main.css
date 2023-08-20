@@ -782,7 +782,7 @@ svg {
 
 @media (min-width: 992px) {
   .insta-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .insta-grid > div {
     height: 250px;
