@@ -204,13 +204,13 @@ header.container {
 
 .about-left {
   margin-bottom: 4rem;
-  height: 480px;
+  height: 500px;
   overflow: hidden;
 }
 
 .about-left img {
   width: 100%;
-  border-radius: 25px;
+  border-radius: 40px;
   height: 500px;
   display: block;
   object-fit: cover;
