@@ -719,12 +719,12 @@ svg {
 
 
 .info{
-    background: rgba(27, 26, 26, 0.9);
+    background: rgba(0, 0, 0, 0.8);
     font-family: 'Farsan', cursive;
     transition: all 0.3s ease-out;
     transform: translateX(-100%);
     position: absolute;
-    line-height: 1.9;
+    line-height: 2;
     text-align: left;
     font-size: 120%;
     cursor: no-drop;
@@ -756,12 +756,20 @@ svg {
 
 
 .overlay{
-  transition:  .5s ease;
+  transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.overlay icon-btn1 {
+  color: var(--color);
+}
+
+.overlay icon-btn2{
+  color: var(--light-color);
 }
 
 .img-container:hover .imgage{
