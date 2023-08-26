@@ -662,7 +662,7 @@ h1 {
   font-weight: 500;
 }
 
-.card-body h5 h6{
+.card-body h5,h6{
 text-align: center;
 }
 
@@ -682,6 +682,7 @@ svg {
 
 .img-container{
   position: relative;
+  overflow: hidden;
 }
 
 .img-container img{
