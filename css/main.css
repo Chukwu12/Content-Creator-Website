@@ -661,6 +661,7 @@ h1 {
 .card-text ul {
   display: grid;
   text-align: center;
+  padding-left: 0;
 }
 
 
@@ -669,8 +670,10 @@ h1 {
   font-weight: 500;
 }
 
-.card-body h5,h6{
+
+.card-body h5{
 text-align: center;
+margin-bottom: 2rem;
 }
 
 svg {
