@@ -764,11 +764,11 @@ svg {
   transform: translate(-50%, -50%);
 }
 
-.overlay icon-btn1 {
+.overlay .icon-btn1 {
   color: var(--color);
 }
 
-.overlay icon-btn2{
+.overlay .icon-btn2{
   color: var(--light-color);
 }
 
