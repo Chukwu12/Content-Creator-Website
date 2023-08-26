@@ -609,9 +609,6 @@ h1 {
 }
 
 #gallery{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: 100vh;
 }
 
@@ -650,6 +647,23 @@ h1 {
 
 .caro-info .p {
   font-size: 1rem;
+}
+
+.card-title h5 {
+  text-align: center;
+}
+
+.card-subtitle h6{
+  text-align: center;
+}
+
+.card-text ul li {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card-body h5 h6{
+text-align: center;
 }
 
 svg {
