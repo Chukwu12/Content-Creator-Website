@@ -663,10 +663,65 @@ svg {
   position: relative;
 }
 
+.img-container img{
+  transition: .5s ease;
+  backface-visibility: hidden;
+  height: 400px;
+}
+
 .image{
   transition: .5s ease;
   backface-visibility: hidden;
 }
+
+.gallery .img-container{
+  transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 100%;
+	display: inline-block;
+}
+
+
+.info{
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Farsan', cursive;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.9;
+    text-align: left;
+    font-size: 120%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {
+  text-align: center;
+  color: white;
+}
+
+.img-container:hover .info
+{transform: translateX(0);
+}
+
+.info ul li{
+  transition: 0.3s ease;
+}
+.info ul li:hover{
+  transform: translateX(50px) scale(1.3);
+}
+
+.img-container:hover img {transition: all 0.3s ease-out;}
+.img-container:hover img {transform: scale(1.2, 1.2);}
+
 
 .overlay{
   transition:  .5s ease;
