@@ -738,6 +738,7 @@ svg {
 .info h2 {
   text-align: center;
   color: white;
+  font-family: 'Teko', sans-serif;
 }
 
 .img-container:hover .info
