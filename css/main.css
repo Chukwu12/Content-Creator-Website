@@ -579,12 +579,13 @@ h1 {
 }
 .carousel-item {
   background: #777;
+  height: 60vh;
 }
 
 .carousel-item img{
   object-fit: cover;
   object-position: center;
-  height: 60vh;
+  height: 100%;
   overflow: hidden;
 }
 /* title */
