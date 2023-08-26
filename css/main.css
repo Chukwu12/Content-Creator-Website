@@ -27,7 +27,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: "DM Serif Display",;
+  font-family: 'DM Sans', sans-serif;
   line-height: 1.6;
 
 }
@@ -217,9 +217,9 @@ header.container {
 }
 
 .about-right p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  padding: 0 1rem;
+  
 }
 
 .about-container {
