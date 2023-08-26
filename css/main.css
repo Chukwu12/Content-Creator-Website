@@ -657,6 +657,13 @@ h1 {
   text-align: center;
 }
 
+
+.card-text ul {
+  display: grid;
+  text-align: center;
+}
+
+
 .card-text ul li {
   font-size: 1.5rem;
   font-weight: 500;
