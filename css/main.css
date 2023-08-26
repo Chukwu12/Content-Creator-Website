@@ -608,6 +608,13 @@ h1 {
   background-color: var(--dark-color);
 }
 
+#gallery{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
 /* Card */
 .card-container {
   display: inline-flex;
