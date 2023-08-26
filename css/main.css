@@ -47,7 +47,7 @@ body {
   height: 60px;
 }
 
-.navbar-nav {
+#navbar-nav {
   display: flex;
   flex-direction: column;
   padding-left: 0;
