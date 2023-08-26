@@ -725,7 +725,7 @@ svg {
     transform: translateX(-100%);
     position: absolute;
     line-height: 2;
-    text-align: left;
+    text-align: center;
     font-size: 120%;
     cursor: no-drop;
     color: #FFF;
@@ -747,6 +747,8 @@ svg {
 
 .info ul li{
   transition: 0.3s ease;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.6rem;
 }
 .info ul li:hover{
   transform: translateX(50px) scale(1.3);
