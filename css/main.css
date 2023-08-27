@@ -224,7 +224,7 @@ header.container {
   height: 500px;
   display: block;
   object-fit: cover;
-  animation: slideMe .2s ease-in;
+  animation: slideMe .5s ease-in;
 }
 
 @keyframes slideMe {
@@ -232,7 +232,7 @@ from{
     transform:translateX(-300px);
   }
   to {
-    transform:translateX(0);
+    transform:translateX(50%);
   }
 }
 
