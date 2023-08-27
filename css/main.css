@@ -212,6 +212,13 @@ header.container {
 
 /* About Page */
 
+#about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
 .about-left {
   margin-bottom: 4rem;
   height: 500px;
@@ -242,7 +249,7 @@ from{
   font-size: 1.6rem;
   font-weight: 500;
   color: white;
-  transform: translateY(300px);
+  transform: translateY(-300px);
   animation: slideUp .8s ease-in-out forwards .8s;
 }
 
@@ -914,6 +921,7 @@ svg {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
 
 @media (min-width: 768px) {
   .header-content h1 {
