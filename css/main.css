@@ -219,21 +219,20 @@ header.container {
 }
 
 .about-left img {
-  width: 100%;
+  width: 60%;
   border-radius: 40px;
   height: 500px;
   display: block;
   object-fit: cover;
-  animation: slideMe .7s ease-in;
+  animation: slideMe .2s ease-in;
 }
 
 @keyframes slideMe {
-from
-  {
-    transform: skew(53deg) translateX(-300px);
+from{
+    transform:translateX(-300px);
   }
   to {
-    transform: translateX(0);
+    transform:translateX(0);
   }
 }
 
