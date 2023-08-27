@@ -228,12 +228,12 @@ header.container {
 }
 
 @keyframes slideMe {
-
-  0%{
-    transform: skew(53deg) translateX(-50%);
+from
+  {
+    transform: skew(53deg) translateX(-300px);
   }
-  100%{
-    transform: skew(0deg);
+  to {
+    transform: translateX(0);
   }
 }
 
