@@ -216,6 +216,8 @@ header.container {
   margin-bottom: 4rem;
   height: 500px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .about-left img {
@@ -245,13 +247,13 @@ from{
 }
 
 .about-container {
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
 .about-content{
-  gap: 5rem;
+  gap: 3rem;
   align-items: center;
 }
 
