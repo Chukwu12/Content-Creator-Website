@@ -249,17 +249,17 @@ from{
   font-size: 1.6rem;
   font-weight: 500;
   color: white;
-  animation: slideRight 3s ease-in;
+  /* animation: slideRight 3s ease-in; */
 }
 
-@keyframes slideRight {
+/* @keyframes slideRight {
   0% {
     transform: translateX(-100%);
   }
   100% {
     transform: translateY(0px);
   }
-}
+} */
 
 .about-container {
   max-width: 1200px;
