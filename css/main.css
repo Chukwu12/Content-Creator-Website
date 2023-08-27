@@ -249,8 +249,16 @@ from{
   font-size: 1.6rem;
   font-weight: 500;
   color: white;
-  transform: translateY(-300px);
-  animation: slideUp .8s ease-in-out forwards .8s;
+  animation: slideRight 3s ease-in;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .about-container {
@@ -292,14 +300,7 @@ from{
 
 }
 
-@keyframes slideUp {
-  0% {
-    transform: translateY(-300px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
+
 
 
 .title h2::after {
