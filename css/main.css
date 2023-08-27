@@ -282,8 +282,7 @@ from{
   text-align: center;
   font-size: 3rem;
   color: white;
-  transform: translateY(100px);
-  animation: slideUp .8s ease forwards .5s;
+
 }
 
 @keyframes slideUp {
