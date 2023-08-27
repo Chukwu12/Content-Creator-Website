@@ -240,7 +240,8 @@ from{
   font-size: 1.6rem;
   font-weight: 500;
   color: white;
-  
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
 }
 
 .about-container {
@@ -279,7 +280,20 @@ from{
   text-align: center;
   font-size: 3rem;
   color: white;
+  transform: translateY(100px);
+  animation: slideUp .8s ease forwards .5s;
 }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
 .title h2::after {
   position: absolute;
   content: "";
