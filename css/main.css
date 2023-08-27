@@ -238,7 +238,7 @@ header.container {
 
 @keyframes slideMe {
 from{
-    transform:translateX(-300%);
+    transform:translateX(300%);
   }
   to {
     transform:translateX(0px);
