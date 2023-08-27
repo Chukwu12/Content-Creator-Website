@@ -219,12 +219,12 @@ header.container {
 }
 
 .about-left img {
-  width: 60%;
+  width: 500px;
   border-radius: 40px;
   height: 500px;
   display: block;
   object-fit: cover;
-  animation: slideMe .5s ease-in;
+  animation: slideMe 3s ease-in;
 }
 
 @keyframes slideMe {
@@ -232,7 +232,7 @@ from{
     transform:translateX(-100%);
   }
   to {
-    transform:translateX(50%);
+    transform:translateX(100%);
   }
 }
 
@@ -244,7 +244,7 @@ from{
 }
 
 .about-container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 0 2rem;
 }
