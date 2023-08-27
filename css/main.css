@@ -196,7 +196,7 @@ h3 {
 }
 .social-links li a:hover {
   opacity: 0.9;
-  background-color: var(--color);
+  background: var(--color);
 }
 
 header.container {
@@ -230,7 +230,7 @@ header.container {
 @keyframes slideMe {
 
   0%{
-    transform: translateX(-50%).7s ease-in;
+    transform: skew(53deg) translateX(-50%);
   }
   100%{
     transform: skew(0deg);
