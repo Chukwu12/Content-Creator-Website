@@ -245,7 +245,7 @@ from{
   }
 }
 .about-right{
-  animation: slideUp 3s ease-in; 
+  animation: slideUp 1s ease-in; 
 }
 
 .about-right p {
