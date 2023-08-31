@@ -13,7 +13,19 @@
   --background2: #282a3a;
   --background3: #735f32;
   --background4: #c69749;
+    --color-black: black;
+    --color-white: white;
+    --color-yellow: yellow;
+    --color-grey: #e8e8e8;
+    --time: 4s;
+    --time-s: 0.3s;
+    --vw: 60vw;
+
+    @media (max-width: 768px) {
+        --size-height: 54px;
+    }
 }
+
 
 * {
   box-sizing: border-box;
