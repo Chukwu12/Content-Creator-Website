@@ -244,17 +244,22 @@ from{
     transform:translateX(0px);
   }
 }
+.about-right{
+  animation: slideUp 3s ease-in; 
+}
 
 .about-right p {
   font-size: 1.6rem;
   font-weight: 500;
   color: white;
-  animation: slideUp 3s ease-in; 
+ 
 }
+
+
 
 /@keyframes slideUp {
   from{
-    transform: translateY(-800px);
+    transform: translateY(800px);
   }
   to {
     transform: translateY(0);
