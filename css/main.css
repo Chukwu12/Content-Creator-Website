@@ -110,7 +110,7 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--dark-color);
+  color: var(--light-color);
 }
 
 img {
@@ -427,8 +427,12 @@ from{
   padding: 0 2rem;
 }
 
+.insta-grid{
+  justify-content: center;
+}
+
 video{
-  width: 500px;
+  width: 100%;
   height: 300px;
 }
 
@@ -628,6 +632,10 @@ h1 {
   background-size: cover;
   height: 100vh;
 }
+
+#carousel-vd{
+  margin-bottom: 100px;
+}
 .carousel-item {
   background: #777;
   height: 60vh;
@@ -661,10 +669,8 @@ h1 {
 }
 
 #gallery{
-  height: 100vh;
-  display: flex;
-  justify-self: space-around;
-  align-items: center;
+  height: 100%;
+ margin-bottom: 100px;
 }
 
 /* Card */
