@@ -233,7 +233,7 @@ header.container {
   height: 500px;
   display: block;
   object-fit: cover;
-  animation: slideMe 2s ease-in;
+  animation: slideMe 1.5s ease-in;
 }
 
 @keyframes slideMe {
@@ -245,7 +245,7 @@ from{
   }
 }
 .about-right{
-  animation: slideUp 1s ease-in; 
+  animation: slideUp 1.5s ease-in; 
 }
 
 .about-right p {
