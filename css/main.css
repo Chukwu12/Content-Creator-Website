@@ -257,7 +257,7 @@ from{
 
 
 
-/@keyframes slideUp {
+@keyframes slideUp {
   from{
     transform: translateY(800px);
   }
