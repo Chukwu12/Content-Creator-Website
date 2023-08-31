@@ -233,7 +233,7 @@ header.container {
   height: 500px;
   display: block;
   object-fit: cover;
-  animation: slideMe 3s ease-in;
+  animation: slideMe 2s ease-in;
 }
 
 @keyframes slideMe {
@@ -249,17 +249,17 @@ from{
   font-size: 1.6rem;
   font-weight: 500;
   color: white;
-  /* animation: slideRight 3s ease-in; */
+  animation: slideUp 3s ease-in; 
 }
 
-/* @keyframes slideRight {
-  0% {
-    transform: translateX(-100%);
+/@keyframes slideUp {
+  from{
+    transform: translateY(-800px);
   }
-  100% {
-    transform: translateY(0px);
+  to {
+    transform: translateY(0);
   }
-} */
+} 
 
 .about-container {
   max-width: 1200px;
