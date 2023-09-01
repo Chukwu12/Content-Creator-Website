@@ -40,7 +40,7 @@ main{
 }
 
 /* Navbar  */
-/* .navbar {
+.navbar {
   position: relative;
   padding-top: 1rem;
   padding: 0 24px;
@@ -96,7 +96,7 @@ main{
 }
 
 /* Home Page */
-/* button,
+button,
 .btn {
   cursor: pointer;
   border: none;
@@ -113,7 +113,7 @@ li {
 a {
   text-decoration: none;
   color: var(--light-color);
-} */ */
+}
 
 img {
   width: 100%;
