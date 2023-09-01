@@ -190,7 +190,7 @@ h3 {
 .social-links li a {
   width: 40px;
   height: 40px;
-  background-color: var(--light-color);
+  background-color: var(--bs-border-color-translucent);
   margin-right: 1rem;
   border-radius: 0.3rem;
   box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.2);
