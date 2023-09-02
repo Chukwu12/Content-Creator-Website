@@ -63,14 +63,17 @@ main{
   height: 60px;
 }
 
-#navbar-nav {
+/* #navbar-nav {
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-}
+} */
 
+.navbar-nav {
+  justify-content: space-evenly;
+}
 .navbar-brand{
   height: 50px;
   width: 100px;
