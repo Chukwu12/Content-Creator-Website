@@ -345,6 +345,12 @@ from{
   color: var(--light-color);
 }
 
+@media only screen and (max-device-width: 648px){
+#work, #insta {
+    background-attachment: scroll;
+  }
+}
+
 .work-container {
   max-width: 1200px;
   margin: 0 auto;
