@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Playfair+Display:wght@400;500&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -13,6 +15,11 @@
   --background2: #282a3a;
   --background3: #735f32;
   --background4: #c69749;
+
+   /* Fonts */
+ --primary-font: 'Playfair Display', serif;
+ --second-font:  'Nunito', sans-serif;
+
     }
 
 
@@ -29,7 +36,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: 'DM Sans', sans-serif;
+  font-family: var(--second-font);
   line-height: 1.6;
   background: whitesmoke;
 
@@ -305,6 +312,7 @@ from{
   text-align: center;
   font-size: 3rem;
   color: white;
+  font-family: var(--primary-font);
 
 }
 
@@ -354,6 +362,7 @@ from{
 
 .work-top p{
   font-size: 1.4rem;
+  font-family: var(--second-font);
 }
 
 /* portfolio */
