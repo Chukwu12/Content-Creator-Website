@@ -52,7 +52,7 @@ main{
 .navbar {
   position: relative;
   padding-top: 1rem;
-  padding: 0 24px;
+  padding: 10px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,7 +60,7 @@ main{
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   background: rgba(0, 0, 0, 0.5);
-  height: 60px;
+
 }
 
 /* #navbar-nav {
