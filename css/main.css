@@ -450,7 +450,7 @@ from{
 }
 
 .insta-grid{
-  justify-content: center;
+  justify-items: center;
 }
 
 video{
