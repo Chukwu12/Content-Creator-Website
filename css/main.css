@@ -872,10 +872,15 @@ svg {
 {transform: translateX(0);
 }
 
+info ul{
+  padding: 0;
+}
+
 .info ul li{
   transition: 0.3s ease;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
+  font-family: var(--font);
+  padding: 0 1rem;
 }
 .info ul li:hover{
   transform: translateX(50px) scale(1.3);
