@@ -177,6 +177,9 @@ h3 {
     display: flex;
   background-size: cover;
   filter: grayscale(100%);
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .header-content {
@@ -464,8 +467,8 @@ from{
 }
 
 video{
-  width: 400px;
-  height: 300px;
+  width: 100%;
+  height: auto;
 }
 
 #insta .title h2 {
@@ -1074,6 +1077,9 @@ svg {
     grid-column: 1 / 3;
   }
 }
+
+
+@media only screen (min-width: 420px) and (max-width:)
 
 /* home page */
 .wrapper .bg-background {
