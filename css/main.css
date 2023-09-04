@@ -233,6 +233,7 @@ header.container {
 
 .ab-container {
   background: black;
+  overflow-x: hidden;
 }
 
 #about{
