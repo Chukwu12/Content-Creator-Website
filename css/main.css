@@ -231,6 +231,10 @@ header.container {
 
 /* About Page */
 
+.ab-container {
+  background: black;
+}
+
 #about{
   display: flex;
   justify-content: center;
