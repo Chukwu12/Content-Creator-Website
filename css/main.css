@@ -979,10 +979,20 @@ svg {
   padding: 0 8%;
 }
 
-.logo{
+.logo img{
   padding: 20px 0;
   width: 150px;
   cursor: pointer;
+}
+
+.content{
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.content h1{
+
 }
 
 
