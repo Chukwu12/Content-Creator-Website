@@ -201,7 +201,7 @@ h3 {
 }
 .social-links {
   display: flex;
-  margin-top: 3.5rem;
+  margin: 40px 25px;
   justify-content: center;
 }
 .social-links li a {
@@ -234,10 +234,33 @@ header.container {
   font-family: var(--primary-font);
   border-radius: 30px;
   margin-top: 20px;
+  box-shadow: 0 0 6px 5px rgba(0, 0, 0, 0.2);
+  color: black;
 }
 
 .home-btn:hover{
   transform: scale(1.1);
+}
+
+.home-btn:before, .home-btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.home-btn:hover {
+	color: var(--light-color);
+	transition-delay: .5s;
+}
+
+.home-btn:hover:before {
+	transition-delay: 0s;
+}
+
+.home-btn:hover:after {
+	background: var(--light-color);
+	transition-delay: .35s;
 }
 
 
