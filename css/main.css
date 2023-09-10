@@ -224,6 +224,21 @@ header.container {
   padding: 0 2rem;
 }
 
+.home-btn{
+  cursor: pointer;
+  border: none;
+  background: white;
+  font-size: 1.3rem;
+  padding: 10px 40px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.home-btn:hover{
+  transform: scale(1.1);
+}
 
 
 
