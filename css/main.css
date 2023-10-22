@@ -1036,6 +1036,25 @@ padding-bottom: 80px;
   
 }
 
+/* Content Page */
+
+#construction{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;  
+  overflow: hidden;
+}
+
+#construction .image {
+  position: relative; 
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 /* Media Queries */
 
 @media (min-width: 450px) {
