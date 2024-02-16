@@ -708,7 +708,7 @@ h1 {
   transition: 0.3s;
 }
 
-.media-icons:hover{
+.media-icons li a i:hover{
   color:(var)(--color);
 }
 /* Service Page  */
