@@ -240,6 +240,8 @@ header.container {
 
 .home-btn:hover{
   transform: scale(1.1);
+  color: var(--background2);
+	transition-delay: .5s;
 }
 
 .home-btn:before, .home-btn:after {
@@ -249,17 +251,12 @@ header.container {
 	z-index: -1;
 }
 
-.home-btn:hover {
-	color: var(--light-color);
-	transition-delay: .5s;
-}
 
 .home-btn:hover:before {
 	transition-delay: 0s;
 }
 
 .home-btn:hover:after {
-	/* background: var(--light-color); */
 	transition-delay: .35s;
 }
 
