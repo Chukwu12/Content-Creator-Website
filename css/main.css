@@ -109,6 +109,18 @@ main{
   transition: 0.7s ease;
 }
 
+/* Cart Icon */
+
+$cart-icon span {
+display: flex;
+justify-content: center;
+background-color: blue;
+align-items: center;
+color: #fff;
+border-radius: 50%;
+width: 30px;
+}
+
 /* Home Page */
 button,
 .btn {
