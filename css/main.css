@@ -240,7 +240,7 @@ header.container {
 
 .home-btn:hover{
   transform: scale(1.1);
-  color: var(--background2);
+  color: red;
 	transition-delay: .5s;
 }
 
