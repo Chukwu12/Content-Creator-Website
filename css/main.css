@@ -240,6 +240,7 @@ header.container {
 
 .home-btn:hover{
   transform: scale(1.1);
+  color: var(--color);
 }
 
 .home-btn:before, .home-btn:after {
