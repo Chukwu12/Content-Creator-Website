@@ -709,7 +709,7 @@ h1 {
 }
 
 .media-icons:hover{
-  color:(var(--color);
+  color:(var)(--color);
 }
 /* Service Page  */
 .services{
