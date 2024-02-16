@@ -111,7 +111,7 @@ main{
 
 /* Cart Icon */
 
-$cart-icon span {
+#cart-icon span {
 display: flex;
 justify-content: center;
 background-color: blue;
