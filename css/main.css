@@ -250,7 +250,7 @@ header.container {
 }
 
 .home-btn:hover {
-	color: var(--light-color);
+	color: var(--color);
 	transition-delay: .5s;
 }
 
