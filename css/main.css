@@ -259,7 +259,7 @@ header.container {
 }
 
 .home-btn:hover:after {
-	background: var(--light-color);
+	/* background: var(--light-color); */
 	transition-delay: .35s;
 }
 
