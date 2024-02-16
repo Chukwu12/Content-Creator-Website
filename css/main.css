@@ -295,7 +295,7 @@ header.container {
   height: 500px;
   display: block;
   object-fit: cover;
-  animation: slideMe 1.5s ease-out;
+  animation: slideMe 1.5s ease-in;
 }
 
 @keyframes slideMe {
@@ -686,6 +686,10 @@ h1 {
   font-family: var(--font);
 }
 
+.brand:hover{
+  color:var(--color);
+}
+
 .media-icons li,
 .service-icons li {
   display: inline-block;
@@ -705,6 +709,81 @@ h1 {
 }
 
 /* Service Page  */
+.services{
+  padding: 7rem 0;
+}
+
+.carousel-nav{
+  width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.carousel-nav a.active{
+  color:#000000;
+}
+
+.carousel-nav a{
+  color: #999;
+  padding: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.service-carousel{
+  display: none;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.service-carousel s1-loaded{
+  display: block;
+}
+
+.service-carousel service-tab-outer{
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+.service-tab{
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 0s ease 0s;
+  width: 1338px;
+}
+
+.service-carousel service-tab {
+
+}
+
+.tab-item{
+  width: 446px;
+}
+
+.service-carousel .service-tab::after{
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.content-1 img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+
+.content-1 text {
+  padding: 50px;
+}
+
 .service-container {
   background-image: url();
   background-position: center;
