@@ -1272,3 +1272,9 @@ padding-bottom: 80px;
   border-radius: 50%;
   }
 }
+/* Video  */
+@media only screen and (min-width:375px) and (max-width: 419px) {
+	.video{
+		width:300px;
+	}
+}
