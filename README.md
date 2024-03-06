@@ -1,6 +1,7 @@
 # My Awesome Project
  I developed a dynamic full stack website tailored for a content creator, seamlessly integrating front-end design with robust back-end functionality to elevate their online presence.
- link to the project: mansaleafproduction.netlify.app
+ 
+ link to the project:[ mansaleafproduction.netlify.app](url)
 
  ## How It's Made:
  Client Consultation and Requirement Gathering:
