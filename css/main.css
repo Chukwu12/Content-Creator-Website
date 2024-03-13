@@ -1123,6 +1123,16 @@ svg {
 
 /* Original Content */
 
+.videos{
+  display: flex;
+  flex-direction: column;
+}
+
+.videos iframe{
+  width: 400px;
+  height: 300px;
+}
+
 .content-container {
 display: flex;
 align-items: center;

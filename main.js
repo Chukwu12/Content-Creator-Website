@@ -104,3 +104,6 @@ $('#target').click(function() {
       alert('Redirecting to checkout page');
     });
   });
+
+
+  
