@@ -1123,16 +1123,38 @@ svg {
 
 /* Original Content */
 
-.videos{
-  display: flex;
-  flex-direction: column;
+.video-gallery{
+  width: 600px;
+  padding: 0 32px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.videos iframe{
-  width: 400px;
-  height: 300px;
+iframe{
+  width: 100%;
 }
 
+.video-gallery h2{
+font-size: 40px;
+font-weight: 800;
+margin: 0;
+padding: 16px 0;
+color: #000;
+
+}
+
+.video-card{
+  position: relative;
+}
+
+.video-gallery h3{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 32px;
+  
+}
 .content-container {
 display: flex;
 align-items: center;
@@ -1143,9 +1165,6 @@ gap: 15px;
 padding-bottom: 80px;
 }
 
-.content-container .content {
-  
-}
 
 /* Content Page */
 
