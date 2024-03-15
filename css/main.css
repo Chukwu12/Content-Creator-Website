@@ -824,7 +824,7 @@ h1 {
 .carousel-item img{
   object-fit: cover;
   object-position: center;
-  height: 400px;
+  height: 500px;
   overflow: hidden;
 }
 /* title */
@@ -1167,8 +1167,11 @@ padding-bottom: 80px;
 
 
 /* Content Page */
+#carousel-inner{
+  height: 500px;
+}
 
-.video-content .title h2{
+#video-content h2{
   color: var(--background4);
 }
 
