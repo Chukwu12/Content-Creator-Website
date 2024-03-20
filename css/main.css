@@ -814,7 +814,7 @@ h1 {
 }
 
 #carousel-vd{
-  margin-bottom: 100px;
+  margin-bottom: 10px;
 }
 /* .carousel-item {
   background: #777;
@@ -1109,6 +1109,106 @@ svg {
 }
 
 /* Content Page */
+
+.gallery-container{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../images/insta-pic.jpg") center/cover no-repeat fixed;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-container h2 {
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.video-container{
+  display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); 
+  gap: 15px;
+  padding: 10px;
+  max-width: 1400px;
+}
+
+.video-container .videos{
+  height: 300px;
+  border: 5px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
+  cursor: pointer;  
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container .videos h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.3;
+  font-size: 15px;
+}
+
+.video-container .videos video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+.video-container .videos:hover video{
+  transform: scale(1.1);
+}
+
+.gallery-container .popup-videos{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, .8);
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.gallery-container .popup-videos video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+.gallery-container .popup-videos span {
+  position: relative;
+  top: 5px;
+  left: 95%;
+  font-size: 50px;
+  color: #fff;
+  font-weight: bolder;
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* @media (max-width:768px) {
+.gallery-container .popup-videos video{
+  width: 95%;
+} */
 
 
 
