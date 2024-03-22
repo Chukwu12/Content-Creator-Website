@@ -107,7 +107,7 @@ $('#target').click(function() {
 
 
   // =============================Video Gallery======================================//
- document.querySelectorAll('.popup-videos video').forEach(vid => {
+ document.querySelectorAll('.video-container video').forEach(vid => {
   vid.onclick = () => {
     document.querySelector('.popup-videos').style.display = 'block';
     document.querySelector('.popup-videos video').src = vid.getAttribute('src');
