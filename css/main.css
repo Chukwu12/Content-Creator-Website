@@ -1213,7 +1213,7 @@ svg {
 .gallery-container .popup-videos span {
   position: relative;
   top: 5px;
-  right: 90%;
+  left: 90%;
   font-size: 50px;
   color: #fff;
   font-weight: bolder;
