@@ -106,4 +106,13 @@ $('#target').click(function() {
   });
 
 
-  
+  // =============================Video Gallery======================================//
+ document.querySelectorAll('.popup-videos video').forEach(vid => {
+  vid.onclick = () => {
+    document.querySelector('.popup-videos').style.display = 'block';
+    document.querySelector('.popup-videos video').src = vid.getAttribute('src');
+  }
+ });
+ document.querySelector('.popup-videos span').onclick = () => {
+  document.querySelector('.popup-videos').style.display = 'none';
+ }
