@@ -887,7 +887,7 @@ h1 {
 }
 
 
-
+/*------------------- Service Card------------------- */
 
 #gallery{
   height: 100%;
@@ -1127,6 +1127,7 @@ svg {
   border: 1px solid var(--dark-color);
   background-color: var(--color) grid;
 }
+
 
 /* Content Page */
 
