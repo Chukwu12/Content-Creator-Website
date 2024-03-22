@@ -997,6 +997,10 @@ svg {
   overflow: hidden;
 }
 
+.img-container ul{
+  cursor: pointer;
+}
+
 .img-container img{
   transition: .5s ease;
   backface-visibility: hidden;
@@ -1221,10 +1225,10 @@ svg {
   cursor: pointer;
 }
 
-/* @media (max-width:768px) {
+@media (max-width:768px) {
 .gallery-container .popup-videos video{
   width: 95%;
-} */
+}
 
 
 /* Testimonials */
