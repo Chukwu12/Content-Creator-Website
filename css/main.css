@@ -1128,6 +1128,13 @@ svg {
   background-color: var(--color) grid;
 }
 
+.icon-cart{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Content Page */
 
