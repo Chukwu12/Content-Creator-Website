@@ -1166,7 +1166,7 @@ svg {
 }
 
 .video-container .videos{
-  height: 300px;
+  height: auto;
   border: 5px solid #fff;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
@@ -1190,7 +1190,7 @@ svg {
 }
 
 .video-container .videos video {
-  height: 100%;
+  height: auto;
   width: 100%;
   object-fit: cover;
   transition: .2s linear;
@@ -1246,6 +1246,7 @@ svg {
   }
   .gallery-container{
     background: none;
+    padding: 20px;
   }
 }
 
