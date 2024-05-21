@@ -76,3 +76,18 @@
  document.querySelector('.popup-videos span').onclick = () => {
   document.querySelector('.popup-videos').style.display = 'none';
  }
+// =============================disable parallex effect======================================//
+function screenSize() {
+  let galleyContainer = document.querySelector('.galley-container');
+  if (window.innerWidth < 768) {
+     // Disable parallax effect
+    galleyContainer.style.backgroundAttachment = 'scroll';
+  } else {
+    // Enable parallax effect
+    galleyContainer.style.backgroundAttachment = 'fixed';
+  }
+  }
+ // Run on initial load
+ screenSize();
+  // Add event listener to handle screen resize
+  window.addEventListener('resize', screenSize);
