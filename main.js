@@ -78,7 +78,7 @@
  }
 // =============================disable parallex effect======================================//
 function screenSize() {
-  let galleyContainer = document.querySelector('.galley-container');
+  let galleyContainer = document.querySelector('.gallery-container');
   if (window.innerWidth < 768) {
      // Disable parallax effect
     galleyContainer.style.backgroundAttachment = 'scroll';
