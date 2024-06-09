@@ -91,3 +91,26 @@ function screenSize() {
  screenSize();
   // Add event listener to handle screen resize
   window.addEventListener('resize', screenSize);
+
+  // =============================Cart Checkout======================================//
+  document.addEventListener('DOMContentLoaded', () => {
+  let cartIcon = document.querySelector('.fa-solid fa-cart-shopping');
+  let cart = document.querySelector('.cart');
+  let serviceCards = document.getElementById('gallery');
+  let close = document.querySelector('.close');
+
+  cartIcon.addEventListener('click', () => {
+    if (cart.style.right == '-100%') {
+        cart.style.right = '0';
+        serviceCards.style.transform = 'translateX(-300px)';
+    } else {
+        cart.style.right = '-100%';
+        serviceCards.style.transform = 'translateX(0)';
+    }
+});
+
+close.addEventListener('click', () => {
+  cart.style.right = '-100%';
+  serviceCards.style.transform = 'translateX(0)';
+});
+});

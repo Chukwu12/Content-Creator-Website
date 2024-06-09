@@ -7,75 +7,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MANSA LEAF PRODUCTION</title>
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- font awesome -->
-<script src="https://kit.fontawesome.com/bb1892d46f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
-<!-- CSS -->
-<link rel="stylesheet" href="css/main.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-<!-- Font aswsome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    
     <div class="container-fluid">
       <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo2.png" alt="logo" width="100" height="50">
-
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="service.html">SERVICES</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="content.html">CONTENT</a>
-          </li>
-        </ul>
-        <div class="icon-cart">
-          <i class="fa-solid fa-cart-shopping"></i>
-          <div class="totalQuantity">0</div>
+        <a class="navbar-brand" href="#">
+          <img src="images/logo2.png" alt="logo" width="100" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="content.html">CONTENT</a>
+            </li>
+          </ul>
+          <div class="icon-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="totalQuantity">0</div>
+          </div>
         </div>
-      </div>   
-    </nav>
+      </nav>
     </div>
-</header>
- 
+  </header>
+
   <div class="cart">
     <h2>Checkout</h2>
     <div class="list-cart">
       <div class="item">
-        <img src="images/pexels-kaique-rocha-598917.jpg" alt="">
         <div class="content">
-          <div class="name">
-            Product Name
-          </div>
-          <div class="price">
-
-          </div>
+          <div class="name">Product Name</div>
+          <div class="price"></div>
           <div class="quantity">
             <button>-</button>
             <span class="value">3</span>
@@ -83,290 +69,168 @@
           </div>
         </div>
       </div>
-      <div class="buttons">
-        <div class="close">Close</div>
-        <div class="checkout">
-          <a href="cart.html">Checkout</a>
-        </div>
-
+    </div>
+    <div class="buttons">
+      <div class="close">Close</div>
+      <div class="checkout">
+        <a href="cart.html">Checkout</a>
       </div>
     </div>
   </div>
 
-  <!-- Service Card -->
-
+  <!-- Service Card Section -->
   <section id="gallery">
     <div class="container">
       <div class="heading text-center">
         <h1>Our Services</h1>
-      <h5>
-        <span class="code">Inquire for custom packages with custom quote.</span>
-      </h5>
+        <h5><span class="code">Inquire for custom packages with custom quote.</span></h5>
       </div>
       <div class="row">
+        <!-- Service Card 1 -->
         <div class="col-md-4 col-lg-4 col-sm-6 gx-5 py-5">
           <div class="card">
             <div class="img-container">
-              <img src="images/pexels-kaique-rocha-598917.jpg" alt="Music Package" class="image card-img-top img-fluid"">
+              <img src="images/pexels-kaique-rocha-598917.jpg" alt="Portrait Photography" class="image card-img-top img-fluid">
               <div class="info">
                 <h2>Portrait Photography</h2>
                 <ul>
                   <li>$125 - an hour min 1</li>
                   <li>$50 - 30min Reels</li>
                   <li> 50% - deposit required to book</li>
-                  <li> Final captures will sent 3-5 days after shoot $75</li>
+                  <li> Final captures will be sent 3-5 days after shoot $75</li>
                 </ul>
               </div>
               <div class="overlay">
-                <button class="icon-btn1 btn btn-outline-secondary btn-sm"><i class="fas fa-cart-plus mr-2"></i>
-                    Add to Cart
-                </button>
-                  <button class="icon-btn2 btn btn-outline-secondary btn-sm"><i class="fas fa-heart"></i></button>
+                <button class="icon-btn1 btn btn-outline-secondary btn-sm"><i class="fas fa-cart-plus mr-2"></i> Add to Cart</button>
+                <button class="icon-btn2 btn btn-outline-secondary btn-sm"><i class="fas fa-heart"></i></button>
               </div>
             </div>
-
-                <div class="card-body">
-                  <h5>Photoshoots</h5>
-                  <div class="card-text">
-                    <ul>
-                      <li> Studio or Outside with 25 digitals of your choosing per hour of shooting</li>
-                      <li>Outside or Inside</li>
-                      <li> Headshots</li>
-                      <li>5 digitals of your choosing.</li>
-                    </ul>
-                  </div>
-                </div>
+            <div class="card-body">
+              <h5>Photoshoots</h5>
+              <div class="card-text">
+                <ul>
+                  <li> Studio or Outside with 25 digitals of your choosing per hour of shooting</li>
+                  <li>Outside or Inside</li>
+                  <li> Headshots</li>
+                  <li>5 digitals of your choosing.</li>
+                </ul>
               </div>
             </div>
-
-            <div class="col-md-4 col-lg-4 col-sm-6 gx-5 py-5">
-              <div class="card">
-                <div class="img-container">
-                  <img src="images/pexels-martin-lopez-1117132.jpg" alt="Music Package" class="image card-img-top img-fluid"">
-                  <div class="info">
-                    <h2>Music Packages Prices</h2>
-                    <ul>
-                      <li>Package 1 $400</li>
-                      <li> Package 2 $800 ($875 if you have no concept)</li>
-                      <li>Package 3 $1200 ($1275 if you have no concept)</li>
-                      <li>Light use of visual effects +$0 </li>
-                      <li>Moderate use of visual effects +$35:4-6 hours </li>
-                      <li>Heavy use of visual effects +$70:max 8 hours</li>
-                    </ul>
-                  </div>
-                  <div class="overlay">
-                    <button class=" icon-btn1 btn btn-outline-secondary btn-sm"><i class="fas fa-cart-plus mr-2"></i>
-                        Add to Cart
-                    </button>
-                      <button class=" icon-btn2 btn btn-outline-secondary btn-sm"><i class="fas fa-heart"></i></button>
-                  </div>
-                </div>
-
-                    <div class="card-body">
-                      <h5>Music Videos</h5>
-                      <div class="card-text">
-                        <ul>
-                          <li>Guerilla style Arrive and shoot: 1-2 locations.</li>
-                          <li>Captures necessary footage: 2.5 hours 
-                            <li> Semi-production style Pre production, 2-3 locations</li>
-                           <li>lighting set ups 3.5 hours </li>
-                          <li> Production style Pre-production, 3-4 locations</li>
-                          <li>schedule, pro lighting setups.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-4 col-lg-4 col-sm-6 gx-5 py-5">
-                  <div class="card">
-                    <div class="img-container">
-                      <img src="images/pexels-tyler-hendy-53265.jpg" alt="Music Package" class="image card-img-top img-fluid"">
-                      <div class="info">
-                        <h2>Single Services Packages</h2>
-                        <ul>
-                          <li>Promotional Content Package #1 - $500
-                            1 Cinematic Video
-                            2 Highlight video
-                            5 Pictures
-                            </li>
-                          <li>Promotional Content Package #2 - $650 
-                            2 Cinematic Video
-                            1 Highlight Video
-                            5 Pictures
-                            </li>
-                          <li>Promotional Content Package #3 - $400 
-                            3 Highlight Video
-                            10 Pictures
-                            
-                            </li>
-                        </ul>
-                      </div>
-                      <div class="overlay">
-                        <button class="icon-btn1 btn btn-outline-secondary btn-sm"><i class="fas fa-cart-plus mr-2"></i>
-                            Add to Cart
-                        </button>
-                          <button class="icon-btn2 btn btn-outline-secondary btn-sm"><i class="fas fa-heart"></i></button>
-                      </div>
-                    </div>
-    
-                        <div class="card-body">
-                          <h5>Branding</h5>
-                          <div class="card-text">
-                            <ul>
-                              <li>
-                                Cinematic Video Reels
-                                For Branding, and Marketing 
-                                Promotional video with edit.
-                                $300 per video.
-                                </li>
-                              <li>
-                                Highlight Video 
-                                1.5 hours with edit.
-                                Capturing highlights of a service or product
-                                $150 per video 
-                                </li>
-                              <li>Photography
-                                The best photos tell stories about your business and its products or services.
-                                Promotional Photography
-                                5 Photos - $30
-                                10 Photos - $60
-                                </li>
-                             
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
           </div>
         </div>
-        
-      </section>
-
-      <!-- checkout form -->
-<!-- Checkout Modal -->
-<div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="checkoutModalLabel">Checkout</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form id="checkoutForm">
-          <div class="mb-3">
-            <label for="fullName" class="form-label">Full Name</label>
-            <input type="text" class="form-control" id="fullName" required>
+        <!-- Service Card 2 -->
+        <div class="col-md-4 col-lg-4 col-sm-6 gx-5 py-5">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/pexels-martin-lopez-1117132.jpg" alt="Music Packages" class="image card-img-top img-fluid">
+              <div class="info">
+                <h2>Music Packages Prices</h2>
+                <ul>
+                  <li>Package 1 $400</li>
+                  <li> Package 2 $800 ($875 if you have no concept)</li>
+                  <li>Package 3 $1200 ($1275 if you have no concept)</li>
+                  <li>Light use of visual effects +$0</li>
+                  <li>Moderate use of visual effects +$35: 4-6 hours</li>
+                  <li>Heavy use of visual effects +$70: max 8 hours</li>
+                </ul>
+              </div>
+              <div class="overlay">
+                <button class="icon-btn1 btn btn-outline-secondary btn-sm"><i class="fas fa-cart-plus mr-2"></i> Add to Cart</button>
+                <button class="icon-btn2 btn btn-outline-secondary btn-sm"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5>Music Videos</h5>
+              <div class="card-text">
+                <ul>
+                  <li>Guerilla style Arrive and shoot: 1-2 locations.</li>
+                  <li>Captures necessary footage: 2.5 hours</li>
+                  <li>Semi-production style Pre-production, 2-3 locations</li>
+                  <li>Lighting setups: 3.5 hours</li>
+                  <li>Production style Pre-production, 3-4 locations</li>
+                  <li>Schedule, pro lighting setups.</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required>
+        </div>
+        <!-- Service Card 3 -->
+        <div class="col-md-4 col-lg-4 col-sm-6 gx-5 py-5">
+          <div class="card">
+            <div class="img-container">
+              <img src="images/pexels-tyler-hendy-53265.jpg" alt="Single Services Packages" class="image card-img-top img-fluid">
+              <div class="info">
+                <h2>Single Services Packages</h2>
+                <ul>
+                  <li>Promotional Content Package #1 - $500
+                    <ul>
+                      <li>1 Cinematic Video</li>
+                      <li>2 Highlight videos</li>
+                      <li>5 Pictures</li>
+                    </ul>
+                  </li>
+                  <li>Promotional Content Package #2 - $650
+                    <ul>
+                      <li>2 Cinematic Videos</li>
+                      <li>1 Highlight Video</li>
+                      <li>5 Pictures</li>
+                    </ul>
+                  </li>
+                  <li>Promotional Content Package #3 - $400
+                    <ul>
+                      <li>3 Highlight Videos</li>
+                      <li>10 Pictures</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="overlay">
+                <button class="icon-btn1 btn btn-outline-secondary btn-sm"><i class="fas fa-cart-plus mr-2"></i> Add to Cart</button>
+                <button class="icon-btn2 btn btn-outline-secondary btn-sm"><i class="fas fa-heart"></i></button>
+              </div>
+            </div>
+            <div class="card-body">
+              <h5>Branding</h5>
+              <div class="card-text">
+                <ul>
+                  <li>Cinematic Video Reels for Branding and Marketing. Promotional video with edit. $300 per video.</li>
+                  <li>Highlight Video: 1.5 hours with edit. Capturing highlights of a service or product. $150 per video.</li>
+                  <li>Photography: The best photos tell stories about your business and its products or services. Promotional Photography: 5 Photos - $30, 10 Photos - $60.</li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="address" class="form-label">Address</label>
-            <input type="text" class="form-control" id="address" required>
-          </div>
-          <div class="mb-3">
-            <label for="city" class="form-label">City</label>
-            <input type="text" class="form-control" id="city" required>
-          </div>
-          <div class="mb-3">
-            <label for="zipCode" class="form-label">ZIP Code</label>
-            <input type="text" class="form-control" id="zipCode" required>
-          </div>
-          <div class="mb-3">
-            <label for="cardNumber" class="form-label">Credit Card Number</label>
-            <input type="text" class="form-control" id="cardNumber" required>
-          </div>
-          <div class="mb-3">
-            <label for="expiryDate" class="form-label">Expiry Date</label>
-            <input type="text" class="form-control" id="expiryDate" placeholder="MM/YY" required>
-          </div>
-          <div class="mb-3">
-            <label for="cvv" class="form-label">CVV</label>
-            <input type="text" class="form-control" id="cvv" required>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit Payment</button>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-   
-       
-
-   
-
-  
-
-  <!-- footer -->
+  </section>
 
 
+
+  <!-- Footer -->
   <footer class="footer4">
     <div class="container">
       <a href="#" class="brand">MANSA LEAF PRODUCTION</a>
       <ul class="menu">
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-
-        <li>
-          <a href="service.html">Services</a>
-        </li>
-        <li>
-          <a href="#">Content</a>
-        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="content.html">Content</a></li>
       </ul>
       <ul class="media-icons">
-        <li>
-          <a href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-       
-        <li>
-          <a href="#">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </li>
-       
-        <li>
-          <a href="#">
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
       </ul>
-      <p>
-
-      </p>
+      <p>&copy; 2024 MANSA LEAF PRODUCTION</p>
     </div>
     <a href="https://lordicon.com/">Icons by Lordicon.com</a>
   </footer>
-  <!-- end of footer -->
 
-
-
-
-
-
-  <!-- Typescript -->
-  <script src="typewriting-master/typewriting.js"></script>
-
-   <!-- Bootstrap JS -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
-   integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-   <!-- JavaScript Bundle with Popper -->
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-   integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-
-
-
-   <script src="main.js"></script>
-
-
+  <!-- Bootstrap JS and Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="/js/main.js"></script>
 </body>
+
 </html>
