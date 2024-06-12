@@ -1010,6 +1010,10 @@ h1 {
   display: flex;
   justify-content: center;
   margin: 5px 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: brown;
 }
 
 .card-body{
