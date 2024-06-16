@@ -1218,7 +1218,11 @@ cursor: pointer;
   display: grid;
   grid-template-rows: 50px 1fr 50px;
   gap: 20px;
-  transition: right 0.5s;
+  transition: right 0.3s ease-in-out;
+}
+
+.cart.open {
+  right: 0; /* Display cart when 'open' class is applied */
 }
 
 .cart h2{
@@ -1277,7 +1281,7 @@ cursor: pointer;
 .cart .buttons div{
 background-color: #000;
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 font-weight: bold;
 cursor: pointer;
@@ -1291,6 +1295,26 @@ cursor: pointer;
   background-color: gold;
 }
 
+.close {
+  cursor: pointer;
+  color: #333;
+}
+
+.close:hover {
+  text-decoration: underline;
+}
+
+.checkout a {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.checkout a:hover {
+  background-color: #0056b3;
+}
 
 
 
