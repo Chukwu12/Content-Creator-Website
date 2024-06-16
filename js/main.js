@@ -67,15 +67,49 @@
 
 
   // =============================Video Gallery======================================//
- document.querySelectorAll('.video-container video').forEach(vid => {
-  vid.onclick = () => {
-    document.querySelector('.popup-videos').style.display = 'block';
-    document.querySelector('.popup-videos video').src = vid.getAttribute('src');
-  }
- });
- document.querySelector('.popup-videos span').onclick = () => {
-  document.querySelector('.popup-videos').style.display = 'none';
- }
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select all videos inside .video-container
+    const videos = document.querySelectorAll('.video-container .videos video');
+  
+    // Add click event listener to each video
+    videos.forEach(video => {
+      video.addEventListener('click', () => {
+        const videoSource = video.getAttribute('src');
+        const popupVideo = document.querySelector('.popup-videos video');
+  
+        if (popupVideo) {
+          // Set the source of the popup video
+          popupVideo.src = videoSource;
+  
+          // Display the popup
+          const popupContainer = document.querySelector('.popup-videos');
+          if (popupContainer) {
+            popupContainer.style.display = 'block';
+          } else {
+            console.error('Popup container not found.');
+          }
+        } else {
+          console.error('Popup video element not found.');
+        }
+      });
+    });
+  
+    // Add click event listener to close button (span) inside .popup-videos
+    const popupCloseButton = document.querySelector('.popup-videos span');
+    if (popupCloseButton) {
+      popupCloseButton.addEventListener('click', () => {
+        const popupContainer = document.querySelector('.popup-videos');
+        if (popupContainer) {
+          popupContainer.style.display = 'none'; // Hide the popup
+        } else {
+          console.error('Popup container not found.');
+        }
+      });
+    } else {
+      console.error('Popup close button (span) not found.');
+    }
+  });
+  
 // =============================disable parallex effect======================================//
 function screenSize() {
   let galleyContainer = document.querySelector('.gallery-container');
@@ -94,23 +128,54 @@ function screenSize() {
 
   // =============================Cart Checkout======================================//
   document.addEventListener('DOMContentLoaded', () => {
-  let cartIcon = document.querySelector('.fa-solid fa-cart-shopping');
-  let cart = document.querySelector('.cart');
-  let serviceCards = document.getElementById('gallery');
-  let close = document.querySelector('.close');
-
-  cartIcon.addEventListener('click', () => {
-    if (cart.style.right == '-100%') {
-        cart.style.right = '0';
-        serviceCards.style.transform = 'translateX(-300px)';
+    const cartIcon = document.querySelector('.icon-cart');
+    const cart = document.querySelector('.cart');
+    const close = document.querySelector('.close');
+  
+    if (cartIcon && cart && close) {
+      // Toggle cart visibility when clicking cart icon
+      cartIcon.addEventListener('click', () => {
+        cart.classList.toggle('open'); // Toggle a CSS class for showing/hiding
+      });
+  
+      // Close cart when clicking close button
+      close.addEventListener('click', () => {
+        cart.classList.remove('open'); // Remove the 'open' class to hide the cart
+      });
     } else {
-        cart.style.right = '-100%';
-        serviceCards.style.transform = 'translateX(0)';
+      console.error('One or more elements not found:', { cartIcon, cart, close });
     }
-});
+  });
 
-close.addEventListener('click', () => {
-  cart.style.right = '-100%';
-  serviceCards.style.transform = 'translateX(0)';
-});
-});
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    // Select all 'Add to Cart' buttons
+    const addToCartButtons = document.querySelectorAll('.icon-btn1');
+  
+    // Loop through each button and attach click event listener
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Get the parent card element
+        const card = button.closest('.card');
+        
+        // Example: Extracting service name and price from card
+        const serviceName = card.querySelector('h2').textContent.trim();
+        const price = card.querySelector('ul li:first-child').textContent.trim();
+  
+        // Example: Replace this with your logic to add the item to cart
+        console.log(`Added '${serviceName}' to cart for ${price}`);
+  
+        // Optionally, update the cart total or perform other actions
+        updateCartTotal();
+      });
+    });
+  
+    // Function to update cart total (example)
+    function updateCartTotal() {
+      // Example: Update cart total quantity or display a message
+      const totalQuantityElement = document.querySelector('.totalQuantity');
+      let currentTotal = parseInt(totalQuantityElement.textContent);
+      totalQuantityElement.textContent = currentTotal + 1;
+    }
+  });
+  
