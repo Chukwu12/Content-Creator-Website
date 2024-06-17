@@ -111,71 +111,38 @@
   });
   
 // =============================disable parallex effect======================================//
-function screenSize() {
-  let galleyContainer = document.querySelector('.gallery-container');
-  if (window.innerWidth < 768) {
-     // Disable parallax effect
-    galleyContainer.style.backgroundAttachment = 'scroll';
-  } else {
-    // Enable parallax effect
-    galleyContainer.style.backgroundAttachment = 'fixed';
-  }
-  }
- // Run on initial load
- screenSize();
-  // Add event listener to handle screen resize
-  window.addEventListener('resize', screenSize);
+// function screenSize() {
+//   let galleyContainer = document.querySelector('.gallery-container');
+//   if (window.innerWidth < 768) {
+//      // Disable parallax effect
+//     galleyContainer.style.backgroundAttachment = 'scroll';
+//   } else {
+//     // Enable parallax effect
+//     galleyContainer.style.backgroundAttachment = 'fixed';
+//   }
+//   }
+//  // Run on initial load
+//  screenSize();
+//   // Add event listener to handle screen resize
+//   window.addEventListener('resize', screenSize);
 
   // =============================Cart Checkout======================================//
   document.addEventListener('DOMContentLoaded', () => {
+    // Toggle Cart Visibility
     const cartIcon = document.querySelector('.icon-cart');
-    const cart = document.querySelector('.cart');
+    const cart = document.querySelector('.cartTab');
     const close = document.querySelector('.close');
   
     if (cartIcon && cart && close) {
-      // Toggle cart visibility when clicking cart icon
       cartIcon.addEventListener('click', () => {
-        cart.classList.toggle('open'); // Toggle a CSS class for showing/hiding
+        cart.classList.toggle('open');
       });
   
-      // Close cart when clicking close button
       close.addEventListener('click', () => {
-        cart.classList.remove('open'); // Remove the 'open' class to hide the cart
+        cart.classList.remove('open');
       });
     } else {
       console.error('One or more elements not found:', { cartIcon, cart, close });
-    }
-  });
-
-  
-  document.addEventListener('DOMContentLoaded', () => {
-    // Select all 'Add to Cart' buttons
-    const addToCartButtons = document.querySelectorAll('.icon-btn1');
-  
-    // Loop through each button and attach click event listener
-    addToCartButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Get the parent card element
-        const card = button.closest('.card');
-        
-        // Example: Extracting service name and price from card
-        const serviceName = card.querySelector('h2').textContent.trim();
-        const price = card.querySelector('ul li:first-child').textContent.trim();
-  
-        // Example: Replace this with your logic to add the item to cart
-        console.log(`Added '${serviceName}' to cart for ${price}`);
-  
-        // Optionally, update the cart total or perform other actions
-        updateCartTotal();
-      });
-    });
-  
-    // Function to update cart total (example)
-    function updateCartTotal() {
-      // Example: Update cart total quantity or display a message
-      const totalQuantityElement = document.querySelector('.totalQuantity');
-      let currentTotal = parseInt(totalQuantityElement.textContent);
-      totalQuantityElement.textContent = currentTotal + 1;
     }
   });
   
