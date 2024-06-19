@@ -1053,7 +1053,7 @@ svg {
 .img-container img{
   transition: .5s ease;
   backface-visibility: hidden;
-  height: 400px;
+  height: 500px;
   object-fit: fill;
 }
 
@@ -1107,7 +1107,21 @@ svg {
   gap: 10px;
 }
 
+.package h4, p {
+  transition: 0.3s ease;
+  font-size: 1.3rem;
+  font-family: var(--font);
+  padding: 0 1rem;
+}
 
+.package h3{
+  font-size: 1.2rem;
+  color: white;
+}
+
+.package h4, p:hover {
+  transform: translateY(10px) scale(1.1);
+}
 
 .info ul li{
   transition: 0.3s ease;
@@ -1231,6 +1245,8 @@ svg {
   color: gold;
   padding: 20px;
   margin: 0;
+  font-size: 3.5rem;
+  margin: 50px 0;
 }
 
 .listCart .item {
@@ -1267,6 +1283,7 @@ svg {
 .listCart {
   padding: 20px;
   overflow: auto;
+  margin: 50px 0;
 }
 
 .listCart::-webkit-scrollbar {
@@ -1307,7 +1324,6 @@ svg {
 
 .card {
   border: 1px solid #ddd;
-  padding: 20px;
   border-radius: 10px;
 }
 
@@ -1351,6 +1367,56 @@ svg {
   background-color: #5a6268;
 }
 
+.music-packages {
+  margin-top: 20px;
+}
+
+.music-packages h3 {
+  font-size: 1.2em;
+  color: #444;
+}
+
+.music-packages .package, .visual-effects {
+  margin-bottom: 10px;
+}
+
+.music-packages .package h4, .visual-effects h4 {
+  font-size: 1em;
+
+  margin-bottom: 5px;
+}
+
+.music-packages .package p, .visual-effects p {
+  margin: 5px 0;
+
+}
+
+.visual-effects{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+.package{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+}
+.note {
+  font-size: 0.9em;
+  color: #999;
+  margin-left: 20px;
+}
+
+.price {
+  font-weight: bold;
+  color: #333;
+}
 
 
 
