@@ -111,7 +111,7 @@ main{
 
 /* Cart Icon */
 
-#cart-icon span {
+/* #cart-icon span {
 display: flex;
 justify-content: center;
 background-color: blue;
@@ -129,7 +129,7 @@ width: 30px;
   margin-top: 10px;
   border: none;
   cursor: pointer;
-}
+} */
 
 /* Home Page */
 button,
@@ -1220,6 +1220,7 @@ svg {
   grid-template-rows: 50px 1fr 50px;
   gap: 20px;
   transition: right 0.3s ease-in-out;
+  z-index: 1;
 }
 
 .cartTab.open {
