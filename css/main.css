@@ -1013,7 +1013,7 @@ h1 {
   font-size: 1.2em;
   text-transform: uppercase;
   text-decoration: underline;
-  color: brown;
+  color: var(--background3);
 }
 
 .card-body{
@@ -1119,7 +1119,7 @@ svg {
   color: white;
 }
 
-.package h4, p:hover {
+.package h4:hover {
   transform: translateY(10px) scale(1.1);
 }
 
