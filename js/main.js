@@ -151,7 +151,7 @@
   addToCartButtons.forEach(button => {
     button.addEventListener('click', () => {
       const card = button.closest('.card');
-      const serviceName = card.querySelector('h2').textContent.trim();
+      const serviceName = card.querySelector('h4').textContent.trim();
       const price = card.querySelector('ul li:first-child').textContent.trim();
 
       // Create a new cart item element
