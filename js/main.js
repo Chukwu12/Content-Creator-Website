@@ -151,30 +151,41 @@
   addToCartButtons.forEach(button => {
     button.addEventListener('click', () => {
       const card = button.closest('.card');
-      const serviceName = card.querySelector('h4').textContent.trim();
+      const serviceName = card.querySelector('h2').textContent.trim();
       const price = card.querySelector('ul li:first-child').textContent.trim();
+      const quantityInput = card.querySelector('.num-input');
+      const quantity = parseInt(quantityInput.value);
 
-      // Create a new cart item element
-      const cartItem = document.createElement('div');
-      cartItem.classList.add('item');
-      cartItem.innerHTML = `
-        <div class="content">
-          <div class="name">${serviceName}</div>
-          <div class="price">${price}</div>
-          <div class="quantity">
-            <button class="decrement">-</button>
-            <span class="value">1</span>
-            <button class="increment">+</button>
-          </div>
-        </div>
-      `;
+      if (quantity > 0) {
+        // Create a new cart item element
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('item');
+        const totalPrice = price * quantity;
+
+        cartItem.innerHTML = `
+            <div class="content">
+                <div class="name">${serviceName}</div>
+                <div class="price">$${totalPrice}</div>
+                <div class="quantity">
+                    <button class="decrement">-</button>
+                    <span class="value">${quantity}</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        `;
 
       // Append the cart item to the listCart
       const listCart = document.querySelector('.listCart');
       listCart.appendChild(cartItem);
 
+       // Clear the input
+       quantityInput.value = 0;
+
       // Update total quantity in cart
       updateCartTotal();
+    } else {
+      alert('Please select a valid quantity.');
+  }
     });
   });
 
@@ -191,6 +202,11 @@
       const quantityElement = event.target.parentElement.querySelector('.value');
       let currentValue = parseInt(quantityElement.textContent);
       quantityElement.textContent = currentValue + 1;
+
+        // Update total price in cart item
+        const priceElement = event.target.closest('.item').querySelector('.price');
+        const price = 125; // Fixed price per hour
+        priceElement.textContent = `$${price * (currentValue + 1)}`;
     }
 
     if (event.target.classList.contains('decrement')) {
@@ -198,6 +214,11 @@
       let currentValue = parseInt(quantityElement.textContent);
       if (currentValue > 1) {
         quantityElement.textContent = currentValue - 1;
+
+          // Update total price in cart item
+          const priceElement = event.target.closest('.item').querySelector('.price');
+          const price = 125; // Fixed price per hour
+          priceElement.textContent = `$${price * (currentValue - 1)}`;
       }
     }
   });

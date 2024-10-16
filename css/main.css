@@ -1107,6 +1107,12 @@ svg {
   gap: 20px;
 }
 
+.input-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .package > li{
   display: flex;
   gap: 10px;
