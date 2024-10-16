@@ -69,6 +69,7 @@
         <div class="totalPrice"></div>
       </div>
     </div>
+    <div>Total Quantity: <span class="totalQuantity">0</span></div>
     <div class="btn">
         <button class="close">CLOSE</button>
         <button class="checkOut">Check Out</button>
@@ -92,8 +93,15 @@
               <div class="info">
                 <h2>Portrait Photography Deals</h2>
                 <ul>
-                  <li>$125 - an hour <p class="note">(min. 1 hour)</p></li>
+                  <div class="input-btn">
+                    <li>$125 - an hour <p class="note">(min. 1 hour)</p></li> 
+                  <input type="number" class="num-input" min="0" max="5" value="0"/>
+                  </div>
+                  
+                  <div class="input-btn">
                   <li>$50 - 30mins <p class="note">(Reels)</p></li>
+                  <input type="number" class="num-input" min="0" max="5" value="0"/>
+                  </div>
                   <p>50% - deposit required to book</p>
                 </ul>
               </div>
