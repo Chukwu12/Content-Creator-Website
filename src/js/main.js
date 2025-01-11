@@ -71,44 +71,31 @@
     // Select all videos inside .video-container
     const videos = document.querySelectorAll('.video-container .videos video');
   
-    // Add click event listener to each video
+    // Add click event listener to each video to open it in the popup
     videos.forEach(video => {
       video.addEventListener('click', () => {
-        const videoSource = video.getAttribute('src');
-        const popupVideo = document.querySelector('.popup-videos video');
+        const videoSource = video.getAttribute('src');  // Get the src of clicked video
+        const popupVideo = document.querySelector('.popup-videos video');  // Popup video element
   
-        if (popupVideo) {
-          // Set the source of the popup video
-          popupVideo.src = videoSource;
+        // Set the source of the popup video to the clicked video's src
+        popupVideo.src = videoSource;
   
-          // Display the popup
-          const popupContainer = document.querySelector('.popup-videos');
-          if (popupContainer) {
-            popupContainer.style.display = 'block';
-          } else {
-            console.error('Popup container not found.');
-          }
-        } else {
-          console.error('Popup video element not found.');
-        }
+        // Display the popup
+        const popupContainer = document.querySelector('.popup-videos');
+        popupContainer.style.display = 'flex';  // Show the popup
       });
     });
   
-    // Add click event listener to close button (span) inside .popup-videos
-    const popupCloseButton = document.querySelector('.popup-videos span');
-    if (popupCloseButton) {
-      popupCloseButton.addEventListener('click', () => {
+    // Close the popup when the close button is clicked
+    const closeButton = document.querySelector('.popup-videos .close-btn');
+    if (closeButton) {
+      closeButton.addEventListener('click', () => {
         const popupContainer = document.querySelector('.popup-videos');
-        if (popupContainer) {
-          popupContainer.style.display = 'none'; // Hide the popup
-        } else {
-          console.error('Popup container not found.');
-        }
+        popupContainer.style.display = 'none';  // Hide the popup
       });
-    } else {
-      console.error('Popup close button (span) not found.');
     }
   });
+  
   
 // =============================disable parallex effect======================================//
 // function screenSize() {
