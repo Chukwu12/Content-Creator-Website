@@ -19,15 +19,7 @@ module.exports = {
         slideMe: 'slideMe 1.5s ease-in forwards',
         slideUp: 'slideUp 1.5s ease-in forwards',
       },
-      // Example of adding custom colors or spacing
-      colors: {
-        customBlue: '#1e40af',
-      },
     },
   },
-  plugins: [
-    // Uncomment these if you need additional Tailwind CSS plugins
-    // require('@tailwindcss/typography'),
-    // require('@tailwindcss/forms'),
-  ],
+  plugins: [],
 };
