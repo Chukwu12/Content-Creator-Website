@@ -7,7 +7,7 @@
 
 
 :root {
-  --transition: all 300ms ease-in-out;
+  /* --transition: all 300ms ease-in-out; */
   --dark-color: #332e29;
   --light-color: #fff;
   --color: #eece1a;
@@ -48,7 +48,7 @@ main{
 }
 
 /* Navbar  */
-.navbar {
+/* .navbar {
   position: relative;
   padding-top: 1rem;
   padding: 10px 24px;
@@ -105,7 +105,7 @@ main{
 
 .navbar ul li a:hover {
   color: var(--color);
-  transition: 0.7s ease;
+  transition: 0.7s ease; */
 }
 
 /* Cart Icon */
@@ -1847,13 +1847,10 @@ a {
 }
 
 nav {
-  padding-top: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
 }
 
 .brand {
@@ -2137,15 +2134,7 @@ nav ul li a:hover::after {
   font-family: "Roboto Cn", sans-serif;
 }
 
-section p {
-  display: block;
-  max-width: 660px;
-  margin: 0 auto 1em;
-  height: 150px;
-  position: relative;
-  border-right: 0.2em;
-  transform: -3d;
-}
+
 
 .span {
   background: crimson;
@@ -3398,10 +3387,12 @@ header .carousel-inner .item img {
   transform: rotateY(360deg) translateZ(300px);
 }
 
+
+
 .shadow {
-  position: absolute;
   box-shadow: 0px 0px 20px 0px #000;
   border-radius: 1px;
+  position: relative;
 }
 
 .content-carrousel img {

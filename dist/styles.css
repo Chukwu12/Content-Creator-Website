@@ -2000,15 +2000,7 @@ nav ul li a:hover::after {
   font-family: "Roboto Cn", sans-serif;
 }
 
-section p {
-  display: block;
-  max-width: 660px;
-  margin: 0 auto 1em;
-  height: 150px;
-  position: relative;
-  border-right: 0.2em;
-  transform: -3d;
-}
+
 
 .span {
   background: crimson;
