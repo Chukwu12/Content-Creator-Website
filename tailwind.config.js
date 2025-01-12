@@ -6,25 +6,22 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        slideInFromLeft: {
-          '0%': { transform: 'translateX(-100%)', opacity: '0' },
-          '100%': { transform: 'translateX(0)', opacity: '1' },
+        slideMe: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
         },
         slideUp: {
-          '0%': { transform: 'translateY(20px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
+          '0%': { transform: 'translateY(800px)' },
+          '100%': { transform: 'translateY(0)' },
         },
       },
       animation: {
-        slideInFromLeft: 'slideInFromLeft 1s ease-out',
-        slideUp: 'slideUp 1s ease-out',
+        slideMe: 'slideMe 1.5s ease-in forwards',
+        slideUp: 'slideUp 1.5s ease-in forwards',
       },
       // Example of adding custom colors or spacing
       colors: {
         customBlue: '#1e40af',
-      },
-      spacing: {
-        128: '32rem',  // Custom spacing example
       },
     },
   },
