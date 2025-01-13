@@ -6,19 +6,17 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        slideMe: {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(0)' },
-        },
-        slideUp: {
-          '0%': { transform: 'translateY(800px)' },
-          '100%': { transform: 'translateY(0)' },
-        },
+        // Removed the slideMe and slideUp keyframes
       },
       animation: {
-        slideMe: 'slideMe 1.5s ease-in forwards',
-        slideUp: 'slideUp 1.5s ease-in forwards',
+        // Removed the slideMe and slideUp animations
       },
+      colors: {
+        'custom-teal': '#14b8a6',
+      },
+    },
+    fontSize: {
+      base: '16px', // Set your default font size here
     },
   },
   plugins: [],

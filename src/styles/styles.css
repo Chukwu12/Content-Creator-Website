@@ -281,7 +281,10 @@ header.container {
 	transition-delay: .35s;
 }
 
-
+/* Hero Section */
+.hero-img img{
+  height: 300px;
+}
 
 
 
