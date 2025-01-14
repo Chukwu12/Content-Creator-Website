@@ -101,7 +101,7 @@ main{
 
 .navbar ul li a:hover {
   color: var(--color);
-  transition: 0.7s ease; */
+  transition: 0.7s ease; 
 }
 
 /* Cart Icon */
