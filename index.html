@@ -17,6 +17,7 @@
 
   <!-- Compiled Tailwind CSS -->
   <link href="/dist/styles.css" rel="stylesheet">
+  <link href="/src/css/main.css" rel="stylesheet"> 
 </head>
 
 <body class="bg-gray-100 text-gray-900">
@@ -72,14 +73,30 @@
   <!-- Hero Section -->
   <section class="relative bg-cover bg-center h-screen" style="background-image: url('/src/images/pexels-jessica-lewis-593324.jpg');">
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    <div class="container mx-auto h-full flex flex-col justify-center items-center text-center text-white relative z-10">
-      <h1 class="text-4xl md:text-6xl font-bold mb-6">I'm a <br>
-        <span class="text-indigo-400 typewrite"></span>
-      </h1>
-      <h3 class="text-2xl md:text-3xl font-medium mb-6">Salif Soumahoro</h3>
+    <div class="wrapper container mx-auto h-full flex flex-col justify-center items-center text-center text-white relative z-10">
+      <div class="static-txt text-4xl md:text-6xl font-bold mb-6">I'm a</div>
+      <ul class="dynamic-txts inline-block text-xl text-custom-teal font-mono overflow-hidden whitespace-nowrap border-r-4 pr-2">
+        <li><span>Photographer</span></li>
+        <li><span>Videographer</span></li>
+        <li><span>Freelancer</span></li>
+      </ul>
       <a href="about.html" class="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md text-lg font-medium transition">About Me</a>
     </div>
+  
+
+    <h1 class="text-4xl md:text-6xl font-bold mb-6">I'm a <br>
+      <span id="typewrite" class="inline-block text-xl font-mono overflow-hidden whitespace-nowrap border-r-4 pr-2 animate-typewriter">
+        Photographer
+      </span>
+    </h1>
+
+
+    <div class="wrapper">
+    
+    </div>
   </section>
+
+
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-400 py-8">
@@ -90,15 +107,14 @@
 
   <!-- Typewriter Effect Script -->
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      new TypeIt(".typewrite", {
-        strings: ["Photographer", "Videographer", "Content Creator"],
-        speed: 100,
-        waitUntilVisible: true,
-        loop: true,
-        deleteSpeed: 50,
-      }).go();
-    });
+    const words = ["Photographer", "Videographer", "Content Creator"];
+    let index = 0;
+    const typewriterElement = document.getElementById("typewrite");
+  
+    setInterval(() => {
+      typewriterElement.textContent = words[index];
+      index = (index + 1) % words.length;
+    }, 4000); // Change word every 4 seconds (same as typewriter speed)
   </script>
 
 </body>
