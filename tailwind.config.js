@@ -6,10 +6,18 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        // Removed the slideMe and slideUp keyframes
+        typewriter: {
+          '0%': { width: '0' },
+          '100%': { width: '100%' },
+        },
+        blinkCaret: {
+          '0%, 100%': { borderColor: 'transparent' },
+          '50%': { borderColor: 'black' },
+        },
       },
       animation: {
-        // Removed the slideMe and slideUp animations
+        typewriter: 'typewriter 4s steps(40) 1s 1 normal both', // Customize steps based on your word length
+        blinkCaret: 'blinkCaret 0.75s step-end infinite',
       },
       colors: {
         'custom-teal': '#14b8a6',
