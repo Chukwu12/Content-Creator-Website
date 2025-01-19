@@ -210,3 +210,9 @@
     }
   });
 });
+// ====================================== toggle btb ===============================================//
+const menuButton = document.querySelector('[aria-controls="mobile-menu"]');
+const mobileMenu = document.getElementById('mobile-menu');
+menuButton.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden');
+});
