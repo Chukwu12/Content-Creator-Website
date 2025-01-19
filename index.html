@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Karina Tes Portfolio</title>
+  <title>Saleaf Somo</title>
 
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
@@ -14,7 +14,13 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- GSAP (for animations) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+
+<!-- Anime.js -->
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+
+
 
   <!-- Tailwind CSS (optional, or use your own CSS) -->
   <link href="/dist/styles.css" rel="stylesheet">
@@ -22,47 +28,136 @@
 </head>
 
 <body>
-  <div class="home-container">
-    <nav class="home-menu">
-      <div class="menu-item menu-left">
-      <div class="menu-link">About </div>
-        <div class="menu-link">Contact</div>
-    </div>
-    <div class="menu-item menu-center">
-      <div class="brand-logo">Saleaf S</div>
-    </div>
-    <div class="menu-item menu-right">
-      <div class="search-icon">
-        <ion-icon name="search-sharp"></ion-icon>
-      </div>
-    </div>
-    </nav>
- 
-    <div class="home-images">
-      <div class="img-left"></div>
-      <div class="img-right"></div>
-    </div>
-
-      <div class="hero-image">
-        <div class="wrapper-img">
-          <div class="box"></div>
-          <div>
-            <img src="/src/images/IMG_7491.jpg" alt="" class="images">
+  <header>
+    <nav class="bg-teal-500 h-16" aria-label="Main navigation">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex shrink-0 items-center">
+              <img class="h-8 w-auto" src="/src/images/logo.png" alt="Company Logo">
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-teal-300" aria-current="page">HOME</a>
+                <a href="about.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">ABOUT</a>
+                <a href="service.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">SERVICES</a>
+                <a href="content.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">CONTENT</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="header"><p class="title">Saleaf Somo</p></div>
-      <div class="home-hero">
-        <div class="slidebar-text">003</div>
-        <div class="projects">Content</div>
-        <div class="img-nav">
-          <div class="prev">prev</div>
-          <div class="next">next</div>
-
+  
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a href="index.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">HOME</a>
+          <a href="about.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">ABOUT</a>
+          <a href="service.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">SERVICES</a>
+          <a href="content.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">CONTENT</a>
         </div>
       </div>
-  </div>
+    </nav>
+  </header>
+  <section>
+    <div class="home-container">
+      <div class="left column">
+        <div class="header">
+          <p>boundary supply /</p>
+          <p>better than brand new second hand clothing / focus by sick apparel everyday,</p>
+          <p>home of (23-29)</p>
+        </div>
+        <div class="link"><a href="#">all products</a></div>
+      </div>
+      <div class="right column">
+        <div class="images">
+          <div class="img-1 img"></div>
+          <div class="img-2 img"></div>
+          <div class="img-3 img"></div>
+          <div class="img-4 img"></div>
+        </div>
+        <div class="header">
+          <h1 class="ml12">gorgeoushe</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
   <script src="/src/js/main.js"></script>
+  <script>
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector(".ml12");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S/g,
+      "<span class='letter'>$&</span>"
+    );
+
+    anime.timeline().add({
+      targets: ".ml12 .letter",
+      translateY: [100, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: "easeOutExpo",
+      duration: 2000,
+      delay: (el, i) => 2000 + 60 * i,
+    });
+
+    TweenMax.from(".left", 3, {
+      left: "-50%",
+      ease: Expo.easeInOut,
+      delay: 3.4,
+    });
+    TweenMax.from(".header h1", 3, {
+      left: "-140%",
+      ease: Expo.easeInOut,
+      delay: 3.4,
+    });
+    TweenMax.staggerFrom(
+      ".images > div",
+      1,
+      {
+        y: "60",
+        opacity: 0,
+        ease: Power2.easeOut,
+        delay: 6,
+      },
+      0.2
+    );
+
+    TweenMax.staggerFrom(
+      ".header > p",
+      1,
+      {
+        y: "60",
+        opacity: 0,
+        ease: Power2.easeOut,
+        delay: 5.6,
+      },
+      0.2
+    );
+
+    TweenMax.from(".link", 1, {
+      opacity: 0,
+      ease: SteppedEase.config(1),
+      repeat: -1,
+      repeatDelay: 0.2,
+      delay: 7.8,
+    });
+  </script>
+ 
 </body>
+
+
+
 
 </html>
