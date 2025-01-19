@@ -74,329 +74,120 @@ body {
   background: black;
 } */
 
-.home-container nav {
-  width: 100%;
-  height: 100px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  text-transform: uppercase;
-
-}
-
-.menu-item{
-  flex: 1;
-}
-
-.menu-left{
-  text-align: left;
-  margin-left: 4em;
-}
-
-.menu-center{
-  text-align: center;
-}
-
-.menu-right{
-  text-align: right;
-  margin-right: 4em;
-}
-
-.menu-link{
-  padding: 0 30px;
-}
-
-.hero-image{
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.wrapper-img{
-  position: absolute;
-  overflow: hidden;
-  margin: 0 auto;
-  width: 50%;
-  height: 100vh;
-}
-
-.wrapper-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.box{
-  background: #bebeb8;
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-   
-}
-
-.images{
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.hero-image img {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 400px;
-  background:  000;
-}
-
-.left{
-  background: url(/src/images/20191015_110755.jpg) no-repeat 50% 50%;
-  background-size: cover;
-}
-
-.right{
-  background: url(/src/images/20191015_110755.png) no-repeat 50% 50%;
-  background-size: cover;
-}
-
-.header p {
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: red;
-}
-
-.title .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-
-.slidebar-text{
-position: absolute;
-top: 20%;
-right: 0 4em;
-transform: translate(-50%, -50%);
-font-size: 40px;
-color: transparent;
--webkit-text-stroke: 1px rgb(117, 115, 113);
-}
-
-.projects {
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  transform: translate(-50%, -50%);
-  text-transform: uppercase;
-}
-
-
 
 
 /* Navbar  */
 
 /* Home Page */
 /* This will only apply to elements inside a body with class "home-page" */
-.home-page body,
-.home-page html {
-  height: 100%;
+.home-container{
   width: 100%;
-  overflow: hidden;
+	height: 100vh;
+  display: flex;
+  background: #000;
 }
 
- .wrapper {
-  position: relative;
-  height: 100vh;
-  width: 100%;
+.column {
+	width: 50%;
+	height: 100vh;
 }
 
- .left,
- .right {
-  position: absolute;
-  height: 100%;
-  z-index: -1;
-}
-
- .left {
-  background: #B3B4AF;
-  left: 0;
-  width: 0;
+.left {
+	position: relative;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: url("/src/images/IMG_7491_edited.jpg") no-repeat 50% 50%;
+	background-size: cover;
+	padding: 20px;
 }
 
 .right {
-  background: #191921;
-  right: 0;
-  width: 100%;
+	display: flex;
+	padding: 120px 0;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
- .nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 80px;
-  padding: 0 20px;
-  margin-top: 10px;
+.img {
+	width: 160px;
+	height: 200px;
+	margin: 6px;
 }
 
- .nav ul li {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 8px;
-  font-weight: 600;
-  padding: 0 30px;
+.img-1 {
+	background: url("/src/images/IMG_7491.jpg") no-repeat 50% 50%;
+	background-size: cover;
 }
 
-.home-page .nav .logo {
-  font-size: 18px;
+.img-2 {
+	background: url("/src/images/header-banner.jpg") no-repeat 50% 50%;
+	background-size: cover;
 }
 
-.home-page .nav .menu {
-  font-size: 18px;
+.img-3 {
+	background: url("/src/images/wildlife-icon.png") no-repeat 50% 50%;
+	background-size: cover;
 }
 
-.home-page .nav .collection,
-.home-page .nav .explore,
-.home-page .nav .search {
-  font-size: 12px;
+.img-4 {
+	background: url("/src/images/work-pic.jpg") no-repeat 50% 50%;
+	background-size: cover;
 }
 
-.home-page .nav .profile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+	color: #a77a3f;
+	text-transform: uppercase;
+	font-size: 40px;
 }
 
-.home-page .nav .profile .img {
-  background-image: url('/src/images/profile.jpg');
-  background-size: cover;
-  background-position: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+.header h1 {
+	position: relative;
 }
 
-.home-page .content {
-  position: relative;
-  height: 100%;
-  padding: 50px;
+.ml12 .letter {
+	display: inline-block;
+	line-height: 1em;
 }
 
-.home-page .img-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 180px;
+.link a {
+	color: red;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-family: "Neutral Face";
 }
 
- .img-wrapper .karina {
-  background-image: url('/src/images/IMG_7491.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 550px;
-  width: 0;
+@media (min-width: 900px) {
+	.container {
+		display: flex;
+	}
+
+	.images {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
-.home-page .info {
-  position: absolute;
-  bottom: 0;
-  left: 180px;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 0 10px;
+@media (max-width: 900px) {
+	.column {
+		width: 100%;
+	}
+
+	.img {
+		width: 400px;
+		height: 400px;
+	}
+
+	.header {
+		font-size: 20px;
+		padding: 80px 0;
+	}
 }
 
-.home-page .info ul li {
-  display: inline-block;
-  padding: 20px 25px;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 8px;
-  font-weight: 600;
-}
-
-.home-page .text {
-  position: absolute;
-  top: 50%;
-  right: 100px;
-  transform: translateY(-50%);
-}
-
-.home-page .text h1 {
-  font-size: 90px;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.home-page .text p {
-  font-size: 20px;
-  color: #fff;
-  font-family: monospace;
-}
-
-.home-page .name {
-  position: absolute;
-  top: 50%;
-  left: -270px;
-  transform: translateY(-50%);
-  font-size: 90px;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 2px #fff;
-}
-
-.home-page .bottomnav {
-  position: absolute;
-  bottom: 100px;
-  right: 100px;
-}
-
-.home-page .bottomnav ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.home-page .bottomnav ul li {
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 15px;
-  margin-top: 20px;
-}
-
-.home-page .bottomnav ul li:nth-child(2) {
-  font-weight: bolder;
-}
-
-.home-page .bottomnav ul li:nth-child(2)::before {
-  content: "";
-  display: inline-block;
-  border: 1px solid #fff;
-  width: 65px;
-  margin: 0 10px 0 -78px;
-  transform: translateY(-3px);
-}
-
-
-
+ 
 button,
 .btn {
   cursor: pointer;
