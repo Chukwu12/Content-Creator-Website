@@ -47,45 +47,55 @@
 
 <body>
 
+  <!-- Navbar -->
   <header>
-    <nav class="bg-teal-500 h-16" aria-label="Main navigation">
-      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
+    <nav class="bg-teal-500 p-4" aria-label="Main navigation">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between">
+          
+          <!-- Mobile Menu Button -->
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-              <span class="absolute -inset-0.5"></span>
+            <button id="mobile-menu-toggle" type="button" class="inline-flex items-center justify-center p-2 text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
               </svg>
             </button>
           </div>
-          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div class="flex shrink-0 items-center">
-              <img class="h-8 w-auto" src="/src/images/logo.png" alt="Company Logo">
+
+          <!-- Logo and Links -->
+          <div class="flex items-center justify-between w-full sm:w-auto">
+            <div class="flex items-center">
+              <img class="h-8 w-auto" src="/src/images/logo.png" alt="Logo">
             </div>
-            <div class="hidden sm:ml-6 sm:block">
+
+            <!-- Desktop Links -->
+            <div class="hidden sm:block ml-6">
               <div class="flex space-x-4">
-                <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:text-teal-300" aria-current="page">HOME</a>
-                <a href="about.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">ABOUT</a>
-                <a href="service.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">SERVICES</a>
-                <a href="content.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">CONTENT</a>
+                <a href="index.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Home</a>
+                <a href="about.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">About</a>
+                <a href="services.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Services</a>
+                <a href="contact.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Contact</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-  
-      <div class="sm:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
-          <a href="index.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">HOME</a>
-          <a href="about.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">ABOUT</a>
-          <a href="service.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">SERVICES</a>
-          <a href="content.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">CONTENT</a>
+
+      <!-- Mobile Menu -->
+      <div class="sm:hidden" id="mobile-menu" class="hidden">
+        <div class="space-y-1 px-2 py-3">
+          <a href="index.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Home</a>
+          <a href="about.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">About</a>
+          <a href="services.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Services</a>
+          <a href="contact.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Contact</a>
         </div>
       </div>
     </nav>
   </header>
+
+
+
   
  
  <div class="ab-container">
@@ -195,7 +205,7 @@
 
 <!-- Work Section -->
 <section id="work" class="py-16 text-white">
-  <div class="container mx-auto px-6">
+  <div class="work-container mx-auto px-6">
     <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
       <h2 class="text-4xl font-bold text-white">What Am I Doing?</h2>
     </div>
@@ -657,6 +667,18 @@
    
 
    <script src="/src/js/main.js"></script>
+  </script>
+
+   <!-- JavaScript for Mobile Menu Toggle -->
+   <script>
+    const menuButton = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', !isExpanded);
+      mobileMenu.classList.toggle('hidden', isExpanded);
+    });
   </script>
 </body>
 

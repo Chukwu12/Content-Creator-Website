@@ -28,6 +28,230 @@
       scroll-behavior: smooth;
     }
 
+    .home-body{
+      width: 100%;
+      height: 100%;
+      font-family: 'PP Neue Montreal';
+      background-color: #fff;
+    }
+
+    .home-images {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      transform-origin: center center;
+      will-change: transform;
+    }
+
+    .home-images img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .home-images .img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1.5);
+      width: 100%;
+      height: 100%;
+      visibility: visible;
+      will-change: transform;
+      opacity: 0;
+    }
+
+    .img:first-child{
+      opacity: 1;
+    }
+
+    .home-images.stacked-container{
+      position: fixed;
+      left: 2em;
+      bottom: 2em;
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1em;
+      transform: none;
+      will-change: transform;
+    }
+
+    .img.stacked{
+      position: relative;
+      width: 150px;
+      height: 100px;
+      transform: none;
+      top: auto;
+      left: auto;
+      opacity: 1;
+      will-change: transform;
+    }
+
+    .home-content{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .site-logo{
+      position: absolute;
+      top: 2em;
+      left: 2em;
+      display: flex;
+      gap: 1em;
+    }
+
+    .site-logo h1{
+      color: #000;
+      font-family: 'PP Neue Montreal';
+      font-size: 5vw;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.01em;
+    }
+
+    .site-logo h1 sup{
+      position: absolute;
+      top: -0.125em;
+      font-size: 2rem;
+    }
+
+    .home-nav{
+      position: absolute;
+      right: 0;
+      width: 50%;
+      padding: 2em;
+      display: flex;
+      justify-content: flex-end;
+      gap: 1em;
+    }
+
+    .home-nav .nav-item p{
+      position: relative;
+    }
+
+    .home-nav .nav-item p{
+      position: relative;
+     font-size: 16px;
+     font-weight: 500; 
+    }
+
+    .cover-img{
+      position: absolute;
+      right: 2em;
+      bottom: 2em;
+      width: 40%;
+      height: 50%;
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+
+    .cover-img img {
+      filter: saturate(0);
+    }
+
+    .site-info{
+      position: absolute;
+      bottom: 2em;
+      left: 2em;
+      width: 50%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .site-info .row .col{
+      flex: 1;
+    }
+
+    .site-info h2{
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 1.25;
+    }
+
+    .site-info p{
+      text-transform: uppercase;
+      font-family: "Apercu Mono Pro";
+      font-size: 11px;
+      font-weight: 500;
+      color: #000;
+    }
+
+    .site-info .row :nth-child(2) .col:nth-child(2) {
+      display: flex;
+    }
+
+    .address,
+    .socials{
+      flex: 1;
+    }
+
+    .address p .socials p {
+      line-height: 1.125;
+    }
+
+   .line{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .word h1, 
+   .nav-item p, 
+   .site-info h2 .line span,
+    .line p {
+      position: relative;
+      will-change: transform;
+    }
+
+    .site-info h2 .line span{
+      display: flex;
+      transform: translateY(100%);
+    }
+
+    .word h1,
+    .nav-item p,
+    .line p{
+      transform: translateY(100%);
+    }
+
+    .home-nav .nav-item
+
+    .home-container{
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .revealers{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      z-index: 2;
+   
+    }
+
+    .revealer{
+      flex: 1;
+      width: 100%;
+      background-color: #fff;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+
+
+
+
 
     /* Hero Section */
 #hero-section{
@@ -80,12 +304,7 @@ body {
 
 /* Home Page */
 /* This will only apply to elements inside a body with class "home-page" */
-.home-container{
-  width: 100%;
-	height: 100vh;
-  display: flex;
-  background: #000;
-}
+
 
 .column {
 	width: 50%;
@@ -112,30 +331,12 @@ body {
 }
 
 .img {
-	width: 160px;
+	/* width: 160px;
 	height: 200px;
-	margin: 6px;
+	margin: 6px; */
 }
 
-.img-1 {
-	background: url("/src/images/IMG_7491.jpg") no-repeat 50% 50%;
-	background-size: cover;
-}
 
-.img-2 {
-	background: url("/src/images/header-banner.jpg") no-repeat 50% 50%;
-	background-size: cover;
-}
-
-.img-3 {
-	background: url("/src/images/wildlife-icon.png") no-repeat 50% 50%;
-	background-size: cover;
-}
-
-.img-4 {
-	background: url("/src/images/work-pic.jpg") no-repeat 50% 50%;
-	background-size: cover;
-}
 
 .header {
 	color: #a77a3f;
@@ -177,8 +378,8 @@ body {
 	}
 
 	.img {
-		width: 400px;
-		height: 400px;
+		/* width: 400px;
+		height: 400px; */
 	}
 
 	.header {
