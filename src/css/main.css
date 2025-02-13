@@ -33,6 +33,7 @@
       height: 100%;
       font-family: 'PP Neue Montreal';
       background-color: #fff;
+      overflow: hidden;
     }
 
     .home-images {
@@ -132,6 +133,53 @@
       gap: 1em;
       pointer-events: auto;
       z-index: 10;
+    }
+    .home-nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0 15px;
+      position: relative;
+      padding: 10px;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    /* Hover effect - changes color */
+    .home-nav a:hover {
+      color: teal;
+    }
+    
+    /* Underline animation */
+    .home-nav a::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      width: 0;
+      height: 3px;
+      background-color: teal;
+      transition: all 0.4s ease-in-out;
+      transform: translateX(-50%);
+    }
+    
+    /* Expanding underline on hover */
+    .home-nav a:hover::after {
+      width: 100%;
+    }
+    
+    /* Cool Entrance Animation */
+    @keyframes slideDown {
+      from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    
+    .home-nav {
+      animation: slideDown 0.7s ease-out;
     }
 
     .home-nav .nav-item p{
