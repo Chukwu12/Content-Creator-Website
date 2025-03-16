@@ -74,7 +74,6 @@
               <div class="flex space-x-4">
                 <a href="index.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Home</a>
                 <a href="#about" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">About</a>
-                <a href="#services" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Services</a>
                 <a href="#content" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Contact</a>
               </div>
             </div>
@@ -83,11 +82,10 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div class="sm:hidden" id="mobile-menu" class="hidden">
+      <div class="sm:hidden" id="mobile-menu">
         <div class="space-y-1 px-2 py-3">
           <a href="index.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Home</a>
           <a href="#about" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">About</a>
-          <a href="#services" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Services</a>
           <a href="#content" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Contact</a>
         </div>
       </div>
@@ -100,44 +98,51 @@
  
  <div class="ab-container">
 
-  <!-- Hero Section -->
-<!-- component -->
+<!-- Hero Section -->
 <section id="hero-section">
   <div class="bg-black text-white py-20">
     <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
       
       <!-- Hero Content -->
-      <div class="hero-content flex flex-col w-full lg:w-1/3 justify-center items-start p-8" data-aos="fade-up" data-aos-duration="1000">
+      <section class="hero-content flex flex-col w-full lg:w-1/3 justify-center items-start p-8" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="text-3xl md:text-5xl p-2 text-custom-teal tracking-loose">Mansa Leaf Productions</h1>
-        <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">Creative Content That Connects</h2>
-        <p class="text-gray-50 mb-4">
-          We create consistent and creative video/photo content that drives engagement, increases brand visibility, 
-          and opens sales opportunities for small businesses, entrepreneurs, and creatives. 
-          From pre-production to final edits, we deliver high production value at low production costs without compromising quality.
-        </p>
+        <!-- <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-4">Creative Content That Connects</h2> -->
+        <p class="text-gray-800 leading-relaxed max-w-prose mb-6">
+          I'm Salif Soumahoro, I’m a director, videographer, and editor based in New York City, driven by a passion for storytelling through the visual medium. My goal is to create high-quality visuals that not only evoke emotion but also spark a call to action or inspire change.
+          I specialize in beauty, sports, branding, and corporate work, but what truly defines my creative vision is a clean, empowering, and idealistic aesthetic.
+       
+           I believe the work I create should leave a lasting imprint, inspiring and motivating those who experience it. As a 
+            first-generation immigrant, my upbringing shapes this vision, fueling my desire to produce content that resonates deeply and drives transformation.
+            At my core, I am a collaborative visionary, committed to elevating and inspiring those who seek meaningful change through the power of video.</p>
+         
+      
+        
         <a href="#"
-          class="bg-transparent hover:bg-custom-teal text-white-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-custom-teal hover:border-transparent">
+          class="bg-transparent hover:bg-custom-teal text-white hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-custom-teal hover:border-transparent transition-colors duration-300">
           Learn More
         </a>
-      </div>
+      </section>
       
       <!-- Images -->
-      <div class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3 justify-center">
-        <div class="h-48 flex flex-wrap content-center">
-          <div data-aos="fade-left" data-aos-duration="1000">
-            <img class=" mt-28 hidden xl:block" src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png">
+      <div class="hero-img p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3 justify-center">
+        <div class="hero-img-content flex items-center">
+          <div class="flex items-center" data-aos="fade-left" data-aos-duration="1000">
+            <img class="mt-28 hidden xl:block rounded-full" src="./src/images/IMG_9897.JPG" alt="Portrait of Salif Soumahoro">
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000">
-            <img class=" mt-24 md:mt-0 p-8 md:p-0" src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png">
+          <div class="middle-img flex items-center" data-aos="fade-up" data-aos-duration="1000">
+            <img class="mt-24 md:mt-0 p-8 md:p-0 rounded-full" src="./src/images/IMG_7491.jpg" alt="Salif Soumahoro at work">
           </div>
-          <div data-aos="fade-right" data-aos-duration="1000">
-            <img class=" mt-28 hidden lg:block" src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png">
+          <div class="flex items-center" data-aos="fade-right" data-aos-duration="1000">
+            <img class="mt-28 hidden lg:block rounded-full" src="./src/images/20191015_110755.jpg" alt="Creative session with Salif Soumahoro">
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
+
 
 
   <!-- Hero End -->
@@ -155,7 +160,7 @@
       <!-- About Image -->
       <div class="about-left flex justify-center" data-aos="fade-right" data-aos-duration="1000">
         <img
-          src="/src/images/20191015_110755.jpg"
+          src="/src/images/about-image.png"
           alt="Portrait of the content creator"
           class="w-full max-w-md rounded-lg shadow-lg lg:max-w-lg hover:scale-105 transition-transform duration-300 ease-in-out"
           loading="lazy"
@@ -165,22 +170,13 @@
       <!-- About Content -->
       <div data-aos="fade-left" data-aos-duration="1000">
         <h2 class="text-3xl font-bold text-teal-500 mb-6">About Me</h2>
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
-          I am an Actor, Content Creator, and Model who was born and raised in Harlem, New York, to Ivorian immigrants.
-          I did not see much positivity in the environment I grew up in; dealing with economic hardship, violence,
-          gangs, and drugs; as well as classism and racism. To capture a break from reality, I looked to film, TV, and
-          video games. It provided an escape for me. I watched in awe of whatever was in that 24-inch screen. I wanted
-          to be whatever I saw: a lawyer from a courtroom drama, a spy from a spy movie, a basketball star—the list
-          goes on. Media gave me life lessons, hope, drive, passion, experience, and escape. It helped me with my own
-          experiences as I navigated through life.
-        </p>
+       
         <p class="text-lg text-gray-700 leading-relaxed mb-8">
-          I want to provide that for people: tell stories that convey emotion, entertain, educate, deliver experiences,
-          and inspire. Helping people and hopefully bringing positive change. Mansa Leaf Productions is a content
-          production studio and a video/photo service agency where we produce and distribute original content to tell
-          stories that convey emotion, entertain, educate, and inspire. Helping clients engage with audiences and tell
-          stories through video, we provide professionalism with a familiar feel for those who seek a reliable and
-          creative production partner.
+         
+
+I was born and raised in Harlem, NY, to immigrant parents from Ivory Coast. Growing up, positive influences were scarce, and inspiration seemed out of reach. But through media—whether it was cinema, sports, or even the fleeting commercials between shows—I discovered a world beyond my circumstances. These glimpses of greatness gave me the confidence to believe that change was possible.
+I started researching what makes people successful, and that curiosity fueled my education and creativity. I realized that through collaboration and determination, something powerful could be created—even from the humblest of beginnings. I wanted to be a beacon for those who felt hopeless or for those just starting their journey, to show them that greatness is achievable.
+I refuse to be confined by labels or limitations. Being boxed in creates doubt, and no one should ever feel limited. I push boundaries in every area of my life, and my mission is to help others do the same. Change is possible, and it starts with embracing the potential within, no matter where you come from.
         </p>
         <a
           href="#content" class="relative inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-teal-500 hover:bg-teal-600 rounded-lg shadow-md transition duration-300"
@@ -289,237 +285,11 @@
 
 
 
-    <!-- Services -->
-     <section id="services">
-      <div class="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
-          <div class="mx-auto aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-        </div>
-        <div class="mx-auto max-w-4xl text-center">
-          <h2 class="text-base/7 font-semibold text-indigo-600">Pricing</h2>
-          <p class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">Choose the right plan for you</p>
-        </div>
-        <p class="mx-auto mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600 sm:text-xl/8">Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
-        <div class="mx-auto mt-16 grid max-w-xl grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-3">
-  
-          <!-- Card 1 -->
-          <div class="rounded-3xl rounded-t-3xl bg-white/60 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-bl-3xl lg:rounded-tr-none">
-              <h3 id="tier-portrait" class="text-base/7 font-semibold text-indigo-600">Portrait Photography</h3>
-              <p class="mt-4 flex items-baseline gap-x-2">
-                  <span class="text-5xl font-semibold tracking-tight text-gray-900">$25</span>
-                  <span class="text-base text-gray-500">/ hour</span>
-              </p>
-              <p class="mt-4 text-base/7 text-gray-600">Perfect for capturing high-quality portrait shots in a personalized session.</p>
-              <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600 sm:mt-10">
-                  <li class="flex gap-x-3">
-                      <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                      </svg>
-                      $125 - 1 hour session
-                  </li>
-                  <li class="flex gap-x-3">
-                      <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                      </svg>
-                      $50 - 30 mins (Reels)
-                  </li>
-                  <li class="flex gap-x-3">
-                      <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                          <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                      </svg>
-                      50% deposit required to book
-                  </li>
-              </ul>
-              <a href="#" aria-describedby="tier-portrait" class="mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:mt-10">Add to Cart</a>
-          </div>
-  
-          <!-- Card 2 -->
-          <div class="relative rounded-3xl bg-gray-900 p-8 shadow-2xl ring-1 ring-gray-900/10 sm:p-10">
-            <h3 id="tier-music-packages" class="text-base/7 font-semibold text-indigo-400">Music Packages</h3>
-            <p class="mt-4 flex items-baseline gap-x-2">
-                <span class="text-5xl font-semibold tracking-tight text-white">$400</span>
-                <span class="text-base text-gray-400">- Package 1</span>
-            </p>
-            <p class="mt-4 flex items-baseline gap-x-2">
-                <span class="text-5xl font-semibold tracking-tight text-white">$800</span>
-                <span class="text-base text-gray-400">- Package 2</span>
-            </p>
-            <p class="mt-4 flex items-baseline gap-x-2">
-                <span class="text-5xl font-semibold tracking-tight text-white">$1200</span>
-                <span class="text-base text-gray-400">- Package 3</span>
-            </p>
-        
-            <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-300 sm:mt-10">
-                <li class="flex gap-x-3">
-                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                    </svg>
-                    Guerilla style shoot
-                </li>
-                <li class="flex gap-x-3">
-                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                    </svg>
-                    Shoot 1-2 locations
-                </li>
-                <li class="flex gap-x-3">
-                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                    </svg>
-                    Capture necessary footage (2.5 hours)
-                </li>
-                <li class="flex gap-x-3">
-                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                    </svg>
-                    Concept fee applies for Package 2 & 3
-                </li>
-            </ul>
-            <a href="#" aria-describedby="tier-music-packages" class="mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">Add to Cart</a>
-        </div>
-  
-        <!-- Card 3 -->
-          <div class="relative rounded-3xl bg-gray-900 p-8 shadow-2xl ring-1 ring-gray-900/10 sm:p-10">
-            <h3 id="tier-music-packages" class="text-base/7 font-semibold text-indigo-400">Music Packages</h3>
-            <p class="mt-4 flex items-baseline gap-x-2">
-                <span class="text-5xl font-semibold tracking-tight text-white">$400</span>
-                <span class="text-base text-gray-400">- Package 1</span>
-            </p>
-            <p class="mt-4 flex items-baseline gap-x-2">
-                <span class="text-5xl font-semibold tracking-tight text-white">$800</span>
-                <span class="text-base text-gray-400">- Package 2</span>
-            </p>
-            <p class="mt-4 flex items-baseline gap-x-2">
-                <span class="text-5xl font-semibold tracking-tight text-white">$1200</span>
-                <span class="text-base text-gray-400">- Package 3</span>
-            </p>
-        
-            <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-300 sm:mt-10">
-                <li class="flex gap-x-3">
-                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                    </svg>
-                    Guerilla style shoot
-                </li>
-                <li class="flex gap-x-3">
-                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                    </svg>
-                    Shoot 1-2 locations
-                </li>
-                <li class="flex gap-x-3">
-                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                    </svg>
-                    Capture necessary footage (2.5 hours)
-                </li>
-                <li class="flex gap-x-3">
-                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                    </svg>
-                    Concept fee applies for Package 2 & 3
-                </li>
-            </ul>
-            <a href="#" aria-describedby="tier-music-packages" class="mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">Add to Cart</a>
-        </div>
-        
-        
-      </div>
-      
-      </div>
-  
-      <div class="bg-white py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl lg:text-center">
-            <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
-            <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">Everything you need to deploy your app</p>
-            <p class="mt-6 text-lg/8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
-          </div>
-          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-900">
-                  <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 0 1 5.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 0 0-1.134-.175 2.31 2.31 0 0 1-1.64-1.055l-.822-1.316a2.192 2.192 0 0 0-1.736-1.039 48.774 48.774 0 0 0-5.232 0 2.192 2.192 0 0 0-1.736 1.039l-.821 1.316Z" />
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 12.75a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM18.75 10.5h.008v.008h-.008V10.5Z" />
-                    </svg>                  
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0 3 3m-3-3-3 3M6.75 19.5a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
-                    </svg>
-                  </div>
-                  Photoshoots
-                  Studio or Outside
-                </dt>
-                <dd class="mt-2 text-base/7 text-gray-600">Optional 25 digitals of your choosing per hour of shooting
-                  Optional: Choose up to 25 digital images per hour of shooting (outside or inside). For headshots, you can select 5 digital images. Final images will be delivered within 3-5 days after the shoot. Pricing: $75.</dd>
-              </div>
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-900">
-                  <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z" />
-                    </svg>
-                    
-                  </div>
-                  Music Videos
-                  Visual Effects
-                </dt>
-                <dd class="mt-2 text-base/7 text-gray-600">Moderate use of visual effects: $35 (4-6 hours)
-                  Heavy use of visual effects: $70 (max 8 hours)
-                  
-                  Schedule Pro Lighting Setups:
-                  
-                  Semi-Production Style: Pre-production, 2-3 locations, 3.5 hours
-                  Full Production Style: Pre-production, 3-4 locations.</dd>
-              </div>
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-900">
-                  <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <svg class="size-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
-                    </svg>
-                  </div>
-                  Branding
-                  Cinematic Video Reels
-                </dt>
-                <dd class="mt-2 text-base/7 text-gray-600">Promotional video with edit. $300 per video.
-                  Highlight Video 1.5 hours with edit. .</dd>
-              </div>
-              <div class="relative pl-16">
-                <dt class="text-base/7 font-semibold text-gray-900">
-                  <div class="absolute left-0 top-0 flex size-10 items-center justify-center rounded-lg bg-indigo-600">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" />
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" />
-                    </svg>
-                    
-                  </div>
-                  Branding and Marketing
-                </dt>
-                <dd class="mt-2 text-base/7 text-gray-600">Promotional Video with Edit:
-  
-                  $300 per video
-                  Highlight Video (1.5 hours with edit):
-                  
-                  Captures key highlights of a service or product
-                  $150 per video
-                  Photography:
-                  The best photos tell the story of your business, products, or services.
-                  
-                  Promotional Photography:
-                  5 Photos: $30
-                  10 Photos: $60</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </div>
-      
-     </section>
+    
    
   
 
-    <!-- Services End -->
+ 
 
    <!-- Video Gallery  -->
    <section id="content">
@@ -541,10 +311,10 @@
         <div class="videos"><video src="/src/images/YSL color.mp4" muted></video>
           <h2>Saint Laurent - Be Bold</h2>
         </div>
-        <div class="videos"><video src="images/Basketball_mixtape.mp4" muted></video>
+        <div class="videos"><video src="/src/images/Studio Tre Flip.mp4" muted></video>
           <h2>Sean Micheal - Hoop Dreams</h2>
         </div>
-        <div class="videos"><video src="images/Beeyee.mp4" muted></video>
+        <div class="videos"><video src="/src/images/EDGE.mp4" muted></video>
           <h2>Jasmine S - BeeYee</h2>
         </div>
       </div>
