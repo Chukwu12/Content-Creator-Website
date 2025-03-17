@@ -734,9 +734,9 @@ from{
 
 /* work */
 #work {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("../images/work-pic.jpg") center/cover no-repeat fixed;
-  color: var(--light-color);
+  color: var(--light-color); */
 }
 
 @media only screen and (max-device-width: 648px){
@@ -1255,7 +1255,8 @@ h1 {
 
 .gallery-container{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("../images/insta-pic.jpg") center/cover no-repeat fixed;
+  url("../images/work-pic.jpg") center/cover no-repeat fixed;
+color: var(--light-color);
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -1281,7 +1282,7 @@ h1 {
 }
 
 .video-container .videos{
-  height: auto;
+  height: 300px;
   border: 5px solid #fff;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
@@ -1357,6 +1358,8 @@ h1 {
    cursor: pointer; 
    z-index: 1001;
 }
+
+
 
 /* Media query for screens smaller than 800px */
 @media (max-width: 800px) {
