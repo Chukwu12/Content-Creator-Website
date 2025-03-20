@@ -71,103 +71,7 @@
 //   // Add event listener to handle screen resize
 //   window.addEventListener('resize', screenSize);
 
-  // =============================Cart Checkout======================================//
-//   document.addEventListener('DOMContentLoaded', () => {
-//     // Toggle Cart Visibility
-//     const cartIcon = document.querySelector('.icon-cart');
-//     const cart = document.querySelector('.cartTab');
-//     const close = document.querySelector('.close');
-  
-//     if (cartIcon && cart && close) {
-//       cartIcon.addEventListener('click', () => {
-//         cart.classList.toggle('open');
-//       });
-  
-//       close.addEventListener('click', () => {
-//         cart.classList.remove('open');
-//       });
-//     } else {
-//       console.error('One or more elements not found:', { cartIcon, cart, close });
-//     }
 
-//    // Add to Cart Functionality
-//   const addToCartButtons = document.querySelectorAll('.icon-btn1');
-
-//   addToCartButtons.forEach(button => {
-//     button.addEventListener('click', () => {
-//       const card = button.closest('.card');
-//       const serviceName = card.querySelector('h2').textContent.trim();
-//       const price = card.querySelector('ul li:first-child').textContent.trim();
-//       const quantityInput = card.querySelector('.num-input');
-//       const quantity = parseInt(quantityInput.value);
-
-//       if (quantity > 0) {
-//         // Create a new cart item element
-//         const cartItem = document.createElement('div');
-//         cartItem.classList.add('item');
-//         const totalPrice = price * quantity;
-
-//         cartItem.innerHTML = `
-//             <div class="content">
-//                 <div class="name">${serviceName}</div>
-//                 <div class="price">$${totalPrice}</div>
-//                 <div class="quantity">
-//                     <button class="decrement">-</button>
-//                     <span class="value">${quantity}</span>
-//                     <button class="increment">+</button>
-//                 </div>
-//             </div>
-//         `;
-
-//       // Append the cart item to the listCart
-//       const listCart = document.querySelector('.listCart');
-//       listCart.appendChild(cartItem);
-
-//        // Clear the input
-//        quantityInput.value = 0;
-
-//       // Update total quantity in cart
-//       updateCartTotal();
-//     } else {
-//       alert('Please select a valid quantity.');
-//   }
-//     });
-//   });
-
-//   // Function to update cart total quantity
-//   function updateCartTotal() {
-//     const totalQuantityElement = document.querySelector('.totalQuantity');
-//     let currentTotal = parseInt(totalQuantityElement.textContent);
-//     totalQuantityElement.textContent = currentTotal + 1;
-//   }
-
-//   // Event delegation for increment and decrement buttons within cart items
-//   document.addEventListener('click', event => {
-//     if (event.target.classList.contains('increment')) {
-//       const quantityElement = event.target.parentElement.querySelector('.value');
-//       let currentValue = parseInt(quantityElement.textContent);
-//       quantityElement.textContent = currentValue + 1;
-
-//         // Update total price in cart item
-//         const priceElement = event.target.closest('.item').querySelector('.price');
-//         const price = 125; // Fixed price per hour
-//         priceElement.textContent = `$${price * (currentValue + 1)}`;
-//     }
-
-//     if (event.target.classList.contains('decrement')) {
-//       const quantityElement = event.target.parentElement.querySelector('.value');
-//       let currentValue = parseInt(quantityElement.textContent);
-//       if (currentValue > 1) {
-//         quantityElement.textContent = currentValue - 1;
-
-//           // Update total price in cart item
-//           const priceElement = event.target.closest('.item').querySelector('.price');
-//           const price = 125; // Fixed price per hour
-//           priceElement.textContent = `$${price * (currentValue - 1)}`;
-//       }
-//     }
-//   });
-// });
  // =============================JavaScript for Mobile Menu Toggle======================================//
 
  document.addEventListener('DOMContentLoaded', () => {
@@ -186,116 +90,166 @@
 
 
     // ============================= Gsap home animation======================================//
-    document.addEventListener("DOMContentLoaded", () => {
-      gsap.registerPlugin(Flip, ScrollTrigger, CustomEase);
+    // document.addEventListener("DOMContentLoaded", () => {
+    //   gsap.registerPlugin(Flip, ScrollTrigger, CustomEase);
     
-      // Custom easing functions
-      CustomEase.create(
-        "hop",
-        "M0,0 C0.355,0.022 0.448,0.079 0.5,0.5 0.542,0.846 0.615,1 1,1"
-      );
+    //   // Custom easing functions
+    //   CustomEase.create(
+    //     "hop",
+    //     "M0,0 C0.355,0.022 0.448,0.079 0.5,0.5 0.542,0.846 0.615,1 1,1"
+    //   );
     
-      CustomEase.create(
-        "hop2",
-        "M0,0 C0.078,0.617 0.114,0.716 0.255,0.828 0.373,0.922 0.561,1 1,1"
-      );
+    //   CustomEase.create(
+    //     "hop2",
+    //     "M0,0 C0.078,0.617 0.114,0.716 0.255,0.828 0.373,0.922 0.561,1 1,1"
+    //   );
     
-      // Splitting text for animation
-      const splitH2 = new SplitType(".site-info h2", { types: "lines" });
+    //   // Splitting text for animation
+    //   const splitH2 = new SplitType(".site-info h2", { types: "lines" });
     
-      splitH2.lines.forEach((line) => {
-        const text = line.textContent;
-        const wrapper = document.createElement("div");
-        wrapper.className = "line";
-        const span = document.createElement("span");
-        span.textContent = text;
-        wrapper.appendChild(span);
-        line.parentNode.replaceChild(wrapper, line);
-      });
+    //   splitH2.lines.forEach((line) => {
+    //     const text = line.textContent;
+    //     const wrapper = document.createElement("div");
+    //     wrapper.className = "line";
+    //     const span = document.createElement("span");
+    //     span.textContent = text;
+    //     wrapper.appendChild(span);
+    //     line.parentNode.replaceChild(wrapper, line);
+    //   });
     
-      // Timelines for animations
-      const mainTl = gsap.timeline();
-      const revealerTl = gsap.timeline();
-      const scaleTl = gsap.timeline();
+    //   // Timelines for animations
+    //   const mainTl = gsap.timeline();
+    //   const revealerTl = gsap.timeline();
+    //   const scaleTl = gsap.timeline();
     
-      revealerTl
-        .to(".r-1", {
-          clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-          duration: 1.5,
-          ease: "hop",
-        })
-        .to(
-          ".r-2",
-          {
-            clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
-            duration: 1.5,
-            ease: "hop",
-          },
-          "<"
-        );
+    //   revealerTl
+    //     .to(".r-1", {
+    //       clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+    //       duration: 1.5,
+    //       ease: "hop",
+    //     })
+    //     .to(
+    //       ".r-2",
+    //       {
+    //         clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+    //         duration: 1.5,
+    //         ease: "hop",
+    //       },
+    //       "<"
+    //     );
     
-      scaleTl.to(".img:first-child", {
-        scale: 1,
-        duration: 2,
-        ease: "power4.inOut",
-      });
+    //   scaleTl.to(".img:first-child", {
+    //     scale: 1,
+    //     duration: 2,
+    //     ease: "power4.inOut",
+    //   });
     
-      // Selecting all images except the first child
-      const images = document.querySelectorAll(".img:not(:first-child)");
+    //   // Selecting all images except the first child
+    //   const images = document.querySelectorAll(".img:not(:first-child)");
     
-      images.forEach((img, index) => {
-        scaleTl.to(
-          img,
-          {
-            opacity: 1,
-            scale: 1,
-            duration: 1.25,
-            ease: "power3.out",
-          },
-          ">-0.5"
-        );
-      });
+    //   images.forEach((img, index) => {
+    //     scaleTl.to(
+    //       img,
+    //       {
+    //         opacity: 1,
+    //         scale: 1,
+    //         duration: 1.25,
+    //         ease: "power3.out",
+    //       },
+    //       ">-0.5"
+    //     );
+    //   });
     
-      mainTl.add(revealerTl).add(scaleTl, "-1.25").add(() => {
-        document.querySelectorAll(".img:not(.main)").forEach((img) => img.remove());
+    //   mainTl.add(revealerTl).add(scaleTl, "-1.25").add(() => {
+    //     document.querySelectorAll(".img:not(.main)").forEach((img) => img.remove());
     
-        // Ensure .main images exist before running Flip
-        const mainElements = document.querySelectorAll(".main");
-        if (mainElements.length > 0) {
-          const state = Flip.getState(".main");
+    //     // Ensure .main images exist before running Flip
+    //     const mainElements = document.querySelectorAll(".main");
+    //     if (mainElements.length > 0) {
+    //       const state = Flip.getState(".main");
     
-          const imagesContainer = document.querySelector(".home-images");
-          if (imagesContainer) {
-            imagesContainer.classList.add("stacked-container");
-          }
+    //       const imagesContainer = document.querySelector(".home-images");
+    //       if (imagesContainer) {
+    //         imagesContainer.classList.add("stacked-container");
+    //       }
     
-          document.querySelectorAll(".main").forEach((img, i) => {
-            img.classList.add("stacked");
-            img.style.order = i;
-            gsap.set(".img.stacked", {
-              clearProps: "transform, top, left",
-            });
-          });
+    //       document.querySelectorAll(".main").forEach((img, i) => {
+    //         img.classList.add("stacked");
+    //         img.style.order = i;
+    //         gsap.set(".img.stacked", {
+    //           clearProps: "transform, top, left",
+    //         });
+    //       });
     
-         return Flip.from(state, {
-            duration: 2,
-            ease: "hop",
-            absolute: true,
-            stagger: { amount: -0.3 },
-          });
-        }
-      })
-      .to(".word h1, .nav-item p, .line p, .site-info h2 .line span", {
+    //      return Flip.from(state, {
+    //         duration: 2,
+    //         ease: "hop",
+    //         absolute: true,
+    //         stagger: { amount: -0.3 },
+    //       });
+    //     }
+    //   })
+    //   .to(".word h1, .nav-item p, .line p, .site-info h2 .line span", {
+    //     y: 0,
+    //     duration: 3,
+    //     ease: "hop2",
+    //     stagger: 0.1,
+    //     delay: 1.25,
+    //   }).to(".cover-img", {
+    //     clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+    //     duration: 2,
+    //     ease: "hop",
+    //     delay: -4.75,
+    //   })
+    // });
+    document.addEventListener("DOMContentLoaded", function () {
+      gsap.set(".img", {y: 500});
+      gsap.set(".loader-imgs", {x: 500});
+      gsap.set(".nav-item", {y: 25, opacity: 0});
+      gsap.set("h1, .item, footer", {y: 200});
+
+      const tl = gsap.timeline({delay: 1});
+
+      tl.to(".img", {
         y: 0,
-        duration: 3,
-        ease: "hop2",
+        duration: 1.5,
+        stagger: 0.05,
+        ease: "power3.inOut",
+      }).to(".loader-imgs",
+        {
+          x: 0,
+          duration: 3,
+          ease: "power3.inOut",
+        },
+        "-=2.5"
+      ).to(".img:not(#loader-logo", {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+        duration: 1,
         stagger: 0.1,
-        delay: 1.25,
-      }).to(".cover-img", {
-        clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
-        duration: 2,
-        ease: "hop",
-        delay: -4.75,
-      })
+        ease: "power3.inOut",
+      }, "-=1"
+    )
+      .to(
+        ".loader", 
+        {
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+        duration: 1,
+        ease: "power3.inOut",
+    },
+  "-=0.5"
+).to(".nav-item, h1, footer, .item", {
+  y: 0,
+  opacity: 1,
+  duration: 1,
+  stagger: 0.1,
+  ease: "power3.inOut",
+},
+"-=0.5"
+);
     });
-    
+
+   //=========================JavaScript for Mobile Menu Toggle ===========================//
+
+  document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
