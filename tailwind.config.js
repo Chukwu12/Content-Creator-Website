@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    './src/**/*.{html,js}',    // Files in the src folder
+    './src/**/*.{html,js}', // Files in the src folder
+    './dist/**/*.{html,js}',   
     './*.{html,js}',           // HTML/JS files in the root
   ],
   theme: {

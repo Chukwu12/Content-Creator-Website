@@ -4,8 +4,8 @@
   "description": "Content Website",
   "main": "main.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/styles/styles.css -o ./dist/styles.css",
-    "watch": "tailwindcss -i ./src/styles/styles.css -o ./dist/styles.css --watch",
+   "build": "tailwindcss -i ./src/main.css -o ./dist/main.css",
+   "watch": "tailwindcss -i ./src/css/main.css -o ./dist/main.css --watch",
     "dev": "tailwindcss -i ./src/styles/styles.css -o ./dist/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server dist"

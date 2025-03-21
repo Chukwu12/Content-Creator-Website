@@ -74,17 +74,16 @@
 
  // =============================JavaScript for Mobile Menu Toggle======================================//
 
- document.addEventListener('DOMContentLoaded', () => {
-  const menuButton = document.getElementById('mobile-menu-toggle');
-  const mobileMenu = document.getElementById('mobile-menu');
 
-  if (menuButton && mobileMenu) { // Check if elements exist
-    menuButton.addEventListener('click', () => {
-      const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
-      menuButton.setAttribute('aria-expanded', !isExpanded);
-      mobileMenu.classList.toggle('hidden', isExpanded);
-    });
-  }
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("mobile-menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuToggle.addEventListener("click", function () {
+    const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", !isExpanded);
+    mobileMenu.classList.toggle("hidden");
+  });
 });
 
 

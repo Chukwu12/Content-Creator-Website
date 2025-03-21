@@ -24,15 +24,17 @@
 
      <!-- AOS JavaScript -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
 
-   <!-- Typewriting JS -->
-   <script src="typewriting-master/typewriting.js"></script>
 
      <!-- Lord Icons -->
   <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 
    <!-- Main JavaScript -->
    <script src="/src/js/main.js"></script>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+ 
 
 
 
@@ -50,18 +52,10 @@
   <!-- Navbar -->
   <header>
     <nav class="bg-teal-500 p-4" aria-label="Main navigation">
-      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-        <div class="relative flex items-center justify-between">
-          
-          <!-- Mobile Menu Button -->
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <button id="mobile-menu-toggle" type="button" class="inline-flex items-center justify-center p-2 text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-              <span class="sr-only">Open main menu</span>
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-              </svg>
-            </button>
-          </div>
+      <div class="container flex justify-between items-center py-4 md:pt-4 opacity: 1">
+        <div class="relative flex items-center justify-between flex-grow">
+
+        
 
           <!-- Logo and Links -->
           <div class="flex items-center justify-between w-full sm:w-auto">
@@ -74,25 +68,38 @@
               <div class="flex space-x-4">
                 <a href="index.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Home</a>
                 <a href="#about" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">About</a>
-                <a href="#services" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Services</a>
                 <a href="#content" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Contact</a>
               </div>
             </div>
           </div>
+
+              <!-- Mobile Menu Button -->
+        <div class="relative inset-y-0 right-0 flex items-center">
+          <button id="mobile-menu-toggle" type="button" class="inline-flex items-center justify-center p-2 text-white hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
         </div>
-      </div>
 
       <!-- Mobile Menu -->
-      <div class="sm:hidden" id="mobile-menu" class="hidden">
+      <div class="sm:hidden" id="mobile-menu">
         <div class="space-y-1 px-2 py-3">
           <a href="index.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Home</a>
           <a href="#about" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">About</a>
-          <a href="#services" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Services</a>
           <a href="#content" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Contact</a>
         </div>
       </div>
+        </div>
+
+    
+      </div>
+
+         
     </nav>
   </header>
+
 
 
 
@@ -100,52 +107,57 @@
  
  <div class="ab-container">
 
-  <!-- Hero Section -->
-<!-- component -->
+<!-- Hero Section -->
 <section id="hero-section">
   <div class="bg-black text-white py-20">
     <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
       
       <!-- Hero Content -->
-      <div class="hero-content flex flex-col w-full lg:w-1/3 justify-center items-start p-8" data-aos="fade-up" data-aos-duration="1000">
+      <section class="hero-content flex flex-col w-full lg:w-1/3 justify-center items-start p-8" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="text-3xl md:text-5xl p-2 text-custom-teal tracking-loose">Mansa Leaf Productions</h1>
-        <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">Creative Content That Connects</h2>
-        <p class="text-gray-50 mb-4">
-          We create consistent and creative video/photo content that drives engagement, increases brand visibility, 
-          and opens sales opportunities for small businesses, entrepreneurs, and creatives. 
-          From pre-production to final edits, we deliver high production value at low production costs without compromising quality.
-        </p>
+        <!-- <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-4">Creative Content That Connects</h2> -->
+        <p class="text-gray-800 leading-relaxed max-w-prose mb-6">
+          I'm Salif Soumahoro, I’m a director, videographer, and editor based in New York City, driven by a passion for storytelling through the visual medium. My goal is to create high-quality visuals that not only evoke emotion but also spark a call to action or inspire change.
+          I specialize in beauty, sports, branding, and corporate work, but what truly defines my creative vision is a clean, empowering, and idealistic aesthetic.
+       
+           I believe the work I create should leave a lasting imprint, inspiring and motivating those who experience it. As a 
+            first-generation immigrant, my upbringing shapes this vision, fueling my desire to produce content that resonates deeply and drives transformation.
+            At my core, I am a collaborative visionary, committed to elevating and inspiring those who seek meaningful change through the power of video.</p>
+         
+      
+        
         <a href="#"
-          class="bg-transparent hover:bg-custom-teal text-white-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-custom-teal hover:border-transparent">
+          class="bg-transparent hover:bg-custom-teal text-white hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-custom-teal hover:border-transparent transition-colors duration-300">
           Learn More
         </a>
-      </div>
+      </section>
       
       <!-- Images -->
-      <div class="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3 justify-center">
-        <div class="h-48 flex flex-wrap content-center">
-          <div data-aos="fade-left" data-aos-duration="1000">
-            <img class=" mt-28 hidden xl:block" src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png">
+      <div class="hero-img p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3 justify-center">
+        <div class="hero-img-content flex items-center">
+          <div class="flex items-center" data-aos="fade-left" data-aos-duration="1000">
+            <img class="mt-28 hidden xl:block rounded-full" src="/src/images/IMG_9897.JPG" alt="Portrait of Salif Soumahoro">
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000">
-            <img class=" mt-24 md:mt-0 p-8 md:p-0" src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png">
+          <div class="middle-img flex items-center" data-aos="fade-up" data-aos-duration="1000">
+            <img class="mt-24 md:mt-0 p-8 md:p-0 rounded-full" src="/src/images/IMG_7491.jpg" alt="Salif Soumahoro at work">
           </div>
-          <div data-aos="fade-right" data-aos-duration="1000">
-            <img class=" mt-28 hidden lg:block" src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png">
+          <div class="flex items-center" data-aos="fade-right" data-aos-duration="1000">
+            <img class="mt-28 hidden lg:block rounded-full" src="/src/images/20191015_110755.jpg" alt="Creative session with Salif Soumahoro">
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
+
+
 
 
   <!-- Hero End -->
 
 
 
-
-<!-- About Section -->
 
 <!-- About Section -->
 
@@ -165,28 +177,19 @@
       <!-- About Content -->
       <div data-aos="fade-left" data-aos-duration="1000">
         <h2 class="text-3xl font-bold text-teal-500 mb-6">About Me</h2>
-        <p class="text-lg text-gray-700 leading-relaxed mb-6">
-          I am an Actor, Content Creator, and Model who was born and raised in Harlem, New York, to Ivorian immigrants.
-          I did not see much positivity in the environment I grew up in; dealing with economic hardship, violence,
-          gangs, and drugs; as well as classism and racism. To capture a break from reality, I looked to film, TV, and
-          video games. It provided an escape for me. I watched in awe of whatever was in that 24-inch screen. I wanted
-          to be whatever I saw: a lawyer from a courtroom drama, a spy from a spy movie, a basketball star—the list
-          goes on. Media gave me life lessons, hope, drive, passion, experience, and escape. It helped me with my own
-          experiences as I navigated through life.
-        </p>
+       
         <p class="text-lg text-gray-700 leading-relaxed mb-8">
-          I want to provide that for people: tell stories that convey emotion, entertain, educate, deliver experiences,
-          and inspire. Helping people and hopefully bringing positive change. Mansa Leaf Productions is a content
-          production studio and a video/photo service agency where we produce and distribute original content to tell
-          stories that convey emotion, entertain, educate, and inspire. Helping clients engage with audiences and tell
-          stories through video, we provide professionalism with a familiar feel for those who seek a reliable and
-          creative production partner.
+         
+
+I was born and raised in Harlem, NY, to immigrant parents from Ivory Coast. Growing up, positive influences were scarce, and inspiration seemed out of reach. But through media—whether it was cinema, sports, or even the fleeting commercials between shows—I discovered a world beyond my circumstances. These glimpses of greatness gave me the confidence to believe that change was possible.
+I started researching what makes people successful, and that curiosity fueled my education and creativity. I realized that through collaboration and determination, something powerful could be created—even from the humblest of beginnings. I wanted to be a beacon for those who felt hopeless or for those just starting their journey, to show them that greatness is achievable.
+I refuse to be confined by labels or limitations. Being boxed in creates doubt, and no one should ever feel limited. I push boundaries in every area of my life, and my mission is to help others do the same. Change is possible, and it starts with embracing the potential within, no matter where you come from.
         </p>
         <a
           href="#content" class="relative inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-teal-500 hover:bg-teal-600 rounded-lg shadow-md transition duration-300"
           aria-label="Learn more about my work"
           data-aos="zoom-in" data-aos-duration="1000">
-          <i class="fas fa-chevron-down mr-2"></i> Learn More
+          <i class="fas fa-chevron-down mr-2"></i> My Projects
         </a>
       </div>
     </div>
@@ -206,11 +209,11 @@
 <!-- Work Section -->
 <section  id="work" class="py-16 text-white">
   <div class="work-container mx-auto px-6">
-    <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
+    <!-- <div class="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
       <h2 class="text-4xl font-bold text-white">What Am I Doing?</h2>
-    </div>
+    </div> -->
 
-    <div class="grid md:grid-cols-2 gap-8 mb-12">
+    <!-- <div class="grid md:grid-cols-2 gap-8 mb-12">
       <div data-aos="fade-right" data-aos-duration="1000">
         <p class="text-xl leading-relaxed">
           Here at Mansa Leaf Productions, we create consistent and creative video/photo content that drives engagement, increases brand visibility, and sales opportunities for small businesses, entrepreneurs, and creatives. Content that markets you or your brand and connects the vision and purpose of the brand with its audiences.
@@ -231,7 +234,7 @@
           We always have back-up equipment at hand, also on location.
         </p>
       </div>
-    </div>
+    </div> -->
 
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
       <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
@@ -272,13 +275,13 @@
       </div>
     </div>
 
-    <div class="flex justify-center mt-12">
+    <!-- <div class="flex justify-center mt-12">
       <a href="#content" class="relative inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-custom-teal hover:bg-custom-teal hover:bg-opacity-90 rounded-lg shadow-md transition duration-300">
         <i class="fas fa-chevron-down mr-2"></i> 
         Explore Portfolio
       </a>
       
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -292,30 +295,37 @@
    
 
    <!-- Video Gallery  -->
-   <section id="content">
+    <section id="content">
     <div class="gallery-container">
       <div class="title">
         <h2>My Work</h2>
       </div>
   
       <div class="video-container container">
-        <div class="videos"><video src="/src/images/Angelica_Nike_Test .mp4" muted></video>
-          <h2>NIKE COVID SPEC</h2>
+        <div class="videos"><video src="/src/images/Princess_1.mp4" muted></video>
+          <h2>Lingerie Collection Showcase</h2>
         </div>
-        <div class="videos"><video src="/src/images/Grind.mp4" muted></video>
-          <h2>Grind - Work for Greatness</h2>
+        <div class="videos"><video src="/src/images/Naomi_tribute.mp4" muted></video>
+          <h2>Naomi Campbell Tribute</h2>
+        </div>
+        <div class="videos"><video src="/src/images/Angelica_Nike_Test .mp4" muted></video>
+          <h2>Nike Spec Ad: Overcoming challenges</h2>
         </div>
         <div class="videos"><video src="/src/images/AK promo.MP4" muted></video>
-          <h2>AKIN by Katherine</h2>
-        </div>
-        <div class="videos"><video src="/src/images/YSL color.mp4" muted></video>
           <h2>Saint Laurent - Be Bold</h2>
         </div>
-        <div class="videos"><video src="images/Basketball_mixtape.mp4" muted></video>
-          <h2>Sean Micheal - Hoop Dreams</h2>
+        <div class="videos"><video src="/src/images/Studio Tre Flip.mp4" muted></video>
+          <h2>Dyemond Lewis - Tre Flip Studio session</h2>
         </div>
-        <div class="videos"><video src="images/Beeyee.mp4" muted></video>
+        <!-- <div class="videos"><video src="/src/images/EDGE.mp4" muted></video>
           <h2>Jasmine S - BeeYee</h2>
+        </div> -->
+        <div class="videos"><video src="/src/images/Athletics_color.mp4" muted></video>
+          <h2>Brooklyn College Athletics
+            Corporate/institutional promo video</h2>
+        </div>
+        <div class="videos"><video src="/src/images/BLMI.mp4" muted></video>
+          <h2>Brooklyn College Black and Latino Male Initiative</h2>
         </div>
       </div>
   
@@ -324,24 +334,17 @@
         <video controls autoplay></video>
       </div>
     </div>
-  </section>
+  </section> 
   
   <!--Video galley end  -->
- 
-   
-
-  
- </div>
 
 
 
 
 
 
-  <!-- footer -->
 
 
- <!-- component -->
 <!-- Foooter -->
 <section class="bg-white">
   <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
@@ -396,21 +399,11 @@
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
               </svg>
           </a>
-          <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">GitHub</span>
-              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-                  <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
-              </svg>
-          </a>
-          <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">Dribbble</span>
-              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-                  <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd"></path>
-              </svg>
-          </a>
+      
+         
       </div>
       <p class="mt-8 text-base leading-6 text-center text-gray-400">
-          © 2021 SomeCompany, Inc. All rights reserved.
+          © 2025 Chukwu Tech Solutions, Inc. All rights reserved.
       </p>
   </div>
 </section>
@@ -426,33 +419,7 @@
     });
   </script>
 
-<script>
- 
-</script>
 
-  
-
-  <!-- Typescript -->
-  <script src="typewriting-master/typewriting.js"></script>
-  
-  <!-- Lord Icons -->
-  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-   
-
-   <script src="/src/js/main.js"></script>
-  </script>
-
-   <!-- JavaScript for Mobile Menu Toggle -->
-   <script>
-    const menuButton = document.getElementById('mobile-menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuButton.addEventListener('click', () => {
-      const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
-      menuButton.setAttribute('aria-expanded', !isExpanded);
-      mobileMenu.classList.toggle('hidden', isExpanded);
-    });
-  </script>
 </body>
 
 </html>

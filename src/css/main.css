@@ -28,11 +28,249 @@
       scroll-behavior: smooth;
     }
 
+    nav{
+      height: 60px;
+    }
+
+/* Home Page */
+
+#home-body{
+  font-family: 'PP Neue Montreal';
+  background: #e7e4e5;
+  overflow-x: hidden;
+}
+
+.loader{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  pointer-events: none;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.loader-imgs{
+  width: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 50px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.loader-imgs .img{
+  position: relative;
+  flex: 1;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+#home-body img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#home-body nav{
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  font-family: 'Neue Montreal';
+}
+
+.nav-item{
+  position: relative;
+  flex: 1;
+}
+
+.nav-item:nth-child(2){
+  text-align: center;
+  font-family: 'PP Editorial Old';
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.nav-item:nth-child(3) {
+  text-align: right;
+}
+
+#logo a {
+  text-transform: none;
+  
+}
+
+#home-body a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000 ;
+}
+
+.hero{
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  font-family: 'PP Migra';
+}
+
+.hero  .h1{
+  width: 100%;
+  text-align: center;
+  font-size: 3vw;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+#home-body h1{
+  position: relative;
+  font-weight: 400;
+  line-height: 85%;
+}
+
+#home-body h1 span{
+  font-family: 'Sharp Grotesk';
+  font-weight: 700;
+}
+
+#home-body footer{
+  width: 100%;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  background: none;
+}
+
+.item{
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+
+@media (max-width: 1024px) {
+  .hero .h1 {
+    font-size: clamp(24px, 5vw, 50px);
+  }
+  
+  #home-body nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-item {
+    text-align: center !important;
+    padding: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px)  {
+  #home-body h1 {
+    font-size: 1.5em;
+  }
+
+}
+@media (max-width: 768px) {
+  .hero {
+    top: 40%;
+  }
+
+  #home-body h1 {
+    font-size: clamp(20px, 4vw, 40px);
+  }
+
+  .loader-imgs {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .nav-item:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .item {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    top: 35%;
+  }
+
+  .hero .h1 {
+    font-size: clamp(18px, 5vw, 35px);
+  }
+
+  .nav-item {
+    font-size: 16px;
+  }
+
+  .loader-imgs {
+    gap: 10px;
+  }
+
+  .item {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* Show the mobile menu toggle on small screens */
+#mobile-menu-toggle {
+  display: block;
+}
+
+/* Hide the mobile menu button on larger screens */
+@media (min-width: 768px) {
+  #mobile-menu-toggle {
+    display: none;
+  }
+}
+
+
+
+
+/* Home page End  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .home-body{
       width: 100%;
       height: 100%;
       font-family: 'PP Neue Montreal';
-      background-color: #fff;
+      background-color: grey;
       overflow: hidden;
     }
 
@@ -47,10 +285,31 @@
       will-change: transform;
     }
 
+    .hero-img-content{
+      gap: 50px;
+    }
+
+    .hero-content p {
+      font-size: 15px;
+    }
+
+    .hero-img img {
+      height: 350px;
+      width: 300px;
+      transform: rotate(-15deg);
+      object-fit: cover;
+    }
+
+    .middle-img img{
+      height: 550px;
+      width: 400px;
+      transform: rotate(-15deg);
+      object-fit: cover;
+    }
+
     .home-images img{
       width: 100%;
       height: 100%;
-      object-fit: cover;
     }
 
     .home-images .img{
@@ -95,9 +354,9 @@
     }
 
     .home-content{
-      /* position: relative;
+       position: relative;
       width: 100%;
-      height: 100%; */
+      height: 100%; 
     }
 
     .site-logo{
@@ -146,11 +405,11 @@
     }
     
     /* Hover effect - changes color */
-    .home-nav a:hover {
+    /* .home-nav a:hover {
       color: teal;
     }
     
-    /* Underline animation */
+ 
     .home-nav a::after {
       content: "";
       position: absolute;
@@ -163,12 +422,11 @@
       transform: translateX(-50%);
     }
     
-    /* Expanding underline on hover */
+
     .home-nav a:hover::after {
       width: 100%;
     }
-    
-    /* Cool Entrance Animation */
+ 
     @keyframes slideDown {
       from {
         transform: translateY(-100%);
@@ -301,7 +559,7 @@
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
 
-
+ */
 
 
 
@@ -467,7 +725,7 @@ img {
 }
 
 img:hover {
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
 }
 .vh-100 {
   min-height: 100vh;
@@ -713,9 +971,9 @@ from{
 
 /* work */
 #work {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url("../images/work-pic.jpg") center/cover no-repeat fixed;
-  color: var(--light-color);
+  color: var(--light-color); */
 }
 
 @media only screen and (max-device-width: 648px){
@@ -1233,8 +1491,9 @@ h1 {
 /* Content Page */
 
 .gallery-container{
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("../images/insta-pic.jpg") center/cover no-repeat fixed;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+  url("../images/work-pic.jpg") center/cover no-repeat fixed; */
+color: var(--light-color);
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -1260,7 +1519,7 @@ h1 {
 }
 
 .video-container .videos{
-  height: auto;
+  height: 300px;
   border: 5px solid #fff;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
@@ -1316,7 +1575,7 @@ h1 {
   object-fit: cover;
 }
 
-.gallery-container .popup-videos span {
+/* .gallery-container .popup-videos span {
   position: relative;
   top: 5px;
   left: 90%;
@@ -1325,7 +1584,19 @@ h1 {
   font-weight: bolder;
   z-index: 100;
   cursor: pointer;
+} */
+
+.popup-videos .close-btn {
+  position: absolute; 
+   top: 20px;
+  right: 20px;
+  font-size: 3rem; 
+   color: #fff; 
+   cursor: pointer; 
+   z-index: 1001;
 }
+
+
 
 /* Media query for screens smaller than 800px */
 @media (max-width: 800px) {
@@ -1570,4 +1841,3 @@ padding-bottom: 80px;
   border-radius: 50%;
   }
 }
-
