@@ -67,7 +67,7 @@ background: #e7e4e5;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, 
 }
 
 .loader-imgs{
-  width: 100%;
+  width: 95%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -270,17 +270,7 @@ background: #e7e4e5;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, 
   }
 }
 
-/* Show the mobile menu toggle on small screens */
-#mobile-menu-toggle {
-  display: block;
-}
 
-/* Hide the mobile menu button on larger screens */
-@media (min-width: 768px) {
-  #mobile-menu-toggle {
-    display: none;
-  }
-}
 
 
 
