@@ -19,7 +19,7 @@
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/dist/styles.css">
+  <link rel="stylesheet" href="/dist/main.css">
    <link href="/src/css/main.css" rel="stylesheet"> 
 
      <!-- AOS JavaScript -->
@@ -49,49 +49,48 @@
 
 <body>
 
-  <!-- Navbar -->
-  <header>
-    <nav class="bg-teal-500 p-4" aria-label="Main navigation">
-      <div class="container flex justify-between items-center py-4 md:pt-4">
-        
-        <!-- Logo -->
-        <div class="flex items-center">
-          <img class="h-8 w-auto" src="/src/images/logo.png" alt="Logo">
-        </div>
-  
-        <!-- Desktop Navigation -->
-        <ul class="hidden sm:flex space-x-4">
-          <li><a href="index.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Home</a></li>
-          <li><a href="#about" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">About</a></li>
-          <li><a href="#projects" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Projects</a></li>
-          <li><a href="#contact" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Contact</a></li>
-        </ul>
-  
-  
-        <!-- Mobile Menu -->
-        <div id="sm:visbile mobile-menu">
-          <ul class="space-y-1 px-2 py-3">
-            <li><a href="index.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Home</a></li>
-            <li><a href="#about" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">About</a></li>
-            <li><a href="#projects" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Projects</a></li>
-            <li><a href="#contact" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Contact</a></li>
-          </ul>
-        </div>
+<!-- Navbar -->
+<header>
+  <nav class=" flex center bg-teal-500 p-4" aria-label="Main navigation">
+    <div class="container flex justify-between items-center py-4 md:py-4">
 
-         <!-- Mobile Menu Button -->
-         <div class="sm:visbile">
-          <button id="mobile-menu-toggle" type="button" class="text-white p-2 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-          </button>
-        </div>
-  
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img class="h-8 w-auto" src="/src/images/logo.png" alt="Logo">
       </div>
-    </nav>
-  </header>
-  
+
+      <!-- Desktop Navigation -->
+      <ul class="hidden sm:flex space-x-4 justify-center w-full">
+        <li><a href="index.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Home</a></li>
+        <li><a href="#about" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">About</a></li>
+        <li><a href="#projects" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Projects</a></li>
+        <li><a href="#contact" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Contact</a></li>
+      </ul>
+
+      <!-- Mobile Menu Button (visible on small screens) -->
+      <div class="sm:hidden">
+        <button id="mobile-menu-toggle" type="button" class="text-white p-2 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu (hidden by default, shown when toggled) -->
+  <div id="mobile-menu" class="sm:hidden hidden">
+    <ul class="flex flex-col bg-teal-500 center space-y-1 px-2 py-3">
+      <li><a href="index.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Home</a></li>
+      <li><a href="#about" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">About</a></li>
+      <li><a href="#projects" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Projects</a></li>
+      <li><a href="contact.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
 
 
 
@@ -109,7 +108,7 @@
       <section class="hero-content flex flex-col w-full lg:w-1/3 justify-center items-start p-8" data-aos="fade-up" data-aos-duration="1000">
         <h1 class="text-3xl md:text-5xl p-2 text-custom-teal tracking-loose">Mansa Leaf Productions</h1>
         <!-- <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-4">Creative Content That Connects</h2> -->
-        <p class="text-gray-800 leading-relaxed max-w-prose mb-6">
+        <p class="text-white-800 leading-relaxed max-w-prose mb-6">
           I'm Salif Soumahoro, I’m a director, videographer, and editor based in New York City, driven by a passion for storytelling through the visual medium. My goal is to create high-quality visuals that not only evoke emotion but also spark a call to action or inspire change.
           I specialize in beauty, sports, branding, and corporate work, but what truly defines my creative vision is a clean, empowering, and idealistic aesthetic.
        

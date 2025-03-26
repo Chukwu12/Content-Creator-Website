@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "Content Website",
   "main": "main.js",
-  "scripts": {
-   "build": "tailwindcss -i ./src/main.css -o ./dist/main.css",
-   "watch": "tailwindcss -i ./src/css/main.css -o ./dist/main.css --watch",
-    "dev": "tailwindcss -i ./src/styles/styles.css -o ./dist/output.css --watch",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server dist"
-  },
+"scripts": {
+  "build": "npx tailwindcss -i ./src/css/main.css -o ./dist/main.css --minify",
+  "watch": "npx tailwindcss -i ./src/css/main.css -o ./dist/main.css --watch",
+  "start": "live-server dist"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Chukwu12/Salef-Website.git"
