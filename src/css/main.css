@@ -1043,7 +1043,7 @@ from{
 }
 
 .contact .content{
-  max-width: 800x;
+  max-width: 800px;
   text-align: center;
 }
 
@@ -1065,13 +1065,238 @@ from{
   justify-content: center;
   align-items: center;
   gap: 50px;
-  height: 50px;
-  background: #f33;
   margin-top: 30px;
 
 }
 
+.contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
 
+.contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+  cursor: pointer;
+}
+
+.contactInfo .box .icon{
+  position: relative;
+  min-width: 60px;
+  height: 60px;
+  background: repeating-conic-gradient(from 27.5deg, #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
+  display: flex;
+  align-items: baseline;
+}
+
+.contactInfo .box .icon::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(from 117.5deg, #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
+}
+
+.contactInfo .box .icon::after{
+content: '';
+position: absolute;
+inset: 2px;
+background: #222;
+}
+
+.contactInfo .box .icon b {
+  position: absolute;
+  inset: 8px;
+  background: #01dbc2;
+  z-index: 2;
+}
+
+.contactInfo .box .icon i {
+  position: relative;
+  z-index: 1000;
+  color: #333;
+  font-size: 1.25em;
+  left: 20px;
+  top: 20px;
+
+}
+
+.contactInfo .box  .text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 1.1em;
+  font-weight:  300;
+  color: #fff;
+}
+
+.contactInfo .box .text h3{
+  font-weight: 500;
+  color: #01dbc2;
+  margin-bottom: 0;
+}
+
+.contactInfo .txt{
+  color: #fff;
+  margin-top: 50px;
+  font-weight: 500;
+  border-left: 50px solid #01dbc2;
+  padding-left: 10px;
+  line-height: 1em;
+}
+
+.contactInfo .sci {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.contactInfo .sci li{
+  list-style: none;
+}
+
+.contactInfo .sci li a {
+  color: #fff;
+  font-size: 1.5em;
+  transition: 0.25s;
+}
+
+.contactInfo .sci li a:hover{
+  color: #01dbc2;
+  filter: drop-shadow(0 0 5px #01dbc2);
+}
+
+.contactForm{
+  position: relative;
+  width: 40%;
+  background: repeating-conic-gradient(from var(--a), #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
+  animation: animate 6s linear infinite;
+  padding: 60px;
+}
+
+.contactForm::before{
+  content:  '';
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(from var(--a), #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50%);
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+
+.contactForm::after{
+  content:  '';
+  position: absolute;
+  inset: 2px;
+  border: 20px solid #222;
+  background: #333;
+}
+
+@property --a 
+{
+  syntax:  '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes animate{
+  0%{
+    --a: 0deg;
+  }
+  100%{
+    --a: 360deg;
+  }
+}
+
+.contactForm form {
+  position: relative;
+  z-index: 10;
+}
+
+.contactForm form h2{
+  font-size: 2em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.contactForm form .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contactForm form .inputBox input,
+.contactForm form .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1.1em;
+  margin: 10px 0;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #01dbc2;
+  color: #fff;
+  outline: none;
+  resize: none;
+}
+
+.contactForm form .inputBox span{
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  padding: 5px 0;
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.contactForm form .inputBox input:focus ~ span,
+.contactForm form .inputBox textarea:focus ~ span,
+.contactForm form .inputBox input:valid ~ span,
+.contactForm form .inputBox textarea:valid ~ span
+{
+  color: #01dbc2;
+  font-size: 0.9em ;
+  transform: translateY(-24px);
+}
+
+.contactForm form .inputBox input[type="submit"]{
+  width: 100%;
+  background: #01dbc2;
+  color: #222;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+  @media(max-width: 991px)
+{
+  .contact {
+    padding: 50px;
+  }
+  .contact .container{
+    flex-direction: column;
+  }
+  .contactInfo,
+  .contactForm{
+    width: 100%;
+  }
+  .contactForm{
+    padding: 40px;
+  }
+
+  .contactForm form{
+    padding: 10px;
+  }
+
+}
+
+
+/* contact page end  */
 video{
   width: 100%;
   height: auto;
