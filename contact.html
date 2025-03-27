@@ -125,25 +125,29 @@
             </ul>
         </div>
         <div class="contactForm">
-          <form action="">
-            <h2>Send Message</h2>
+          <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            
             <div class="inputBox">
-              <input type="text" name="" required="required">
+              <input type="text" name="name" required />
               <span>Full Name</span>
             </div>
+          
             <div class="inputBox">
-              <input type="text" name="" required="required">
+              <input type="email" name="email" required />
               <span>Email</span>
             </div>
+          
             <div class="inputBox">
-            <textarea required="required"></textarea>
-            <span>Type your message...</span>
+              <textarea name="message" required></textarea>
+              <span>Type your message...</span>
             </div>
+          
             <div class="inputBox">
-              <input type="submit"  value="Send">
-       
+              <input type="submit" value="Send">
             </div>
           </form>
+          
         </div>
      </div> 
      </section>
