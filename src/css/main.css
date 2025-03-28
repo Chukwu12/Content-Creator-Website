@@ -36,6 +36,13 @@
       height: 40px;
     }
 
+    @media (max-width: 500px) {
+      nav .img {
+        height: auto;
+        width: auto;
+      }
+    }
+
 
 /* Home Page */
 
@@ -1645,9 +1652,9 @@ color: var(--light-color);
   align-items: center;
 }
 
-.video-container .videos h2 {
+/* .video-container .videos h2 {
   position: absolute;
-  bottom: 40px; /* Adjust to make space for description */
+  bottom: 40px; 
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1657,7 +1664,7 @@ color: var(--light-color);
   text-align: center;
   opacity: 0.9;
   font-size: 15px;
-}
+} */
 
 .video-container .videos p.video-description {
   position: absolute;
