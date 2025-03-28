@@ -46,46 +46,46 @@
      <!-- Header End -->
 
      <!-- Navbar -->
-<header>
-  <nav class=" flex center bg-teal-500 p-4" aria-label="Main navigation">
-    <div class="container flex justify-between items-center py-4 md:py-4">
-
-      <!-- Logo -->
-      <div class="flex items-center">
-        <img class="h-8 w-auto" src="/src/images/logo.png" alt="Logo">
+     <header>
+      <nav class="flex center bg-teal-500 p-4" aria-label="Main navigation">
+        <div class="container flex justify-between items-center py-4 md:py-4">
+    
+          <!-- Logo -->
+          <div class="flex items-center">
+            <img id="logo" src="/src/images/logo.png" alt="Logo">
+          </div>
+    
+          <!-- Desktop Navigation -->
+          <ul class="hidden sm:flex space-x-4 justify-center w-full">
+            <li><a href="index.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Home</a></li>
+            <li><a href="#about" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">About</a></li>
+            <li><a href="#projects" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Projects</a></li>
+            <li><a href="contact.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Contact</a></li>
+          </ul>
+    
+          <!-- Mobile Menu Button (visible on small screens) -->
+          <div class="block sm:hidden">
+            <button id="mobile-menu-toggle" type="button" aria-expanded="false" class="text-white p-2 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+            </button>
+          </div>
+    
+        </div>
+      </nav>
+    
+      <!-- Mobile Menu (hidden by default, shown when toggled) -->
+      <div id="mobile-menu" class="sm:hidden hidden">
+        <ul class="flex flex-col bg-teal-500 center space-y-1 px-2 py-3">
+          <li><a href="index.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Home</a></li>
+          <li><a href="#about" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">About</a></li>
+          <li><a href="#projects" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Projects</a></li>
+          <li><a href="contact.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Contact</a></li>
+        </ul>
       </div>
-
-      <!-- Desktop Navigation -->
-      <ul class="hidden sm:flex space-x-4 justify-center w-full">
-        <li><a href="index.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Home</a></li>
-        <li><a href="about.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">About</a></li>
-        <li><a href="about.html#projects" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Projects</a></li>
-        <li><a href="contact.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Contact</a></li>
-      </ul>
-
-      <!-- Mobile Menu Button (visible on small screens) -->
-      <div class="sm:hidden">
-        <button id="mobile-menu-toggle" type="button" class="text-white p-2 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
-
-    </div>
-  </nav>
-
-  <!-- Mobile Menu (hidden by default, shown when toggled) -->
-  <div id="mobile-menu" class="sm:hidden hidden">
-    <ul class="flex flex-col bg-teal-500 center space-y-1 px-2 py-3">
-      <li><a href="index.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Home</a></li>
-      <li><a href="#about" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">About</a></li>
-      <li><a href="#projects" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Projects</a></li>
-      <li><a href="contact.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Contact</a></li>
-    </ul>
-  </div>
-</header>
+    </header>
 
      <section class="contact">
      <div class="content">

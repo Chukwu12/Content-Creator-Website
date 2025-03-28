@@ -51,12 +51,12 @@
 
 <!-- Navbar -->
 <header>
-  <nav class=" flex center bg-teal-500 p-4" aria-label="Main navigation">
+  <nav class="flex center bg-teal-500 p-4" aria-label="Main navigation">
     <div class="container flex justify-between items-center py-4 md:py-4">
 
       <!-- Logo -->
       <div class="flex items-center">
-        <img class="h-8 w-auto" src="/src/images/logo.png" alt="Logo">
+        <img id="logo" src="/src/images/logo.png" alt="Logo">
       </div>
 
       <!-- Desktop Navigation -->
@@ -68,8 +68,8 @@
       </ul>
 
       <!-- Mobile Menu Button (visible on small screens) -->
-      <div class="sm:hidden">
-        <button id="mobile-menu-toggle" type="button" class="text-white p-2 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+      <div class="block sm:hidden">
+        <button id="mobile-menu-toggle" type="button" aria-expanded="false" class="text-white p-2 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
           <span class="sr-only">Open main menu</span>
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
@@ -90,6 +90,7 @@
     </ul>
   </div>
 </header>
+
 
 
 
@@ -241,32 +242,55 @@ I refuse to be confined by labels or limitations. Being boxed in creates doubt, 
       </div>
   
       <div class="video-container container">
-        <div class="videos"><video src="/src/images/Princess_1.mp4" muted></video>
-          <h2>Lingerie Collection Showcase</h2>
+        <div class="videos">
+          <video src="/src/images/Akin.mp4" muted></video>
+          <h2>Akin by Katherine - Brand Promo</h2>
+          <p class="video-description">DP, Editor, Producer, Director, Gaffer</p>
         </div>
-        <div class="videos"><video src="/src/images/Naomi_tribute.mp4" muted></video>
+      
+        <div class="videos">
+          <video src="/src/images/Naomi_tribute.mp4" muted></video>
           <h2>Naomi Campbell Tribute</h2>
+          <p class="video-description">Creative fashion project <br> DP, Editor, Producer, Director, Gaffer</p>
         </div>
-        <div class="videos"><video src="/src/images/Angelica_Nike_Test .mp4" muted></video>
+      
+        <div class="videos">
+          <video src="/src/images/Princess_1.mp4" muted></video>
+          <h2>Lingerie Collection Showcase</h2>
+          <p class="video-description">Fashion concept reel <br> DP, Editor, Producer, Director, Gaffer</p>
+        </div>
+      
+        <div class="videos">
+          <video src="/src/images/Angelica_Nike_Test.mp4" muted></video>
           <h2>Nike Spec Ad: Overcoming challenges</h2>
+          <p class="video-description">DP, Editor, Producer, Director</p>
         </div>
-        <div class="videos"><video src="/src/images/AK promo.MP4" muted></video>
-          <h2>Saint Laurent - Be Bold</h2>
+      
+        <div class="videos">
+          <video src="/src/images/Athletics_color.mp4" muted></video>
+          <h2>Brooklyn College Athletics</h2>
+          <p class="video-description">Corporate/institutional promo video <br> DP, Editor, Producer, Director, Gaffer, Sound</p>
         </div>
-        <div class="videos"><video src="/src/images/Studio Tre Flip.mp4" muted></video>
-          <h2>Dyemond Lewis - Tre Flip Studio session</h2>
-        </div>
-        <div class="videos"><video src="/src/images/HISTORY.mp4" muted></video>
-          <h2>Jasmine S - BeeYee</h2>
-        </div>
-        <div class="videos"><video src="/src/images/Athletics_color.mp4" muted></video>
-          <h2>Brooklyn College Athletics
-            Corporate/institutional promo video</h2>
-        </div>
-        <div class="videos"><video src="/src/images/BLMI.mp4" muted></video>
+      
+        <div class="videos">
+          <video src="/src/images/BLMI.mp4" muted></video>
           <h2>Brooklyn College Black and Latino Male Initiative</h2>
+          <p class="video-description">Corporate/institutional promo video <br> DP, Editor, Producer, Director, Gaffer, Sound</p>
+        </div>
+      
+        <div class="videos">
+          <video src="/src/images/HISTORY.mp4" muted></video>
+          <h2>Brooklyn College History Department</h2>
+          <p class="video-description">Corporate/institutional promo video <br> DP, Editor, Producer, Director, Gaffer, Sound</p>
+        </div>
+      
+        <div class="videos">
+          <video src="/src/images/Studio_Tre_Flip.mp4" muted></video>
+          <h2>Dyemond Lewis - Tre Flip Studio Session</h2>
+          <p class="video-description">Music Video <br> DP, Editor, Director</p>
         </div>
       </div>
+      
   
       <div class="popup-videos">
         <span class="close-btn">&times;</span>

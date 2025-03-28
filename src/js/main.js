@@ -28,32 +28,31 @@
   document.addEventListener('DOMContentLoaded', () => {
     // Select all videos inside .video-container
     const videos = document.querySelectorAll('.video-container .videos video');
-  
+    const popupVideo = document.querySelector('.popup-videos video');  // Popup video element
+    const popupContainer = document.querySelector('.popup-videos');
+    const closeButton = document.querySelector('.popup-videos .close-btn');
+
     // Add click event listener to each video to open it in the popup
     videos.forEach(video => {
-      video.addEventListener('click', () => {
-        const videoSource = video.getAttribute('src');  // Get the src of clicked video
-        const popupVideo = document.querySelector('.popup-videos video');  // Popup video element
-  
-        // Set the source of the popup video to the clicked video's src
-        popupVideo.src = videoSource;
-  
-        // Display the popup
-        const popupContainer = document.querySelector('.popup-videos');
-        popupContainer.style.display = 'flex';  // Show the popup
-      });
+        video.addEventListener('click', () => {
+            const videoSource = video.getAttribute('src');  // Get the src of clicked video
+            popupVideo.src = videoSource;  // Set popup video source
+            popupContainer.style.display = 'flex';  // Show popup
+            popupVideo.play();  // Play the video automatically
+        });
     });
-  
+
     // Close the popup when the close button is clicked
-    const closeButton = document.querySelector('.popup-videos .close-btn');
     if (closeButton) {
-      closeButton.addEventListener('click', () => {
-        const popupContainer = document.querySelector('.popup-videos');
-        popupContainer.style.display = 'none';  // Hide the popup
-      });
+        closeButton.addEventListener('click', () => {
+            popupContainer.style.display = 'none';  // Hide the popup
+            popupVideo.pause();  // Pause the video
+            popupVideo.currentTime = 0;  // Reset video playback to the beginning
+            popupVideo.src = "";  // Remove the video source to stop buffering
+        });
     }
-  });
-  
+});
+
   
 // =============================disable parallex effect======================================//
 // function screenSize() {
@@ -74,8 +73,7 @@
 
  // =============================JavaScript for Mobile Menu Toggle======================================//
 
-
-document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("mobile-menu-toggle");
   const mobileMenu = document.getElementById("mobile-menu");
 
@@ -85,8 +83,6 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileMenu.classList.toggle("hidden");
   });
 });
-
-
 
     // ============================= Gsap home animation======================================//
     // document.addEventListener("DOMContentLoaded", () => {
