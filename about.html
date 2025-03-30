@@ -34,6 +34,10 @@
    <script src="/src/js/main.js"></script>
 
     <!-- JavaScript for Mobile Menu Toggle -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
  
 
 
@@ -56,7 +60,7 @@
 
       <!-- Logo -->
       <div class="flex items-center">
-        <img id="logo" src="/src/images/logo.png" alt="Logo">
+       
       </div>
 
       <!-- Desktop Navigation -->
@@ -132,10 +136,10 @@
             <img class="mt-28 hidden xl:block rounded-full" src="/src/images/IMG_9897.JPG" alt="Portrait of Salif Soumahoro">
           </div>
           <div class="middle-img flex items-center" data-aos="fade-up" data-aos-duration="1000">
-            <img class="mt-24 md:mt-0 p-8 md:p-0 rounded-full" src="/src/images/IMG_7491.jpg" alt="Salif Soumahoro at work">
+            <img class="mt-24 md:mt-0 p-8 md:p-0 rounded-full" src="/src/images/heroimg3.png" alt="Salif Soumahoro at work">
           </div>
           <div class="flex items-center" data-aos="fade-right" data-aos-duration="1000">
-            <img class="mt-28 hidden lg:block rounded-full" src="/src/images/20191015_110755.png" alt="Creative session with Salif Soumahoro">
+            <img class="mt-28 hidden lg:block rounded-full" src="/src/images/heroimg2.png" alt="Creative session with Salif Soumahoro">
           </div>
         </div>
       </div>
@@ -190,7 +194,7 @@ I refuse to be confined by labels or limitations. Being boxed in creates doubt, 
 <section  id="work" class="py-16 text-white">
   <div class="work-container mx-auto px-6">
   
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+    <!-- <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
       <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
         <lord-icon
           src="https://cdn.lordicon.com/tdxypxgp.json"
@@ -227,7 +231,7 @@ I refuse to be confined by labels or limitations. Being boxed in creates doubt, 
         </lord-icon>
         <h3 class="mt-4 text-2xl font-semibold">Content Creation</h3>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -235,7 +239,7 @@ I refuse to be confined by labels or limitations. Being boxed in creates doubt, 
 
 
    <!-- Video Gallery  -->
-    <section id="projects">
+    <!-- <section id="projects">
     <div class="gallery-container">
       <div class="title">
         <h2>My Work</h2>
@@ -297,9 +301,46 @@ I refuse to be confined by labels or limitations. Being boxed in creates doubt, 
         <video controls autoplay></video>
       </div>
     </div>
-  </section> 
+  </section>  -->
   
   <!--Video galley end  -->
+
+  <section id="projects">
+    <div class="gallery-container">
+      <div class="title">
+        <h2>My Work</h2>
+      </div>
+  
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <video controls>
+              <source src="src/images/AK promo.MP4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="video-description">Akin by Katherine - Brand Promo <br> DP, Editor, Producer, Director, Gaffer</p>
+          </div>
+          
+          <div class="swiper-slide">
+            <video controls>
+              <source src="src/images/Naomi_tribute.mp4" type="video/mp4">
+            </video>
+            <p class="video-description">Naomi Campbell Tribute <br> DP, Editor, Producer, Director, Gaffer</p>
+          </div>
+  
+          <!-- Add more slides as needed -->
+        </div>
+  
+        <!-- Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+  
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  
 
 
 <!-- Foooter -->
@@ -355,6 +396,10 @@ I refuse to be confined by labels or limitations. Being boxed in creates doubt, 
       once: true, // Trigger animation only once
       mirror: false // Prevent animations from being triggered when scrolling back
     });
+  </script>
+
+  <script>
+   
   </script>
 
 
