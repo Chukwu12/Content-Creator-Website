@@ -30,14 +30,18 @@
      <!-- Lord Icons -->
   <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
 
+      <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+   <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
    <!-- Main JavaScript -->
    <script src="/src/js/main.js"></script>
 
     <!-- JavaScript for Mobile Menu Toggle -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+    
  
 
 
@@ -53,356 +57,327 @@
 
 <body>
 
-<!-- Navbar -->
-<header>
-  <nav class="flex center bg-teal-500 p-4" aria-label="Main navigation">
-    <div class="container flex justify-between items-center py-4 md:py-4">
-
-      <!-- Logo -->
-      <div class="flex items-center">
-       
+  <!-- Navbar -->
+  <header>
+    <nav class="flex center bg-teal-500 p-4" aria-label="Main navigation">
+      <div class="container flex justify-between items-center py-4 md:py-4">
+  
+        <!-- Logo -->
+        <div class="flex items-center">
+         <img class="logo" src="src/images/logo.png" alt="home-logo">
+        </div>
+  
+        <!-- Desktop Navigation -->
+        <ul class="hidden sm:flex space-x-4 justify-center w-full">
+          <li><a href="index.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Home</a></li>
+          <li><a href="#about" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">About</a></li>
+          <li><a href="#projects" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Projects</a></li>
+          <li><a href="contact.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Contact</a></li>
+        </ul>
+  
+        <!-- Mobile Menu Button (visible on small screens) -->
+        <div class="block sm:hidden">
+          <button id="mobile-menu-toggle" type="button" aria-expanded="false" class="text-white p-2 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+  
       </div>
-
-      <!-- Desktop Navigation -->
-      <ul class="hidden sm:flex space-x-4 justify-center w-full">
-        <li><a href="index.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Home</a></li>
-        <li><a href="#about" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">About</a></li>
-        <li><a href="#projects" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Projects</a></li>
-        <li><a href="contact.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Contact</a></li>
+    </nav>
+  
+    <!-- Mobile Menu (hidden by default, shown when toggled) -->
+    <div id="mobile-menu" class="sm:hidden hidden">
+      <ul class="flex flex-col bg-teal-500 center space-y-1 px-2 py-3">
+        <li><a href="index.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Home</a></li>
+        <li><a href="#about" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">About</a></li>
+        <li><a href="#projects" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Projects</a></li>
+        <li><a href="contact.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Contact</a></li>
       </ul>
-
-      <!-- Mobile Menu Button (visible on small screens) -->
-      <div class="block sm:hidden">
-        <button id="mobile-menu-toggle" type="button" aria-expanded="false" class="text-white p-2 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-      </div>
-
     </div>
-  </nav>
-
-  <!-- Mobile Menu (hidden by default, shown when toggled) -->
-  <div id="mobile-menu" class="sm:hidden hidden">
-    <ul class="flex flex-col bg-teal-500 center space-y-1 px-2 py-3">
-      <li><a href="index.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Home</a></li>
-      <li><a href="#about" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">About</a></li>
-      <li><a href="#projects" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Projects</a></li>
-      <li><a href="contact.html" class="block text-white px-3 py-2 text-base font-medium rounded-md hover:bg-teal-600">Contact</a></li>
-    </ul>
-  </div>
-</header>
-
-
-
-
-
-
+  </header>
   
- 
- <div class="ab-container">
-
-<!-- Hero Section -->
-<section id="hero-section">
-  <div class="bg-black text-white py-20">
-    <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
-      
-      <!-- Hero Content -->
-      <section class="hero-content flex flex-col w-full lg:w-1/3 justify-center items-start p-8" data-aos="fade-up" data-aos-duration="1000">
-        <h1 class="text-3xl md:text-5xl p-2 text-custom-teal tracking-loose">Mansa Leaf Productions</h1>
-        <!-- <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-4">Creative Content That Connects</h2> -->
-        <p class="text-white-800 leading-relaxed max-w-prose mb-6">
-          I'm Salif Soumahoro, I’m a director, videographer, and editor based in New York City, driven by a passion for storytelling through the visual medium. My goal is to create high-quality visuals that not only evoke emotion but also spark a call to action or inspire change.
-          I specialize in beauty, sports, branding, and corporate work, but what truly defines my creative vision is a clean, empowering, and idealistic aesthetic.
-       
-           I believe the work I create should leave a lasting imprint, inspiring and motivating those who experience it. As a 
-            first-generation immigrant, my upbringing shapes this vision, fueling my desire to produce content that resonates deeply and drives transformation.
-            At my core, I am a collaborative visionary, committed to elevating and inspiring those who seek meaningful change through the power of video.</p>
-         
-      
-        
-        <a href="#about"
-          class="bg-transparent hover:bg-custom-teal text-white hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-custom-teal hover:border-transparent transition-colors duration-300">
-          Learn More
-        </a>
-      </section>
-      
-      <!-- Images -->
-      <div class="hero-img p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3 justify-center">
-        <div class="hero-img-content flex items-center">
-          <div class="flex items-center" data-aos="fade-left" data-aos-duration="1000">
-            <img class="mt-28 hidden xl:block rounded-full" src="/src/images/IMG_9897.JPG" alt="Portrait of Salif Soumahoro">
-          </div>
-          <div class="middle-img flex items-center" data-aos="fade-up" data-aos-duration="1000">
-            <img class="mt-24 md:mt-0 p-8 md:p-0 rounded-full" src="/src/images/heroimg3.png" alt="Salif Soumahoro at work">
-          </div>
-          <div class="flex items-center" data-aos="fade-right" data-aos-duration="1000">
-            <img class="mt-28 hidden lg:block rounded-full" src="/src/images/heroimg2.png" alt="Creative session with Salif Soumahoro">
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-  <!-- Hero End -->
-
-
-
-
-<!-- About Section -->
-
-<section id="about" class="py-16 bg-gray-50">
-  <div class="container mx-auto px-6 lg:px-12">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <!-- About Image -->
-      <div class="about-left flex justify-center" data-aos="fade-right" data-aos-duration="1000">
-        <img
-          src="/src/images/about-image.png"
-          alt="Portrait of the content creator"
-          class="w-full max-w-md rounded-lg shadow-lg lg:max-w-lg hover:scale-105 transition-transform duration-300 ease-in-out"
-          loading="lazy"
-        />
-      </div>
-
-      <!-- About Content -->
-      <div data-aos="fade-left" data-aos-duration="1000">
-        <h2 class="text-3xl font-bold text-teal-500 mb-6">About Me</h2>
-       
-        <p class="text-lg text-gray-700 leading-relaxed mb-8">
-         
-
-I was born and raised in Harlem, NY, to immigrant parents from Ivory Coast. Growing up, positive influences were scarce, and inspiration seemed out of reach. But through media—whether it was cinema, sports, or even the fleeting commercials between shows—I discovered a world beyond my circumstances. These glimpses of greatness gave me the confidence to believe that change was possible.
-I started researching what makes people successful, and that curiosity fueled my education and creativity. I realized that through collaboration and determination, something powerful could be created—even from the humblest of beginnings. I wanted to be a beacon for those who felt hopeless or for those just starting their journey, to show them that greatness is achievable.
-I refuse to be confined by labels or limitations. Being boxed in creates doubt, and no one should ever feel limited. I push boundaries in every area of my life, and my mission is to help others do the same. Change is possible, and it starts with embracing the potential within, no matter where you come from.
-        </p>
-        <a
-          href="#projects" class="relative inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-teal-500 hover:bg-teal-600 rounded-lg shadow-md transition duration-300"
-          aria-label="Learn more about my work"
-          data-aos="zoom-in" data-aos-duration="1000">
-          <i class="fas fa-chevron-down mr-2"></i> My Projects
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- Work Section -->
-<section  id="work" class="py-16 text-white">
-  <div class="work-container mx-auto px-6">
   
-    <!-- <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-      <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
-        <lord-icon
-          src="https://cdn.lordicon.com/tdxypxgp.json"
-          trigger="hover"
-          colors="primary:#14b8a6,secondary:#0d9488"
-          style="width:150px;height:150px">
-        </lord-icon>
-        <h3 class="mt-4 text-2xl font-semibold">Music Videos</h3>
-      </div>
-      <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
-        <lord-icon
-          src="https://cdn.lordicon.com/vixtkkbk.json"
-          trigger="hover"
-          colors="primary:#14b8a6,secondary:#0d9488"
-          style="width:150px;height:150px">
-        </lord-icon>
-        <h3 class="mt-4 text-2xl font-semibold">Portraits/Photography</h3>
-      </div>
-      <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
-        <lord-icon
-          src="https://cdn.lordicon.com/zpxybbhl.json"
-          trigger="hover"
-          colors="primary:#14b8a6,secondary:#0d9488"
-          style="width:150px;height:150px">
-        </lord-icon>
-        <h3 class="mt-4 text-2xl font-semibold">Business/Branding</h3>
-      </div>
-      <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
-        <lord-icon
-          src="https://cdn.lordicon.com/qrbokoyz.json"
-          trigger="hover"
-          colors="primary:#14b8a6,secondary:#0d9488"
-          style="width:150px;height:150px">
-        </lord-icon>
-        <h3 class="mt-4 text-2xl font-semibold">Content Creation</h3>
-      </div>
-    </div> -->
-  </div>
-</section>
-
-<!-- End of Work Section -->
-
-
-   <!-- Video Gallery  -->
-    <!-- <section id="projects">
-    <div class="gallery-container">
-      <div class="title">
-        <h2>My Work</h2>
-      </div>
   
-      <div class="video-container container">
-        <div class="videos">
-          <video src="/src/images/Akin.mp4" muted></video>
-     
-          <p class="video-description">DP, Editor, Producer, Director, Gaffer <br>Akin by Katherine - Brand Promo</p>
-        </div>
-      
-        <div class="videos">
-          <video src="/src/images/Naomi_tribute.mp4" muted></video>
- 
-          <p class="video-description">Creative fashion project <br> DP, Editor, Producer, Director, Gaffer <br>Naomi Campbell Tribute</p>
-        </div>
-      
-        <div class="videos">
-          <video src="/src/images/Princess_1.mp4" muted></video>
+  
+  
+  
     
-          <p class="video-description">Fashion concept reel <br> DP, Editor, Producer, Director, Gaffer <br>Lingerie Collection Showcase</p>
-        </div>
-      
-        <div class="videos">
-          <video src="/src/images/Angelica_Nike_Test.mp4" muted></video>
-      
-          <p class="video-description">DP, Editor, Producer, Director <br>Nike Spec Ad: Overcoming challenges</p>
-        </div>
-      
-        <div class="videos">
-          <video src="/src/images/Athletics_color.mp4" muted></video>
-       
-          <p class="video-description">Corporate/institutional promo video <br> DP, Editor, Producer, Director, Gaffer, Sound<br>Brooklyn College Athletics</p> 
-        </div>
-      
-        <div class="videos">
-          <video src="/src/images/BLMI.mp4" muted></video>
-        
-          <p class="video-description">Corporate/institutional promo video <br> DP, Editor, Producer, Director, Gaffer, Sound <br>Brooklyn College Black and Latino Male Initiative</p> 
-        </div>
-      
-        <div class="videos">
-          <video src="/src/images/HISTORY.mp4" muted></video>
    
-          <p class="video-description">Corporate/institutional promo video <br> DP, Editor, Producer, Director, Gaffer, Sound <br>Brooklyn College History Department</p> 
-        </div>
-      
-        <div class="videos">
-          <video src="/src/images/Studio_Tre_Flip.mp4" muted></video>
-         
-          <p class="video-description">Music Video <br> DP, Editor, Director <br>Dyemond Lewis - Tre Flip Studio Session</p> 
-        </div>
-      </div>
-      
+   <div class="ab-container">
   
-      <div class="popup-videos">
-        <span class="close-btn">&times;</span>
-        <video controls autoplay></video>
+  <!-- Hero Section -->
+  <section id="hero-section">
+    <div class="bg-black text-white py-20">
+      <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+        
+        <!-- Hero Content -->
+        <section class="hero-content flex flex-col w-full lg:w-1/3 justify-center items-start p-8" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="text-3xl md:text-5xl p-2 text-custom-teal uppercase tracking-loose">Mansa Leaf Productions</h1>
+          <!-- <h2 class="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-4">Creative Content That Connects</h2> -->
+          <p class="text-white-800 leading-relaxed max-w-prose mb-6">
+            I'm Salif Soumahoro, I’m a director, videographer, and editor based in New York City, driven by a passion for storytelling through the visual medium. My goal is to create high-quality visuals that not only evoke emotion but also spark a call to action or inspire change.
+            I specialize in beauty, sports, branding, and corporate work, but what truly defines my creative vision is a clean, empowering, and idealistic aesthetic.
+         
+             I believe the work I create should leave a lasting imprint, inspiring and motivating those who experience it. As a 
+              first-generation immigrant, my upbringing shapes this vision, fueling my desire to produce content that resonates deeply and drives transformation.
+              At my core, I am a collaborative visionary, committed to elevating and inspiring those who seek meaningful change through the power of video.</p>
+           
+        
+          
+          <a href="#about"
+            class="bg-transparent hover:bg-custom-teal text-white hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-custom-teal hover:border-transparent transition-colors duration-300">
+            Learn More
+          </a>
+        </section>
+        
+        <!-- Images -->
+        <div class="hero-img p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3 justify-center">
+          <div class="hero-img-content flex items-center">
+            <div class="flex items-center" data-aos="fade-left" data-aos-duration="1000">
+              <img class="mt-28 hidden xl:block rounded-full" src="/src/images/IMG_9897.JPG" alt="Portrait of Salif Soumahoro">
+            </div>
+            <div class="middle-img flex items-center" data-aos="fade-up" data-aos-duration="1000">
+              <img class="mt-24 md:mt-0 p-8 md:p-0 rounded-full" src="/src/images/heroimg3.png" alt="Salif Soumahoro at work">
+            </div>
+            <div class="flex items-center" data-aos="fade-right" data-aos-duration="1000">
+              <img class="mt-28 hidden lg:block rounded-full" src="/src/images/heroimg2.png" alt="Creative session with Salif Soumahoro">
+            </div>
+          </div>
+        </div>
+  
       </div>
     </div>
-  </section>  -->
+  </section>
+    <!-- Hero End -->
   
-  <!--Video galley end  -->
-
-  <section id="projects">
-    <div class="gallery-container">
-      <div class="title">
-        <h2>My Work</h2>
-      </div>
   
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <video controls>
-              <source src="src/images/AK promo.MP4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            <p class="video-description">Akin by Katherine - Brand Promo <br> DP, Editor, Producer, Director, Gaffer</p>
-          </div>
-          
-          <div class="swiper-slide">
-            <video controls>
-              <source src="src/images/Naomi_tribute.mp4" type="video/mp4">
-            </video>
-            <p class="video-description">Naomi Campbell Tribute <br> DP, Editor, Producer, Director, Gaffer</p>
-          </div>
   
-          <!-- Add more slides as needed -->
+  
+  <!-- About Section -->
+  
+  <section id="about" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- About Image -->
+        <div class="about-left flex justify-center" data-aos="fade-right" data-aos-duration="1000">
+          <img
+            src="/src/images/about-image.png"
+            alt="Portrait of the content creator"
+            class="w-full max-w-md rounded-lg shadow-lg lg:max-w-lg hover:scale-105 transition-transform duration-300 ease-in-out"
+            loading="lazy"
+          />
         </div>
   
-        <!-- Navigation -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <!-- About Content -->
+        <div data-aos="fade-left" data-aos-duration="1000">
+          <h2 class="text-3xl font-bold text-teal-500 mb-6">About Me</h2>
+         
+          <p class="text-lg text-gray-700 leading-relaxed mb-8">
+           
   
-        <!-- Pagination -->
-        <div class="swiper-pagination"></div>
+  I was born and raised in Harlem, NY, to immigrant parents from Ivory Coast. Growing up, positive influences were scarce, and inspiration seemed out of reach. But through media—whether it was cinema, sports, or even the fleeting commercials between shows—I discovered a world beyond my circumstances. These glimpses of greatness gave me the confidence to believe that change was possible.
+  I started researching what makes people successful, and that curiosity fueled my education and creativity. I realized that through collaboration and determination, something powerful could be created—even from the humblest of beginnings. I wanted to be a beacon for those who felt hopeless or for those just starting their journey, to show them that greatness is achievable.
+  I refuse to be confined by labels or limitations. Being boxed in creates doubt, and no one should ever feel limited. I push boundaries in every area of my life, and my mission is to help others do the same. Change is possible, and it starts with embracing the potential within, no matter where you come from.
+          </p>
+          <a
+            href="#projects" class="relative inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-teal-500 hover:bg-teal-600 rounded-lg shadow-md transition duration-300"
+            aria-label="Learn more about my work"
+            data-aos="zoom-in" data-aos-duration="1000">
+            <i class="fas fa-chevron-down mr-2"></i> My Projects
+          </a>
+        </div>
       </div>
     </div>
   </section>
   
-
-
-<!-- Foooter -->
-<section class="bg-white">
-  <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
-      <nav class="flex flex-wrap justify-center -mx-5 -my-2">
-          <div class="px-5 py-2">
-              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  About
-              </a>
+     <!-- Video Gallery  -->
+      <!-- <section id="projects">
+      <div class="gallery-container">
+        <div class="title">
+          <h2>My Work</h2>
+        </div>
+    
+        <div class="video-container container">
+          <div class="videos">
+            <video src="/src/images/Akin.mp4" muted></video>
+       
+            <p class="video-description">DP, Editor, Producer, Director, Gaffer <br>Akin by Katherine - Brand Promo</p>
           </div>
-  
-          <div class="px-5 py-2">
-              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  Pricing
-              </a>
-          </div>
-          <div class="px-5 py-2">
-              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                Projects
-              </a>
-          </div>
-          <div class="px-5 py-2">
-              <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
-                  Terms
-              </a>
-          </div>
-      </nav>
-      <div class="flex justify-center mt-8 space-x-6">
-          
-          <a href="#" class="text-gray-400 hover:text-gray-500">
-              <span class="sr-only">Instagram</span>
-              <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
-                  <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
-              </svg>
-          </a>
-          
-      
-         
-      </div>
-      <p class="mt-8 text-base leading-6 text-center text-gray-400">
-          © 2025 Chukwu Tech Solutions, Inc. All rights reserved.
-      </p>
-  </div>
-</section>
-  <!-- end of footer -->
-
-  <script>
-    // Initialize AOS
-    AOS.init({
-      duration: 1000, // Default duration for animations
-      easing: 'ease-in-out', // Default easing
-      once: true, // Trigger animation only once
-      mirror: false // Prevent animations from being triggered when scrolling back
-    });
-  </script>
-
-  <script>
+        
+          <div class="videos">
+            <video src="/src/images/Naomi_tribute.mp4" muted></video>
    
-  </script>
-
-
-</body>
-
+            <p class="video-description">Creative fashion project <br> DP, Editor, Producer, Director, Gaffer <br>Naomi Campbell Tribute</p>
+          </div>
+        
+          <div class="videos">
+            <video src="/src/images/Princess_1.mp4" muted></video>
+      
+            <p class="video-description">Fashion concept reel <br> DP, Editor, Producer, Director, Gaffer <br>Lingerie Collection Showcase</p>
+          </div>
+        
+          <div class="videos">
+            <video src="/src/images/Angelica_Nike_Test.mp4" muted></video>
+        
+            <p class="video-description">DP, Editor, Producer, Director <br>Nike Spec Ad: Overcoming challenges</p>
+          </div>
+        
+          <div class="videos">
+            <video src="/src/images/Athletics_color.mp4" muted></video>
+         
+            <p class="video-description">Corporate/institutional promo video <br> DP, Editor, Producer, Director, Gaffer, Sound<br>Brooklyn College Athletics</p> 
+          </div>
+        
+          <div class="videos">
+            <video src="/src/images/BLMI.mp4" muted></video>
+          
+            <p class="video-description">Corporate/institutional promo video <br> DP, Editor, Producer, Director, Gaffer, Sound <br>Brooklyn College Black and Latino Male Initiative</p> 
+          </div>
+        
+          <div class="videos">
+            <video src="/src/images/HISTORY.mp4" muted></video>
+     
+            <p class="video-description">Corporate/institutional promo video <br> DP, Editor, Producer, Director, Gaffer, Sound <br>Brooklyn College History Department</p> 
+          </div>
+        
+          <div class="videos">
+            <video src="/src/images/Studio_Tre_Flip.mp4" muted></video>
+           
+            <p class="video-description">Music Video <br> DP, Editor, Director <br>Dyemond Lewis - Tre Flip Studio Session</p> 
+          </div>
+        </div>
+        
+    
+        <div class="popup-videos">
+          <span class="close-btn">&times;</span>
+          <video controls autoplay></video>
+        </div>
+      </div>
+    </section>  -->
+    
+    <!--Video galley end  -->
+  
+    <section id="projects">
+      <div class="gallery-container">
+        <h2>My Projects</h2>
+    
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <video controls>
+                <source src="src/video/AK promo.MP4" type="video/mp4">
+              </video>
+              <p class="video-description">Akin by Katherine - Brand Promo <br> DP, Editor, Producer, Director, Gaffer</p>
+            </div>
+            
+            <div class="swiper-slide">
+              <video controls>
+                <source src="src/video/Naomi_tribute.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Naomi Campbell Tribute <br> DP, Editor, Producer, Director, Gaffer</p>
+            </div>
+    
+            <div class="swiper-slide">
+              <video controls>
+                <source src="src/video/Princess_1.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Lingerie Collection Showcase <br> Fashion concept reel <br>DP, Editor, Producer, Director, Gaffer</p>
+            </div>
+    
+            <div class="swiper-slide">
+              <video controls>
+                <source src="src/video/Angelica_Nike_Test .mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Nike Spec Ad <br> Overcoming challenges<br>DP, Editor, Producer, Director</p>
+            </div>
+    
+            <div class="swiper-slide">
+              <video controls>
+                <source src="src/video/Studio Tre Flip.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Dyemond Lewis - Tre Flip Studio session <br> Music Video <br>DP, Editor, Director</p>
+            </div>
+    
+            <div class="swiper-slide">
+              <video controls>
+                <source src="src/video/BLMI.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Brooklyn College Black and Latino Male Initiative <br> Corporate/institutional promo video <br>DP, Editor, Producer, Director, Gaffer, Sound</p>
+            </div>
+    
+            <div class="swiper-slide">
+              <video controls>
+                <source src="src/video/Athletics_color.mp4" type="video/mp4">
+              </video>
+              <p class="video-description">Brooklyn College Athletics <br> Corporate/institutional promo video <br>DP, Editor, Producer, Director, Gaffer, Sound</p>
+            </div>
+          </div>
+    
+          <!-- Navigation -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+    
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    
+    
+  
+  
+  <!-- Foooter -->
+  <section class="bg-white">
+    <div class="max-w-screen-xl px-4 py-12 mx-auto space-y-8 overflow-hidden sm:px-6 lg:px-8">
+        <nav class="flex flex-wrap justify-center -mx-5 -my-2">
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    About
+                </a>
+            </div>
+    
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                  Projects
+                </a>
+            </div>
+            <div class="px-5 py-2">
+                <a href="#" class="text-base leading-6 text-gray-500 hover:text-gray-900">
+                    Terms
+                </a>
+            </div>
+        </nav>
+        <div class="flex justify-center mt-8 space-x-6">
+            
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Instagram</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                </svg>
+            </a>
+            
+        
+           
+        </div>
+        <p class="mt-8 text-base leading-6 text-center text-gray-400">
+            © 2025 Chukwu Tech Solutions, Inc. All rights reserved.
+        </p>
+    </div>
+  </section>
+    <!-- end of footer -->
+  
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000, // Default duration for animations
+        easing: 'ease-in-out', // Default easing
+        once: true, // Trigger animation only once
+        mirror: false // Prevent animations from being triggered when scrolling back
+      });
+    </script>
+  
+  </body>
 </html>

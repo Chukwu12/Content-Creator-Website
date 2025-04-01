@@ -1,116 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salif home page</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Salif home page</title>
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GSAP (for animations) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
 
-  <!-- GSAP (for animations) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Flip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
-  <script src="https://unpkg.com/split-type"></script>
+    <!-- Anime.js -->
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 
+    <!-- Tailwind CSS (optional, or use your own CSS) -->
+    <link href="/dist/main.css" rel="stylesheet" />
+    <link href="/src/css/main.css" rel="stylesheet" />
+  </head>
 
-  <!-- Anime.js -->
-  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-
-  <!-- Tailwind CSS (optional, or use your own CSS) -->
-  <link href="/dist/main.css" rel="stylesheet">
-  <link href="/src/css/main.css" rel="stylesheet">
-</head>
-
-
-
-<body id="home-body">
-
-  <div class="home-container">
-     <div class="loader">
-      <div class="loader-imgs">
-        <div class="img">
-          <img src="/src/images/homeimg1.png" alt="">
-        </div>
-        <div class="img">
-          <img src="/src/images/homeimg2.png" alt="">
-        </div>
-        <div class="img">
-          <img src="/src/images/homeimg3.png" alt="">
-        </div>
-        <!-- <div class="img" id="loader-logo">
+  <body id="home-body">
+    <div class="home-container">
+      <div class="loader">
+        <div class="loader-imgs">
+          <div class="img">
+            <img src="/src/images/homeimg1.png" alt="" />
+          </div>
+          <div class="img">
+            <img src="/src/images/homeimg2.png" alt="" />
+          </div>
+          <div class="img">
+            <img src="/src/images/homeimg3.png" alt="" />
+          </div>
+          <!-- <div class="img" id="loader-logo">
           <img src="/src/images/logo.png" alt="">
         </div> -->
-        <div class="img">
-          <img src="/src/images/homeimg4.png" alt="">
-        </div>
-        <div class="img">
-          <img src="/src/images/homeimg5.png" alt="">
-        </div>
-        <div class="img">
-          <img src="/src/images/homeimg6.png" alt="">
-        </div>
-        <div class="img">
-          <img src="/src/images/homeimg7.png" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="website-content">
-      <nav>
-  <div class="nav-item" id="logo">
-    
-  </div>
-  <div class="nav-links">
-    <div class="nav-item">
-      <a href="about.html">About Me</a>
-    </div>
-    <div class="nav-item">
-      <a href="about.html#projects">Projects</a>
-    </div>
-  </div>
-</nav>
-
-
-      <div class="hero">
-        <div class="h1">
-          <h1>Visuals That Inspire</h1>
-        </div>
-        <div class="h1">
-          <h1>Stories</h1>
-        </div>
-        <div class="h1">
-          <h1><span>that Transform</span></h1>
+          <div class="img">
+            <img src="/src/images/homeimg4.png" alt="" />
+          </div>
+          <div class="img">
+            <img src="/src/images/homeimg5.png" alt="" />
+          </div>
+          <div class="img">
+            <img src="/src/images/homeimg6.png" alt="" />
+          </div>
+          <div class="img">
+            <img src="/src/images/homeimg7.png" alt="" />
+          </div>
         </div>
       </div>
-     
-      <footer>
-        <div class="item">
-          <img src="/src/images/homeimg1.png" alt="">
+      <div class="website-content">
+        <nav
+          class="relative bg-gray-900 text-white p-4 flex justify-between items-center"
+        >
+          <!-- Logo -->
+          <div class="nav-item" id="logo">
+            <img class="logo" src="src/images/logo.png" alt="home-logo" class="h-10" />
+          </div>
+
+          <!-- Toggle Button (Hidden on larger screens) -->
+          <button 
+          id="mobile-menu-toggle"
+            class="md:hidden text-white focus:outline-none"
+          >
+            <svg
+              class="w-8 h-8"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+
+          <!-- Nav Links (Hidden on small screens, visible on desktop) -->
+          <div id="nav-links" class="nav-links hidden md:flex space-x-6">
+            <div class="nav-item">
+              <a href="about.html" class="hover:text-gray-400">About Me</a>
+            </div>
+            <div class="nav-item">
+              <a href="about.html#projects" class="hover:text-gray-400"
+                >Projects</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <!-- Mobile Nav (Dropdown) -->
+        <div
+          id="mobile-menu"
+          class="hidden bg-teal-500 text-white p-4 space-y-4 md:hidden"
+        >
+          <a href="about.html" class="block hover:text-gray-400">About Me</a>
+          <a href="about.html#projects" class="block hover:text-gray-400"
+            >Projects</a
+          >
         </div>
-        <div class="item">
-          <img src="/src/images/homeimg2.png" alt="">
+
+        <div class="hero">
+          <div class="h1">
+            <h1>Visuals That Inspire</h1>
+          </div>
+          <div class="h1">
+            <h1>Stories</h1>
+          </div>
+          <div class="h1">
+            <h1><span>that Transform</span></h1>
+          </div>
         </div>
-        <div class="item">
-          <img src="/src/images/homeimg3.png" alt="">
-        </div>
-        <div class="item">
-          <img src="/src/images/homeimg4.png" alt="">
-        </div>
-      </footer>
+
+        <footer>
+          <div class="item">
+            <img src="/src/images/homeimg1.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="/src/images/homeimg2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="/src/images/homeimg3.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="/src/images/homeimg4.png" alt="" />
+          </div>
+        </footer>
+      </div>
     </div>
-  </div>
 
-  <!-- Custom JS -->
-  <script src="/src/js/particles.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/src/js/particles.min.js"></script>
 
-  <script src="/src/js/app.js"></script>
-  <script src="/src/js/main.js"></script>
-</body>
-
+    <script src="/src/js/app.js"></script>
+    <script src="/src/js/main.js"></script>
+  </body>
 </html>
