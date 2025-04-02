@@ -61,19 +61,19 @@
         </div>
       </div>
       <div class="website-content">
-        <nav
-          class="relative bg-gray-900 text-white p-4 flex justify-between items-center"
-        >
+        <nav class="relative bg-gray-900 text-white p-4 flex justify-between items-center">
           <!-- Logo -->
           <div class="nav-item" id="logo">
-            <img class="logo" src="src/images/logo.png" alt="home-logo" class="h-10" />
+            <img class="logo h-10" src="src/images/logo.png" alt="home-logo" />
           </div>
-
+        
           <!-- Toggle Button (Hidden on larger screens) -->
           <button 
-          id="mobile-menu-toggle"
+            id="mobile-menu-toggle"
+            aria-expanded="false" 
             class="md:hidden text-white focus:outline-none"
           >
+            <span class="sr-only">Open main menu</span>
             <svg
               class="w-8 h-8"
               xmlns="http://www.w3.org/2000/svg"
@@ -89,19 +89,30 @@
               />
             </svg>
           </button>
-
+        
           <!-- Nav Links (Hidden on small screens, visible on desktop) -->
           <div id="nav-links" class="nav-links hidden md:flex space-x-6">
+            <div class="nav-item">
+              <a href="index.html" class="hover:text-gray-400">Home</a>
+            </div>
             <div class="nav-item">
               <a href="about.html" class="hover:text-gray-400">About Me</a>
             </div>
             <div class="nav-item">
-              <a href="about.html#projects" class="hover:text-gray-400"
-                >Projects</a
-              >
+              <a href="about.html#projects" class="hover:text-gray-400">Projects</a>
             </div>
           </div>
         </nav>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="sm:hidden hidden bg-gray-900">
+          <ul class="flex flex-col space-y-4 px-4 py-3">
+            <li><a href="index.html" class="text-white hover:text-gray-400">Home</a></li>
+            <li><a href="about.html" class="text-white hover:text-gray-400">About Me</a></li>
+            <li><a href="about.html#projects" class="text-white hover:text-gray-400">Projects</a></li>
+          </ul>
+        </div>
+        
 
         <!-- Mobile Nav (Dropdown) -->
         <div
