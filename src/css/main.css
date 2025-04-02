@@ -50,8 +50,12 @@
 
 #home-body{
   font-family: 'PP Neue Montreal';
-  background: #e7e4e5;
+  /* background: #e7e4e5; */
+  background-image: url(/src/images/hero-video.jpg);
   overflow-x: hidden;
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  height: 100vh;
 }
 
 .loader{
@@ -98,9 +102,9 @@
   justify-content: space-between;
   align-items: center;
   font-family: 'Neue Montreal', sans-serif;
-  background: #14b8a6; 
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px); /* Frosted glass effect */
+  /* background: #14b8a6;  */
+  -webkit-backdrop-filter: blur(10px); 
+   backdrop-filter: blur(10px); 
   z-index: 100;
   transition: all 0.3s ease-in-out;
 }
@@ -117,6 +121,7 @@
   color: white;
   font-size: 18px;
   transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 
 /* .nav-links{
@@ -127,7 +132,7 @@
 
 /* Hover Effect */
 .nav-item a:hover {
-  color: #333; /* A warm highlight */
+  /* color: #333;  */
 }
 
 
@@ -198,7 +203,7 @@
 .hero{
   width: 100%;
   position: absolute;
-  top: 45%;
+  top: 50%;
   transform: translateY(-50%);
   text-transform: uppercase;
   font-family: 'PP Migra';
@@ -215,6 +220,8 @@
   position: relative;
   font-weight: 400;
   line-height: 85%;
+  color: lightgray;
+  z-index: 9;
 }
 
 #home-body h1 span{

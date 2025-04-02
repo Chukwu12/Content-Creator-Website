@@ -706,24 +706,12 @@ video {
   display: none;
 }
 
-.h-10{
-  height: 2.5rem;
-}
-
 .h-6{
   height: 1.5rem;
 }
 
-.h-8{
-  height: 2rem;
-}
-
 .w-6{
   width: 1.5rem;
-}
-
-.w-8{
-  width: 2rem;
 }
 
 .w-full{
@@ -849,16 +837,6 @@ video {
 .bg-gray-50{
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity, 1));
 }
 
 .bg-teal-500{
@@ -1098,8 +1076,14 @@ nav .img {
 
 #home-body{
   font-family: 'PP Neue Montreal';
-  background: #e7e4e5;
+  /* background: #e7e4e5; */
+  background-image: url(/src/images/hero-video.jpg);
   overflow-x: hidden;
+  background-size: cover;
+  /* Ensures the image covers the entire viewport */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+  height: 100vh;
 }
 
 .loader{
@@ -1149,10 +1133,9 @@ nav .img {
   justify-content: space-between;
   align-items: center;
   font-family: 'Neue Montreal', sans-serif;
-  background: #14b8a6;
+  /* background: #14b8a6;  */
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  /* Frosted glass effect */
   z-index: 100;
   transition: all 0.3s ease-in-out;
 }
@@ -1171,6 +1154,7 @@ nav .img {
   color: white;
   font-size: 18px;
   transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 
 /* .nav-links{
@@ -1182,8 +1166,7 @@ nav .img {
 /* Hover Effect */
 
 .nav-item a:hover {
-  color: #333;
-  /* A warm highlight */
+  /* color: #333;  */
 }
 
 /* Display toggle button on small screens */
@@ -1255,7 +1238,7 @@ nav .img {
 .hero{
   width: 100%;
   position: absolute;
-  top: 45%;
+  top: 50%;
   transform: translateY(-50%);
   text-transform: uppercase;
   font-family: 'PP Migra';
@@ -1272,6 +1255,8 @@ nav .img {
   position: relative;
   font-weight: 400;
   line-height: 85%;
+  color: lightgray;
+  z-index: 9;
 }
 
 #home-body h1 span{
@@ -2985,11 +2970,6 @@ h1 {
 .hover\:text-black:hover{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-gray-400:hover{
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
 .hover\:text-gray-500:hover{

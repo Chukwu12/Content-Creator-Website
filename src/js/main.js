@@ -84,14 +84,7 @@
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menu-toggle");
-  const mobileMenu = document.getElementById("mobile-menu");
 
-  menuToggle.addEventListener("click", function () {
-    mobileMenu.classList.toggle("hidden");
-  });
-});
 
 
     // ============================= Gsap home animation======================================//
@@ -254,19 +247,19 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 // =============================swiper js===================//
-document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".swiper-container", {
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   const swiper = new Swiper(".swiper-container", {
+//     slidesPerView: 1,
+//     spaceBetween: 10,
+//     loop: true,
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//   });
+// });
 
