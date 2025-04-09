@@ -1692,13 +1692,14 @@ h1 {
   text-align: center;
 }
 
-.swiper-slide video {
+.swiper-slide iframe {
   width: 100%;
   max-height: 400px;
   border-radius: 10px;
   outline: none;
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
 }
+
 
 /* Video Description */
 .video-description {
