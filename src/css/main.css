@@ -55,7 +55,31 @@
   overflow-x: hidden;
   background-size: cover; /* Ensures the image covers the entire viewport */
   background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center;
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  #home-body {
+    background-size: cover;
+    background-position: center;  /* Keep the center of the image visible */
+  }
+}
+
+/* For very small screens (like mobile portrait) */
+@media (max-width: 480px) {
+  #home-body {
+    background-size: cover;
+    background-position: center;  /* Ensure it's still centered */
+  }
+}
+
+/* For larger screens (like desktop) */
+@media (min-width: 1024px) {
+  #home-body {
+    background-size: cover;
+    background-position: center;  /* Ensure it's still centered on large screens */
+  }
 }
 
 .loader{
@@ -97,7 +121,7 @@
 /* Navbar Styling */
 #home-body nav {
   width: 100%;
-  padding: 20px 40px;
+  padding: 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
