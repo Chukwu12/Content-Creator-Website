@@ -135,21 +135,25 @@
 
 
  /* Default style for larger screens */
-.logo {
-  height: 40px !important; /* Keep the default height on larger screens */
+ 
+.logo,
+#logo {
+  height: 70px !important; /* Keep the default height on larger screens */
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
 /* Adjust logo size on smaller screens */
 @media (max-width: 768px) { /* For tablets and mobile devices */
-  .logo {
+  .logo,
+  #logo {
     height: 30px !important; /* Reduce height for smaller devices */
   }
 }
 
 @media (max-width: 480px) { /* For very small mobile devices like iPhones */
-  .logo {
+  .logo,
+  #logo {
     height: 25px !important; /* Further reduce height for small screens */
   }
 }
@@ -186,6 +190,10 @@
   padding: 10px;
   cursor: pointer;
   z-index: 101;
+}
+
+#mobile-menu ul {
+  backdrop-filter: blur(3px);
 }
 
 .mobile-menu-toggle .icon-bar {
@@ -324,7 +332,7 @@
   }
 
   #home-body h1 {
-    font-size: clamp(20px, 4vw, 40px);
+    font-size: clamp(20px, 7vw, 40px);
   }
 
   .loader-imgs {
