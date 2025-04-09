@@ -1140,11 +1140,34 @@ nav .img {
   transition: all 0.3s ease-in-out;
 }
 
+/* Default style for larger screens */
+
 .logo {
-  height: 40px!important;
+  height: 40px !important;
+  /* Keep the default height on larger screens */
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.3s ease;
+}
+
+/* Adjust logo size on smaller screens */
+
+@media (max-width: 768px) {
+  /* For tablets and mobile devices */
+
+  .logo {
+    height: 30px !important;
+    /* Reduce height for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For very small mobile devices like iPhones */
+
+  .logo {
+    height: 25px !important;
+    /* Further reduce height for small screens */
+  }
 }
 
 /* Navbar Items */
@@ -1257,6 +1280,7 @@ nav .img {
   line-height: 85%;
   color: lightgray;
   z-index: 9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 #home-body h1 span{
@@ -2729,7 +2753,7 @@ h1 {
   text-align: center;
 }
 
-.swiper-slide video {
+.swiper-slide iframe {
   width: 100%;
   max-height: 400px;
   border-radius: 10px;
