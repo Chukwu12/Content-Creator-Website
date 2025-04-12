@@ -127,8 +127,8 @@
   align-items: center;
   font-family: 'Neue Montreal', sans-serif;
   /* background: #14b8a6;  */
-  -webkit-backdrop-filter: blur(10px); 
-   backdrop-filter: blur(10px); 
+  /* -webkit-backdrop-filter: blur(10px); 
+   backdrop-filter: blur(10px);  */
   z-index: 100;
   transition: all 0.3s ease-in-out;
 }
@@ -193,7 +193,9 @@
 }
 
 #mobile-menu ul {
+  -webkit-backdrop-filter:blur(3px);
   backdrop-filter: blur(3px);
+ 
 }
 
 .mobile-menu-toggle .icon-bar {
@@ -301,7 +303,7 @@
   display: block; /* Show by default */
 }
 
-@media (min-width: 640px) {
+@media (min-width: 767px) {
   #mobile-menu-toggle {
     display: none; /* Hide on screens wider than 640px (small and up) */
   }
@@ -352,7 +354,7 @@
 
 @media (max-width: 480px) {
   .hero {
-    top: 35%;
+    top: 50%;
   }
 
 
@@ -1730,7 +1732,7 @@ h1 {
 /* Swiper Container */
 .swiper-container {
   width: 100%;
-  max-width: 900px; /* Center content and avoid stretching */
+  max-width: 700px; /* Center content and avoid stretching */
   padding-bottom: 50px;
 }
 
@@ -1767,7 +1769,7 @@ h1 {
 .swiper-container .swiper-button-prev {
   color: white; /* Ensures navigation arrows are visible */
   z-index: 10;
-  top: 80%!important;
+  top: 85%!important;
  
 }
 
@@ -1783,6 +1785,58 @@ h1 {
 .swiper-pagination{
   background: #fff;
 }
+
+/* Terms page  */
+#terms{
+  background-image:url("/src/images/pexels-ann-poan-5797903.jpg");
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.terms-box{
+  max-width: 460px;
+  background-color: #111;
+  color: white;
+  font-family: var(--second-font);
+  padding: 60px 30px;
+}
+
+.term-text{
+  padding: 0 20px;
+  height: 400px;
+  overflow-y: auto;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.term-text::--webkit-scrollbar{
+  width: 2px;
+  background-color: #282828;
+}
+
+.term-text::--webkit-scrollbar-thumb{
+  background-color: #d13639;
+}
+
+.term-text h2 {
+  text-transform: uppercase;
+  color: wheat;
+}
+
+.terms-box h4 {
+  font-size: 13px;
+  text-align: center;
+  padding: 0 40px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
