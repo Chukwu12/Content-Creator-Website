@@ -1083,7 +1083,36 @@ nav .img {
   /* Ensures the image covers the entire viewport */
   background-repeat: no-repeat;
   /* Prevents the image from repeating */
+  background-position: center;
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  #home-body {
+    background-size: cover;
+    background-position: center;
+    /* Keep the center of the image visible */
+  }
+}
+
+/* For very small screens (like mobile portrait) */
+
+@media (max-width: 480px) {
+  #home-body {
+    background-size: cover;
+    background-position: center;
+    /* Ensure it's still centered */
+  }
+}
+
+/* For larger screens (like desktop) */
+
+@media (min-width: 1024px) {
+  #home-body {
+    background-size: cover;
+    background-position: center;
+    /* Ensure it's still centered on large screens */
+  }
 }
 
 .loader{
@@ -1128,22 +1157,23 @@ nav .img {
 
 #home-body nav {
   width: 100%;
-  padding: 20px 40px;
+  padding: 10px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: 'Neue Montreal', sans-serif;
   /* background: #14b8a6;  */
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  /* -webkit-backdrop-filter: blur(10px); 
+   backdrop-filter: blur(10px);  */
   z-index: 100;
   transition: all 0.3s ease-in-out;
 }
 
 /* Default style for larger screens */
 
-.logo {
-  height: 40px !important;
+.logo,
+#logo {
+  height: 70px !important;
   /* Keep the default height on larger screens */
   -o-object-fit: cover;
      object-fit: cover;
@@ -1155,7 +1185,8 @@ nav .img {
 @media (max-width: 768px) {
   /* For tablets and mobile devices */
 
-  .logo {
+  .logo,
+  #logo {
     height: 30px !important;
     /* Reduce height for smaller devices */
   }
@@ -1164,7 +1195,8 @@ nav .img {
 @media (max-width: 480px) {
   /* For very small mobile devices like iPhones */
 
-  .logo {
+  .logo,
+  #logo {
     height: 25px !important;
     /* Further reduce height for small screens */
   }
@@ -1201,6 +1233,11 @@ nav .img {
   padding: 10px;
   cursor: pointer;
   z-index: 101;
+}
+
+#mobile-menu ul {
+  -webkit-backdrop-filter:blur(3px);
+  backdrop-filter: blur(3px);
 }
 
 .mobile-menu-toggle .icon-bar {
@@ -1311,7 +1348,7 @@ nav .img {
   /* Show by default */
 }
 
-@media (min-width: 640px) {
+@media (min-width: 767px) {
   #mobile-menu-toggle {
     display: none;
     /* Hide on screens wider than 640px (small and up) */
@@ -1341,7 +1378,7 @@ nav .img {
   }
 
   #home-body h1 {
-    font-size: clamp(20px, 4vw, 40px);
+    font-size: clamp(20px, 7vw, 40px);
   }
 
   .loader-imgs {
@@ -1361,7 +1398,7 @@ nav .img {
 
 @media (max-width: 480px) {
   .hero {
-    top: 35%;
+    top: 50%;
   }
 
   .hero .h1 {
@@ -2739,8 +2776,6 @@ h1 {
 
 .swiper-container {
   width: 100%;
-  max-width: 900px;
-  /* Center content and avoid stretching */
   padding-bottom: 50px;
 }
 
@@ -2780,7 +2815,7 @@ h1 {
   color: white;
   /* Ensures navigation arrows are visible */
   z-index: 10;
-  top: 80%!important;
+  top: 90%!important;
 }
 
 .swiper-pagination-bullet {
@@ -2793,6 +2828,58 @@ h1 {
 
 .swiper-pagination{
   background: #fff;
+}
+
+/* Terms page  */
+
+#terms{
+  background-image:url("/src/images/pexels-ann-poan-5797903.jpg");
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.terms-box{
+  max-width: 460px;
+  background-color: #111;
+  color: white;
+  font-family: var(--second-font);
+  padding: 60px 30px;
+}
+
+.term-text{
+  padding: 0 20px;
+  height: 400px;
+  overflow-y: auto;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.term-text::--webkit-scrollbar{
+  width: 2px;
+  background-color: #282828;
+}
+
+.term-text::--webkit-scrollbar-thumb{
+  background-color: #d13639;
+}
+
+.term-text h2 {
+  text-transform: uppercase;
+  color: wheat;
+}
+
+.terms-box h4 {
+  font-size: 13px;
+  text-align: center;
+  padding: 0 40px;
 }
 
 /* Responsive Design */

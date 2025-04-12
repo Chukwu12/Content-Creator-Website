@@ -1732,7 +1732,6 @@ h1 {
 /* Swiper Container */
 .swiper-container {
   width: 100%;
-  max-width: 700px; /* Center content and avoid stretching */
   padding-bottom: 50px;
 }
 
@@ -1769,7 +1768,7 @@ h1 {
 .swiper-container .swiper-button-prev {
   color: white; /* Ensures navigation arrows are visible */
   z-index: 10;
-  top: 85%!important;
+  top: 90%!important;
  
 }
 
