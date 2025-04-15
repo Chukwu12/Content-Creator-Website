@@ -1173,7 +1173,7 @@ nav .img {
 
 .logo,
 #logo {
-  height: 70px !important;
+  height: 50px !important;
   /* Keep the default height on larger screens */
   -o-object-fit: cover;
      object-fit: cover;
