@@ -1163,10 +1163,11 @@ nav .img {
   align-items: center;
   font-family: 'Neue Montreal', sans-serif;
   /* background: #14b8a6;  */
-  /* -webkit-backdrop-filter: blur(10px); 
-   backdrop-filter: blur(10px);  */
+   -webkit-backdrop-filter: blur(3px); 
+      backdrop-filter: blur(3px);
   z-index: 100;
   transition: all 0.3s ease-in-out;
+  height: 60px;
 }
 
 /* Default style for larger screens */

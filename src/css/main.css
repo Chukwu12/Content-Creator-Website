@@ -139,7 +139,7 @@
  
 .logo,
 #logo {
-  height: 70px !important; /* Keep the default height on larger screens */
+  height: 50px !important; /* Keep the default height on larger screens */
   object-fit: cover;
   transition: transform 0.3s ease;
 }
