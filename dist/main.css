@@ -1180,28 +1180,6 @@ nav .img {
   transition: transform 0.3s ease;
 }
 
-/* Adjust logo size on smaller screens */
-
-@media (max-width: 768px) {
-  /* For tablets and mobile devices */
-
-  .logo,
-  #logo {
-    height: 30px !important;
-    /* Reduce height for smaller devices */
-  }
-}
-
-@media (max-width: 480px) {
-  /* For very small mobile devices like iPhones */
-
-  .logo,
-  #logo {
-    height: 25px !important;
-    /* Further reduce height for small screens */
-  }
-}
-
 /* Navbar Items */
 
 .nav-item a {
