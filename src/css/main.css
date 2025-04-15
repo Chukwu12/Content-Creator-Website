@@ -56,7 +56,7 @@
   background-size: cover; /* Ensures the image covers the entire viewport */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media (max-width: 768px) {
@@ -69,8 +69,8 @@
 /* For very small screens (like mobile portrait) */
 @media (max-width: 480px) {
   #home-body {
-    background-size: cover;
-    background-position: center;  /* Ensure it's still centered */
+    background-size: contain; /* Makes sure the entire image fits */
+    background-position: top center; /* Ensure it's at the top */
   }
 }
 
@@ -143,7 +143,20 @@
   transition: transform 0.3s ease;
 }
 
+/* Adjust logo size on smaller screens */
+@media (max-width: 768px) { /* For tablets and mobile devices */
+  .logo,
+  #logo {
+    height: 30px !important; /* Reduce height for smaller devices */
+  }
+}
 
+@media (max-width: 480px) { /* For very small mobile devices like iPhones */
+  .logo,
+  #logo {
+    height: 25px !important; /* Further reduce height for small screens */
+  }
+}
 
   
 
