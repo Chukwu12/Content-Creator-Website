@@ -53,6 +53,7 @@
   /* background: #e7e4e5; */
   background-image: url(/src/images/hero-video.jpg);
   overflow-x: hidden;
+  overflow-y: hidden;
   background-size: cover; /* Ensures the image covers the entire viewport */
   background-repeat: no-repeat; /* Prevents the image from repeating */
   background-position: center;
@@ -69,7 +70,7 @@
 /* For very small screens (like mobile portrait) */
 @media (max-width: 480px) {
   #home-body {
-    background-size: contain; /* Makes sure the entire image fits */
+    background-size: cover; /* Makes sure the entire image fits */
     background-position: top center; /* Ensure it's at the top */
   }
 }
