@@ -128,8 +128,8 @@
   align-items: center;
   font-family: 'Neue Montreal', sans-serif;
   /* background: #14b8a6;  */
-  /* -webkit-backdrop-filter: blur(10px); 
-   backdrop-filter: blur(10px);  */
+  -webkit-backdrop-filter: blur(3px); 
+   backdrop-filter: blur(3px); 
   z-index: 100;
   transition: all 0.3s ease-in-out;
 }
@@ -139,9 +139,10 @@
  
 .logo,
 #logo {
-  height: 50px!important;
+  height: 60px!important;
   object-fit: cover;
   transition: transform 0.3s ease;
+  z-index: 9;
 }
 
 /* Adjust logo size on smaller screens */

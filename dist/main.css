@@ -706,12 +706,20 @@ video {
   display: none;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-6{
   height: 1.5rem;
 }
 
 .\!w-16{
   width: 4rem !important;
+}
+
+.w-12{
+  width: 3rem;
 }
 
 .w-6{
@@ -1173,8 +1181,8 @@ nav{
   align-items: center;
   font-family: 'Neue Montreal', sans-serif;
   /* background: #14b8a6;  */
-  /* -webkit-backdrop-filter: blur(10px); 
-   backdrop-filter: blur(10px);  */
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
   z-index: 100;
   transition: all 0.3s ease-in-out;
 }
@@ -1183,10 +1191,11 @@ nav{
 
 .logo,
 #logo {
-  height: 50px!important;
+  height: 60px!important;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.3s ease;
+  z-index: 9;
 }
 
 /* Adjust logo size on smaller screens */
