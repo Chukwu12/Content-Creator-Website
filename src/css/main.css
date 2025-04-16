@@ -139,7 +139,7 @@
  
 .logo,
 #logo {
-  height: 50px;
+  height: 50px!important;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
