@@ -548,7 +548,7 @@ object {
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
 
-
+img,
 video {
   max-width: 100%;
   height: auto;
@@ -710,12 +710,28 @@ video {
   height: 1.5rem;
 }
 
+.h-auto{
+  height: auto;
+}
+
+.\!h-auto{
+  height: auto !important;
+}
+
 .w-6{
   width: 1.5rem;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-12{
+  width: 3rem;
+}
+
+.\!w-16{
+  width: 4rem !important;
 }
 
 .max-w-md{
@@ -1061,16 +1077,16 @@ nav{
   height: 60px;
 }
 
-nav .img {
-  height: 40px;
-}
+/* nav .img {
+      height: 40px;
+    } */
 
-@media (max-width: 500px) {
-  nav .img {
-    height: auto;
-    width: auto;
-  }
-}
+/* @media (max-width: 500px) {
+      nav .img {
+        height: auto;
+        width: auto;
+      }
+    } */
 
 /* Home Page */
 
@@ -1079,12 +1095,13 @@ nav .img {
   /* background: #e7e4e5; */
   background-image: url(/src/images/hero-video.jpg);
   overflow-x: hidden;
+  overflow-y: hidden;
   background-size: cover;
   /* Ensures the image covers the entire viewport */
   background-repeat: no-repeat;
   /* Prevents the image from repeating */
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 @media (max-width: 768px) {
@@ -1100,8 +1117,9 @@ nav .img {
 @media (max-width: 480px) {
   #home-body {
     background-size: cover;
-    background-position: center;
-    /* Ensure it's still centered */
+    /* Makes sure the entire image fits */
+    background-position: top center;
+    /* Ensure it's at the top */
   }
 }
 
@@ -1163,23 +1181,22 @@ nav .img {
   align-items: center;
   font-family: 'Neue Montreal', sans-serif;
   /* background: #14b8a6;  */
-   -webkit-backdrop-filter: blur(3px); 
-      backdrop-filter: blur(3px);
+  /* -webkit-backdrop-filter: blur(10px); 
+   backdrop-filter: blur(10px);  */
   z-index: 100;
   transition: all 0.3s ease-in-out;
-  height: 60px;
 }
 
 /* Default style for larger screens */
 
 .logo,
 #logo {
-  height: 50px !important;
-  /* Keep the default height on larger screens */
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.3s ease;
 }
+
+/* Adjust logo size on smaller screens */
 
 /* Navbar Items */
 
@@ -1671,7 +1688,7 @@ nav .img {
       transform: translateY(100%);
     }
 
-    .home-nav .nav-item
+  
 
     .home-container{
       position: relative;
@@ -3107,6 +3124,14 @@ h1 {
     display: none;
   }
 
+  .sm\:w-16{
+    width: 4rem;
+  }
+
+  .sm\:\!w-20{
+    width: 5rem !important;
+  }
+
   .sm\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -3137,6 +3162,14 @@ h1 {
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:w-20{
+    width: 5rem;
+  }
+
+  .md\:\!w-24{
+    width: 6rem !important;
   }
 
   .md\:flex-row{
@@ -3170,6 +3203,14 @@ h1 {
     width: 66.666667%;
   }
 
+  .lg\:w-24{
+    width: 6rem;
+  }
+
+  .lg\:\!w-32{
+    width: 8rem !important;
+  }
+
   .lg\:max-w-lg{
     max-width: 32rem;
   }
@@ -3192,5 +3233,9 @@ h1 {
 @media (min-width: 1280px){
   .xl\:block{
     display: block;
+  }
+
+  .xl\:w-32{
+    width: 8rem;
   }
 }
