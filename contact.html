@@ -48,24 +48,15 @@
      <!-- Navbar -->
      <header>
       <nav class="flex center bg-teal-500 p-4" aria-label="Main navigation">
-        <div class="container flex justify-between items-center py-4 md:py-4">
-    
-             <!-- Logo -->
-        <div class="flex items-center">
-          <img class="logo" src="src/images/logo.png" alt="home-logo">
-         </div>
-    
-          <!-- Desktop Navigation -->
-          <ul class="hidden sm:flex space-x-4 justify-center w-full">
-            <li><a href="index.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Home</a></li>
-            <li><a href="about.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">About</a></li>
-            <li><a href="about.html#projects" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Projects</a></li>
-            <li><a href="contact.html" class="text-white px-3 py-2 text-sm font-medium rounded-md hover:bg-teal-600">Contact</a></li>
-          </ul>
-    
-          <!-- Mobile Menu Button (visible on small screens) -->
+        <nav class="relative text-white p-4 flex justify-between items-center gap-2">
+          <!-- Logo -->
+          <div class="nav-item  flex items-center" id="logo">
+            <img class="logo !w-16  sm:!w-20 md:!w-24 lg:!w-32" src="src/images/logo.png" alt="home-logo" />
+          </div>
+        
+          <!-- Toggle Button (Hidden on larger screens) -->
           <div class="block sm:hidden">
-            <button id="mobile-menu-toggle" type="button" aria-expanded="false" class="text-white p-2 hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <button id="mobile-menu-toggle" type="button" aria-expanded="false" class="text-white p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span class="sr-only">Open main menu</span>
               <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
@@ -73,7 +64,20 @@
             </button>
           </div>
     
-        </div>
+        
+          <!-- Nav Links (Hidden on small screens, visible on desktop) -->
+          <div id="nav-links" class="nav-links hidden md:flex space-x-6">
+            <div class="nav-item">
+              <a href="index.html" class="text-white px-3 py-2 text-sm font-medium rounded-md ">Home</a>
+            </div>
+            <div class="nav-item">
+              <a href="about.html" class="text-white px-3 py-2 text-sm font-medium rounded-md ">About Me</a>
+            </div>
+            <div class="nav-item">
+              <a href="about.html#projects" class="text-white px-3 py-2 text-sm font-medium rounded-md ">Projects</a>
+            </div>
+          </div>
+        </nav>
       </nav>
     
       <!-- Mobile Menu (hidden by default, shown when toggled) -->
