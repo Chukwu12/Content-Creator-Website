@@ -139,6 +139,7 @@
  
 .logo,
 #logo {
+  height: 50px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -220,9 +221,7 @@
     padding: 15px; 
   }
   
-  .nav-item {
-    margin-bottom: 10px;
-  }
+
 
 
    /* Show the toggle button on small screens */

@@ -706,16 +706,16 @@ video {
   display: none;
 }
 
+.\!h-auto{
+  height: auto !important;
+}
+
 .h-6{
   height: 1.5rem;
 }
 
-.h-auto{
-  height: auto;
-}
-
-.\!h-auto{
-  height: auto !important;
+.\!w-16{
+  width: 4rem !important;
 }
 
 .w-6{
@@ -724,14 +724,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-12{
-  width: 3rem;
-}
-
-.\!w-16{
-  width: 4rem !important;
 }
 
 .max-w-md{
@@ -1191,6 +1183,7 @@ nav{
 
 .logo,
 #logo {
+  height: 50px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.3s ease;
@@ -1273,10 +1266,6 @@ nav{
     justify-content: center;
     align-items: center;
     padding: 15px;
-  }
-
-  .nav-item {
-    margin-bottom: 10px;
   }
 
   /* Show the toggle button on small screens */
@@ -3124,10 +3113,6 @@ h1 {
     display: none;
   }
 
-  .sm\:w-16{
-    width: 4rem;
-  }
-
   .sm\:\!w-20{
     width: 5rem !important;
   }
@@ -3164,10 +3149,6 @@ h1 {
     display: none;
   }
 
-  .md\:w-20{
-    width: 5rem;
-  }
-
   .md\:\!w-24{
     width: 6rem !important;
   }
@@ -3195,20 +3176,16 @@ h1 {
     display: block;
   }
 
+  .lg\:\!w-32{
+    width: 8rem !important;
+  }
+
   .lg\:w-1\/3{
     width: 33.333333%;
   }
 
   .lg\:w-2\/3{
     width: 66.666667%;
-  }
-
-  .lg\:w-24{
-    width: 6rem;
-  }
-
-  .lg\:\!w-32{
-    width: 8rem !important;
   }
 
   .lg\:max-w-lg{
@@ -3233,9 +3210,5 @@ h1 {
 @media (min-width: 1280px){
   .xl\:block{
     display: block;
-  }
-
-  .xl\:w-32{
-    width: 8rem;
   }
 }
