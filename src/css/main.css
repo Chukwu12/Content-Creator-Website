@@ -140,7 +140,7 @@
  
 .logo,
 #logo {
-  height: 60px!important;
+  height: 50px!important;
   object-fit: cover;
   transition: transform 0.3s ease;
   z-index: 9;
