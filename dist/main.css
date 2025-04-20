@@ -1094,18 +1094,15 @@ nav{
 
 /* Home Page */
 
-#home-body{
+#home-body {
   font-family: 'PP Neue Montreal';
-  /* background: #e7e4e5; */
-  background-image: url(/src/images/hero-video.jpg);
-  overflow-x: hidden;
-  overflow-y: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url(/src/images/hero-video.jpg);
   background-size: cover;
-  /* Ensures the image covers the entire viewport */
   background-repeat: no-repeat;
-  /* Prevents the image from repeating */
   background-position: center;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
