@@ -706,6 +706,10 @@ video {
   display: none;
 }
 
+.\!h-auto{
+  height: auto !important;
+}
+
 .h-12{
   height: 3rem;
 }
@@ -1191,7 +1195,7 @@ nav{
 
 .logo,
 #logo {
-  height: 60px!important;
+  height: 50px!important;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.3s ease;
@@ -1274,7 +1278,6 @@ nav{
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 15px;
   }
 
   /* Show the toggle button on small screens */
@@ -1309,7 +1312,7 @@ nav{
   position: relative;
   font-weight: 400;
   line-height: 85%;
-  color: lightgray;
+  color: snow;
   z-index: 9;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
@@ -1368,11 +1371,11 @@ nav{
 
 @media (max-width: 768px) {
   .hero {
-    top: 40%;
+    top: 55%;
   }
 
   #home-body h1 {
-    font-size: clamp(20px, 7vw, 40px);
+    font-size: clamp(20px, 7vw, 50px);
   }
 
   .loader-imgs {
@@ -1392,11 +1395,11 @@ nav{
 
 @media (max-width: 480px) {
   .hero {
-    top: 50%;
+    top: 55%;
   }
 
-  .hero .h1 {
-    font-size: clamp(18px, 5vw, 35px);
+  #home-body .h1 {
+    font-size: clamp(3px, 3vw, 9px);
   }
 
   .nav-item {
@@ -2822,6 +2825,48 @@ h1 {
 
 .swiper-pagination{
   background: #fff;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 aspect ratio */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  height: 450px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  text-shadow: 0 0 10px black;
+  z-index: 2;
 }
 
 /* Terms page  */
