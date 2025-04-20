@@ -1399,7 +1399,7 @@ nav{
   }
 
   #home-body .h1 {
-    font-size: clamp(3px, 3vw, 9px);
+    font-size: clamp(3px, 3vw, 11px) !important;
   }
 
   .nav-item {
