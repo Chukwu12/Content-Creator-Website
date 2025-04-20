@@ -152,4 +152,26 @@
   });
 });
 
+// Play Button Functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const playButtons = document.querySelectorAll('.play-button');
+  
+  playButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const videoWrapper = button.closest('.video-wrapper');
+      const videoSrc = videoWrapper.getAttribute('data-video-src');
+      const iframe = document.createElement('iframe');
+      iframe.src = videoSrc;
+      iframe.width = "640";
+      iframe.height = "480";
+      iframe.allow = "autoplay";
+    
+      
+      // Replace thumbnail and play button with iframe
+      videoWrapper.innerHTML = ''; // Clear the content
+      videoWrapper.appendChild(iframe); // Add iframe
+    });
+  });
+});
+
 
