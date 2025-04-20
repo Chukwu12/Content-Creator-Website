@@ -134,20 +134,22 @@
 );
     });
 
-// =============================swiper js===================//
-// document.addEventListener("DOMContentLoaded", function () {
-//   const swiper = new Swiper(".swiper-container", {
-//     slidesPerView: 1,
-//     spaceBetween: 10,
-//     loop: true,
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//   });
-// });
+// =============================Iframes Thumbnail===================//
+ // Replace thumbnail with iframe on click
+ document.querySelectorAll(".video-wrapper").forEach(wrapper => {
+  wrapper.addEventListener("click", function () {
+    const src = this.dataset.videoSrc + "?autoplay=1";
+    const iframe = document.createElement("iframe");
+    iframe.src = videoSrc;
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.allow = "autoplay";
+    iframe.allowFullscreen = true;
+    iframe.style.border = "none";
+    iframe.style.borderRadius = "10px";
+    this.innerHTML = ""; // remove thumbnail + button
+    this.appendChild(iframe);
+  });
+});
+
 
