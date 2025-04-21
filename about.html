@@ -207,14 +207,14 @@
 
             <!--  Slide 1 -->
             <div class="swiper-slide">
-              <div class="video-wrapper"
-                data-video-src="https://drive.google.com/file/d/1C9ZmI4y4MG67CLsc-cDQukEWKpK9vAiS/preview">
+              <div class="video-wrapper" data-video-src="https://drive.google.com/file/d/1C9ZmI4y4MG67CLsc-cDQukEWKpK9vAiS/preview">
                 <img src="src/images/akinthumbnail.png" class="video-thumbnail" alt="Thumbnail">
                 <div class="play-button">▶</div>
               </div>
               <p class="video-description">Akin by Katherine <br> Brand Promo <br></p>
             </div>
-                   <!-- Slide 2 -->
+            
+            <!-- Slide 2 -->
             <div class="swiper-slide">
               <div class="video-wrapper"
                 data-video-src="https://drive.google.com/file/d/1jgrYllDYJDVOdat5Zjwx2fwjcH3VbuPa/preview">
@@ -253,7 +253,8 @@
                 <div class="play-button">▶</div>
               </div>
               <p class="video-description">Brooklyn College History department <br> Corporate/institutional promo video
-                <br></p>
+                <br>
+              </p>
             </div>
 
             <!-- Slide 6 -->
@@ -392,48 +393,48 @@
 
     <script>
       // Play button logic: Replace thumbnail and play button with iframe
-    document.querySelectorAll(".video-wrapper").forEach(wrapper => {
-      wrapper.addEventListener("click", function () {
-        // Get the video source URL with autoplay
-        const videoSrc = this.dataset.videoSrc + "?autoplay=1"; 
-        const iframe = document.createElement("iframe");
-        iframe.src = videoSrc;
-        iframe.width = "100%";
-        iframe.height = "100%";
-        iframe.allow = "autoplay";
-        iframe.allowFullscreen = true;
-        iframe.style.border = "none";
-        iframe.style.borderRadius = "10px";
+      document.querySelectorAll(".video-wrapper").forEach(wrapper => {
+        wrapper.addEventListener("click", function () {
+          // Get the video source URL with autoplay
+          const videoSrc = this.dataset.videoSrc + "?autoplay=1";
+          const iframe = document.createElement("iframe");
+          iframe.src = videoSrc;
+          iframe.width = "100%";
+          iframe.height = "100%";
+          iframe.allow = "autoplay";
+          iframe.allowFullscreen = true;
+          iframe.style.border = "none";
+          iframe.style.borderRadius = "10px";
 
-        // Clear the video wrapper's content and add the iframe
-        this.innerHTML = "";
-        this.appendChild(iframe);
+          // Clear the video wrapper's content and add the iframe
+          this.innerHTML = "";
+          this.appendChild(iframe);
+        });
       });
-    });
     </script>
 
     <script>
       // Play Button Functionality
-document.addEventListener("DOMContentLoaded", function () {
-  const playButtons = document.querySelectorAll('.play-button');
-  
-  playButtons.forEach(button => {
-    button.addEventListener('click', function () {
-      const videoWrapper = button.closest('.video-wrapper');
-      const videoSrc = videoWrapper.getAttribute('data-video-src');
-      const iframe = document.createElement('iframe');
-      iframe.src = videoSrc;
-      iframe.width = "640";
-      iframe.height = "480";
-      iframe.allow = "autoplay";
-    
-      
-      // Replace thumbnail and play button with iframe
-      videoWrapper.innerHTML = ''; // Clear the content
-      videoWrapper.appendChild(iframe); // Add iframe
-    });
-  });
-});
+      document.addEventListener("DOMContentLoaded", function () {
+        const playButtons = document.querySelectorAll('.play-button');
+
+        playButtons.forEach(button => {
+          button.addEventListener('click', function () {
+            const videoWrapper = button.closest('.video-wrapper');
+            const videoSrc = videoWrapper.getAttribute('data-video-src');
+            const iframe = document.createElement('iframe');
+            iframe.src = videoSrc;
+            iframe.width = "640";
+            iframe.height = "480";
+            iframe.allow = "autoplay";
+
+
+            // Replace thumbnail and play button with iframe
+            videoWrapper.innerHTML = ''; // Clear the content
+            videoWrapper.appendChild(iframe); // Add iframe
+          });
+        });
+      });
     </script>
 </body>
 
