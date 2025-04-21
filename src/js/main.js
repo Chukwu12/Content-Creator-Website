@@ -135,37 +135,42 @@
     });
 
 // =============================Iframes Thumbnail===================//
-// JavaScript to dynamically load the video when clicked
-document.querySelectorAll('.video-wrapper').forEach(wrapper => {
-  wrapper.addEventListener('click', function () {
-    const videoSrc = wrapper.getAttribute('data-video-src'); // Get video URL
-    
-    // Replace the thumbnail and play button with an iframe containing the video
-    wrapper.innerHTML = `<iframe src="${videoSrc}" width="640" height="480" allow="autoplay" frameborder="0" allowfullscreen></iframe>`;
+ // Replace thumbnail with iframe on click
+ document.querySelectorAll(".video-wrapper").forEach(wrapper => {
+  wrapper.addEventListener("click", function () {
+    const src = this.dataset.videoSrc + "?autoplay=1";
+    const iframe = document.createElement("iframe");
+    iframe.src = videoSrc;
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.allow = "autoplay";
+    iframe.allowFullscreen = true;
+    iframe.style.border = "none";
+    iframe.style.borderRadius = "10px";
+    this.innerHTML = ""; // remove thumbnail + button
+    this.appendChild(iframe);
   });
 });
 
-
 // Play Button Functionality
-// document.addEventListener("DOMContentLoaded", function () {
-//   const playButtons = document.querySelectorAll('.play-button');
+document.addEventListener("DOMContentLoaded", function () {
+  const playButtons = document.querySelectorAll('.play-button');
   
-//   playButtons.forEach(button => {
-//     button.addEventListener('click', function () {
-//       const videoWrapper = button.closest('.video-wrapper');
-//       const videoSrc = videoWrapper.getAttribute('data-video-src');
-//       const iframe = document.createElement('iframe');
-//       iframe.src = videoSrc;
-//       iframe.width = "640";
-//       iframe.height = "480";
-//       iframe.allow = "autoplay";
+  playButtons.forEach(button => {
+    button.addEventListener('click', function () {
+      const videoWrapper = button.closest('.video-wrapper');
+      const videoSrc = videoWrapper.getAttribute('data-video-src');
+      const iframe = document.createElement('iframe');
+      iframe.src = videoSrc;
+      iframe.width = "640";
+      iframe.height = "480";
+      iframe.allow = "autoplay";
     
       
-//       // Replace thumbnail and play button with iframe
-//       videoWrapper.innerHTML = ''; // Clear the content
-//       videoWrapper.appendChild(iframe); // Add iframe
-//     });
-//   });
-// });
-
+      // Replace thumbnail and play button with iframe
+      videoWrapper.innerHTML = ''; // Clear the content
+      videoWrapper.appendChild(iframe); // Add iframe
+    });
+  });
+});
 
