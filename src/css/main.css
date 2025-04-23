@@ -1755,6 +1755,7 @@ h1 {
   padding: 10px;
   border-radius: 5px;
   max-width: 90%;
+  text-align: center;
 }
 
 /* Swiper Navigation (Positioned below video) */
